@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown</title>
+</head>
+
+<style>
+    button {
+        border: 1px solid #f1f1f1;
+        background-color: rgb(18, 220, 18);
+        font-size: medium;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .website {
+        position: relative;
+        display: inline-block;
+    }
+
+    .weblink {
+        position: absolute;
+        display: none;
+        z-index: 1;
+        min-width: 150px;
+        background-color: white;
+        box-shadow: 0 8px 10px 2px rgb(87, 86, 86);
+    }
+
+    .weblink a {
+        display: block;
+        padding: 10px 12px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .website a:hover {
+        background-color: rgb(210, 204, 204);
+    }
+
+    .website:hover .weblink {
+        display: block;
+    }
+
+
+    .website:hover .button {
+        background-color: rgb(51, 156, 93);
+    }
+</style>
+
+<body>
+    <div class="website">
+        <button class="button">News Website</button>
+        <div class="weblink">
+            <a href="http://www.ndtv.com" target="_blank">NDTV</a>
+            <a href="http://www.thehindu.com" target="_blank">The Hindu</a>
+            <a href="http://economictimes.indiatimes.com" target="_blank">Economic Times</a>
+            <a href="http://indianexpress.com" target="_blank">Indian Express</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
