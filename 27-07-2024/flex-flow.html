@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Flow</title>
+</head>
+
+<style>
+    .flow {
+        background-color: orange;
+        flex-flow: column wrap;
+        display: flex;
+        width: 100px;
+    }
+
+    .flow>div {
+        border: 1px solid orangered;
+        background-color: yellow;
+        margin: 10px;
+        padding: 15px;
+        font-weight: 600;
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .flow2 {
+        border: 2px solid black;
+        background-color: darkgray;
+        display: flex;
+        flex-flow: row-reverse wrap;
+        width: 479px;
+    }
+
+    .flow2>div {
+        border: 2px solid palevioletred;
+        background-color: rgb(188, 143, 143);
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+        font-size: 65px;
+    }
+</style>
+
+<body>
+    <div class="flow">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <div class="flow2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
