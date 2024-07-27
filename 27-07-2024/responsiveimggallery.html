@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+</head>
+
+<style>
+
+
+
+body{
+
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header{
+    text-align: center;
+    padding: 25px;
+}
+
+.images{
+display: flex;
+flex-wrap: wrap;
+padding: 0 7px;
+}
+
+.gallery{
+flex: 30%;
+max-width: 30%;
+padding: 10px;
+}
+
+.gallery > div {
+margin-top: 26px;
+vertical-align: middle;
+}
+
+@media(max-width:800px){
+.gallery{
+flex: 100%;
+max-width: 100%;
+}
+}
+
+@media(max-width:600px){
+.gallery{
+flex: 100%;
+max-width: 100%;
+}
+}
+
+@media(min-width:800px){
+.gallery{
+flex: 100%;
+max-width: 100%;
+}
+}
+
+@media(min-width:1080px){
+.gallery{
+flex: 60%;
+max-width: 60%;
+}
+}
+
+
+</style>
+
+
+
+<body>
+    <div class="header">
+<h1>Respomsive Image Gallery</h1>
+    </div>
+
+<div class="images">
+    <div class="gallery">
+<img src="https://images.pexels.com/photos/1563355/pexels-photo-1563355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Beautiful Road" width="100%">
+<img src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Beautiful Farms" width="100%">
+<img src="https://images.pexels.com/photos/459203/pexels-photo-459203.jpeg?auto=compress&cs=tinysrgb&w=600" alt="OverBridge" width="100%">
+<img src="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Snowey Mountain" width="100%" >
+<img src="https://images.pexels.com/photos/1042423/pexels-photo-1042423.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Flower" width="100%">
+<img src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Rain" width="100%">
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
