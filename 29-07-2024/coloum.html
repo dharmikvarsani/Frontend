@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Media Querie for column </title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        flex: 25%;
+        padding: 30px;
+    }
+
+    @media(max-width:600px) {
+        .column {
+            flex-direction: column;
+        }
+    }
+
+    @media(max-width:800px) {
+        .box {
+            flex: 50%;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="column">
+        <div class="box" style="background-color: #aaa;">
+            <h3>BOX 1</h3>
+        </div>
+
+        <div class="box" style="background-color: #bbb;">
+            <h3>BOX 2</h3>
+        </div>
+
+        <div class="box" style="background-color: #ccc;">
+            <h3>BOX 3</h3>
+        </div>
+
+        <div class="box" style="background-color: #ddd;">
+            <h3>BOX 4</h3>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
