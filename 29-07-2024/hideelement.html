@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Element In Different Size</title>
+</head>
+
+<style>
+    .hide {
+        background-color: powderblue;
+        font-size: 25px;
+        font-family: sans-serif;
+        font-weight: 600;
+        padding: 20px;
+        margin: 15px;
+    }
+
+    @media screen and (max-width:600px) {
+        .hide {
+            display: none;
+        }
+    }
+</style>
+
+
+<body>
+    <h1>Hide Element In Different Size</h1>
+    <div class="hide"> Hide Box </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem iure quo fuga tempora repudiandae quia tempore
+        impedit veritatis qui quasi ipsa asperiores exercitationem, explicabo odio, beatae porro, doloribus ab amet.</p>
+
+
+</body>
+
+</html>
