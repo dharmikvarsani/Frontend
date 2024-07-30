@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+</head>
+
+<style>
+    .box {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 10px;
+        background-color: #c6bcb6;
+        border: 1px solid black;
+        padding: 10px;
+        height: 900px;
+    }
+
+    .box>div {
+        background-color: #96897f;
+        border: 2px solid black;
+        padding: 20px;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 600;
+
+    }
+
+    .item8 {
+
+        grid-area: 1 / 2 / 5 / 6;
+    }
+
+    .box2 {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 10px;
+        background-color: #c2d4dd;
+        border: 1px solid black;
+        padding: 10px;
+        height: 750px;
+    }
+
+    .box2>div {
+        background-color: #b0aac0;
+        border: 2px solid black;
+        padding: 20px;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 600;
+
+    }
+
+    .line8 {
+
+        grid-area: 2 / 1 / span 2 / span 3;
+    }
+</style>
+<h2>Grid Area (Shorthand Prpoperty For grid-row-start, grid-column-start, grid-row-end, grid-column-end).</h2>
+<br>
+
+<body>
+    <div class="box">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+        <div class="item13">13</div>
+        <div class="item14">14</div>
+        <div class="item15">15</div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <h2>Grid Area Using Span</h2>
+    <br>
+
+    <div class="box2">
+        <div class="line1">1</div>
+        <div class="line2">2</div>
+        <div class="line3">3</div>
+        <div class="line4">4</div>
+        <div class="line5">5</div>
+        <div class="line6">6</div>
+        <div class="line7">7</div>
+        <div class="line8">8</div>
+        <div class="line9">9</div>
+        <div class="line10">10</div>
+        <div class="line11">11</div>
+        <div class="line12">12</div>
+        <div class="line13">13</div>
+    </div>
+
+
+</body>
+
+</html>
