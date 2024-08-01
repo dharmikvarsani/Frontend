@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+
+<style>
+    div {
+        background-color: powderblue;
+        border: 2px solid black;
+        padding: 20px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        width: 200px;
+        position: relative;
+        animation-name: demo;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-direction: normal;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+    }
+
+    @keyframes demo {
+
+        0% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+            background-color: yellow;
+            left: 500px;
+            top: 0px;
+        }
+
+        50% {
+            background-color: yellowgreen;
+            left: 500px;
+            top: 500px;
+        }
+
+        75% {
+            background-color: greenyellow;
+            left: 0px;
+            top: 500px;
+        }
+
+        100% {
+            background-color: green;
+            left: 0px;
+            top: 0px;
+        }
+
+    }
+</style>
+
+<body>
+    <h2>Animation</h2>
+    <br>
+
+    <div>Animation</div>
+
+
+</body>
+
+</html>
