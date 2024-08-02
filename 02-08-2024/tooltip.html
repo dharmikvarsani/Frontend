@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolTip</title>
+</head>
+
+<style>
+
+.tooltip{
+background-color: #ddd;
+border-bottom: 1px dotted gray;
+width: 120px;
+position: relative;
+display: inline-block;
+}
+
+.tooltip .text{
+visibility: hidden;
+width: 120px;
+background-color: black;
+border-radius: 5px;
+padding: 5px 0;
+margin: 10px;
+color: white;
+position: absolute;
+z-index: 1;
+top: -5px;
+left: 105%;
+text-align: center;
+opacity: 0;
+transition: opacity 1s;
+}
+
+
+.tooltip:hover .text{
+    visibility: visible;
+opacity: 1;
+}
+
+
+
+
+</style>
+
+
+
+<body style="text-align: center; margin: 10%;">
+    <div class="tooltip">Hover Over Me
+
+        <span class="text">This Is A ToolTip Text</span>
+    </div>
+</body>
+</html>
