@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade In Text</title>
+</head>
+
+<style>
+    .container {
+        position: relative;
+        height: 245px;
+        width: 365px;
+    }
+
+    .image {
+        height: 245px;
+        width: 365px;
+        display: block;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 245px;
+        width: 365px;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: powderblue;
+    }
+
+    .text {
+        top: 50%;
+        position: absolute;
+        left: 50%;
+        color: white;
+        font-size: 25px;
+        font-weight: 400;
+        transform: translate(-50%, -50%);
+    }
+
+    .container:hover .overlay {
+        opacity: 1;
+    }
+
+
+    .container2 {
+        position: relative;
+        height: 300px;
+        width: 400px;
+    }
+
+    .image2 {
+        height: 300px;
+        width: 400px;
+        display: block;
+    }
+
+    .box {
+        position: absolute;
+        opacity: 0;
+        color: white;
+        top: 39%;
+        left: 41%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    .text2 {
+        font-size: 25px;
+        font-weight: 500;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        background-color: yellow;
+        position: absolute;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .container2:hover .image2 {
+        opacity: 0.3;
+    }
+
+    .container2:hover .box {
+        opacity: 1;
+    }
+</style>
+
+
+<body>
+    <div class="container">
+        <img src="./img.jpg" alt="Night View" class="image">
+        <div class="overlay">
+            <div class="text">Hello!</div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div class="container2">
+        <img src="./img_2.jpg" alt="Mountain" class="image2">
+        <div class="box">
+            <div class="text2">Hello</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

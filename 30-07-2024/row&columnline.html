@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Row & Column Line</title>
+</head>
+
+<style>
+    .box {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: rgb(103, 216, 216);
+        border: 1px solid black;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .box>div {
+        background-color: rgb(195, 240, 247);
+        border: 2px solid black;
+        text-align: center;
+        font-size: 30px;
+        padding: 20px;
+        font-weight: 600;
+    }
+
+    .line1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .line7 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .box2 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 25px;
+        background-color: #e6e2d3;
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+    .box2>div {
+        background-color: #c4b7a6;
+        border: 2px solid black;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        padding: 20px;
+    }
+
+    .row1 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .row7 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+</style>
+
+
+<body>
+    <h2>Grid Column Line</h2>
+    <br>
+
+    <div class="box">
+        <div class="line1">1</div>
+        <div class="line2">2</div>
+        <div class="line3">3</div>
+        <div class="line4">4</div>
+        <div class="line5">5</div>
+        <div class="line6">6</div>
+        <div class="line7">7</div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <h2>Grid Row Line</h2>
+    <br>
+
+    <div class="box2">
+        <div class="row1">1</div>
+        <div class="row2">2</div>
+        <div class="row3">3</div>
+        <div class="row4">4</div>
+        <div class="row5">5</div>
+        <div class="row6">6</div>
+        <div class="row7">7</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+</head>
+
+<style>
+    .box {
+        background-color: #8d9db6;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        justify-content: center;
+        padding: 25px;
+    }
+
+    .box>div {
+        background-color: #667292;
+        border: 2px solid black;
+        padding: 20px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .box2 {
+        background-color: #b7bdd8;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        justify-content: start;
+        padding: 25px;
+    }
+
+    .box2>div {
+        background-color: #87bdd8;
+        border: 2px solid black;
+        padding: 20px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .box3 {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: end;
+        gap: 10px;
+        background-color: #b8a9c9;
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+    .box3>div {
+        background-color: #622569;
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .box4 {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-evenly;
+        gap: 10px;
+        background-color: #c6bcb6;
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+    .box4>div {
+        background-color: #96897f;
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .box5 {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-between;
+        gap: 10px;
+        background-color: #d5f4e6;
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+    .box5>div {
+        background-color: #80ced6;
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .box6 {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-around;
+        gap: 10px;
+        background-color: #e6e2d3;
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+    .box6>div {
+        background-color: #c4b7a6;
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+</style>
+
+<body>
+    <h2>justify-content Center</h2>
+    <br>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <h2>Justify-Content Start</h2>
+    <div class="box2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <h2>Justify-Content End</h2>
+    <br>
+
+    <div class="box3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <h2>Justify-Content Space Evenly</h2>
+    <br>
+
+    <div class="box4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <h2>Justify-Content Space-Between</h2>
+    <br>
+
+    <div class="box5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <h2>Justify-Content Space-Around</h2>
+    <br>
+
+    <div class="box6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+
+</body>
+
+</html>
