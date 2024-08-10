@@ -4,45 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation</title>
+    <title>Animation 2</title>
 </head>
 
 <style>
     div {
-        background-color: powderblue;
+        background-color: aquamarine;
         border: 2px solid black;
-        padding: 20px;
+        padding: 10px;
+        margin: 10px;
+        width: 120px;
         text-align: center;
         font-size: 25px;
         font-weight: 600;
-        width: 200px;
         position: relative;
-        animation-name: demo;
-        animation-duration: 5s;
-        animation-delay: 2s;
+        animation-name: box;
+        animation-duration: 10s;
+        animation-delay: 1s;
         animation-direction: normal;
         animation-fill-mode: backwards;
-        animation-iteration-count: infinite;
         animation-timing-function: ease;
+        animation-iteration-count: infinite;
     }
 
-    @keyframes demo {
 
-        0% {
+    @keyframes box {
+
+        10% {
             background-color: red;
             left: 0px;
             top: 0px;
+            transform: skewX(20deg);
+            scale: 10px;
         }
 
         25% {
             background-color: yellow;
-            left: 80%;
+            left: 500px;
             top: 0px;
         }
 
         50% {
             background-color: yellowgreen;
-            left: 80%;
+            left: 500px;
             top: 500px;
         }
 
@@ -50,6 +54,7 @@
             background-color: greenyellow;
             left: 0px;
             top: 500px;
+            rotate: 360deg
         }
 
         100% {
@@ -57,16 +62,12 @@
             left: 0px;
             top: 0px;
         }
-
     }
 </style>
 
 <body>
-    <h2>Animation</h2>
-    <br>
 
-    <div>Animation</div>
-
+    <div>Animation Box</div>
 
 </body>
 
