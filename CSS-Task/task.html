@@ -118,7 +118,7 @@
         padding: 24px 10px 0 191px;
     }
 
-    .content3 {
+    .content3 {  
         font-size: 17px;
         font-family: Arial, Helvetica, sans-serif;
         padding: 0px 120px 0 136px;
@@ -168,6 +168,7 @@
         border-image: linear-gradient(to bottom, rgb(168, 148, 196), rgb(166, 87, 109));
         border-image-slice: 1;
     }
+
 
     .image5 {
         height: 30px;
@@ -222,51 +223,48 @@
         padding: 0px 74px 26px 31px;
     }
 
- @media only screen and (max-width: 768px){
-    
-    .container{
-grid-template-columns: 1;
-grid-template-rows: 6;
-display: flex;
-flex-direction: column;
-float: left;
-justify-content: center
-    }
+    @media only screen and (max-width: 768px) {
 
-    .box1{
-width:760px ;
-height: 0px;
-    }
-    .box2{
-width:760px ;
-height: 122px;
-    }
-    
-    .box3{
-width:818px ;
-height:155px;
-    }
+        .container {
+            grid-template-columns: 1;
+            grid-template-rows: 6;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            float: left;
+            justify-content: start
+        }
 
-    .box4{
-width:818px ;
-height: 286px;
-    }
+        .box1 {
+            width: 760px;
+            height: 0px;
+        }
 
-    .box5{
-width:798px ;
-height: 141px;
-    }
- 
-    .box6{
-width:804px ;
-height: 125px;
-    }
-}
+        .box2 {
+            width: 760px;
+            height: 122px;
+        }
 
+        .box3 {
+            width: 818px;
+            height: 155px;
+        }
 
-        
-            
-    
+        .box4 {
+            width: 818px;
+            height: 286px;
+        }
+
+        .box5 {
+            width: 798px;
+            height: 141px;
+        }
+
+        .box6 {
+            width: 804px;
+            height: 125px;
+        }
+    }
 </style>
 
 <body>
@@ -342,7 +340,7 @@ height: 125px;
 
     </div>
 
-    
+
 </body>
 
 
