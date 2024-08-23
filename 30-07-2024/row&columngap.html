@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column Gap</title>
+</head>
+
+<style>
+    .box {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 60px;
+        background-color: cadetblue;
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+    .column {
+        background-color: powderblue;
+        border: 2px solid black;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .box2 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 62px;
+        background-color: cadetblue;
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+    .row1 {
+        background-color: powderblue;
+        border: 2px solid black;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .box3 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 62px;
+        column-gap: 50px;
+        background-color: cadetblue;
+        border: 1px solid black;
+        padding: 15px;
+    }
+
+    .row2 {
+        background-color: powderblue;
+        border: 2px solid black;
+        text-align: center;
+        font-size: 20px;
+        padding: 15px;
+    }
+</style>
+
+<body>
+    <h2>Column Gap</h2>
+    <div class="box">
+        <div class="column">1</div>
+        <div class="column">2</div>
+        <div class="column">3</div>
+        <div class="column">4</div>
+        <div class="column">5</div>
+        <div class="column">6</div>
+        <div class="column">7</div>
+        <div class="column">8</div>
+        <div class="column">9</div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <h2>Row Gap</h2>
+    <div class="box2">
+        <div class="row1">1</div>
+        <div class="row1">2</div>
+        <div class="row1">3</div>
+        <div class="row1">4</div>
+        <div class="row1">5</div>
+        <div class="row1">6</div>
+        <div class="row1">7</div>
+        <div class="row1">8</div>
+        <div class="row1">9</div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <h2>Column & Row Gap</h2>
+    <div class="box3">
+        <div class="row2">1</div>
+        <div class="row2">2</div>
+        <div class="row2">3</div>
+        <div class="row2">4</div>
+        <div class="row2">5</div>
+        <div class="row2">6</div>
+        <div class="row2">7</div>
+        <div class="row2">8</div>
+        <div class="row2">9</div>
+    </div>
+
+
+</body>
+
+</html>

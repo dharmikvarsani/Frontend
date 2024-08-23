@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area Prpoperty</title>
+</head>
+
+<style>
+    .box {
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+        padding: 20px;
+        background-color: #c6bcb6;
+        width: 1000px;
+        height: 500px;
+    }
+
+
+
+    .box>div {
+        background-color: #96897f;
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+        font-size: 29px;
+        font-weight: 600;
+    }
+
+    .line1 {
+        grid-area: header;
+    }
+
+    .line2 {
+        grid-area: menu;
+    }
+
+    .line3 {
+        grid-area: main;
+    }
+
+    .line4 {
+        grid-area: right;
+    }
+
+    .line5 {
+        grid-area: footer;
+    }
+</style>
+
+<body>
+    <h2>Grid Area Prpoperty For Web Layout</h2>
+    <div class="box">
+        <div class="line1">Header</div>
+        <div class="line2">Menu</div>
+        <div class="line3">Main</div>
+        <div class="line4">Right</div>
+        <div class="line5">Footer</div>
+    </div>
+</body>
+
+</html>

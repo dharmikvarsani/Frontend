@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing Function</title>
+</head>
+
+<style>
+    div {
+        background-color: powderblue;
+        border: 2px solid black;
+        padding: 15px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        width: 100px;
+        position: relative;
+        animation-name: demo;
+        animation-fill-mode: forwards;
+        animation-duration: 5s;
+        animation-delay: 2s;
+    }
+
+
+
+    #ease {
+        animation-timing-function: ease;
+    }
+
+    #liner {
+        animation-timing-function: linear;
+    }
+
+    #ease-in {
+        animation-timing-function: ease-in;
+    }
+
+    #ease-out {
+        animation-timing-function: ease-out;
+    }
+
+    #ease-in-out {
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes demo {
+        from {
+            left: 0px;
+        }
+
+        to {
+            left: 800px;
+        }
+    }
+</style>
+
+
+<body>
+    <h2>Timing Function</h2>
+    <br>
+    <div id="ease">ease</div>
+    <div id="liner">liner</div>
+    <div id="ease-in">ease-in</div>
+    <div id="ease-out">ease-out</div>
+    <div id="ease-in-out">ease-in-out</div>
+</body>
+
+</html>
