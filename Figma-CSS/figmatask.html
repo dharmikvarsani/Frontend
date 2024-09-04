@@ -5,44 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figma Task</title>
+    <!-- Poppins Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!-- Link CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- social Media Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
 </head>
 
 
 <body>
     <div class="container">
+
         <div class="nav">
             <div class="logo0">
+
                 <img src="./logo.png" alt="logo" class="logo">
                 <p class="name"><span class="m">M</span>umair</p>
-            </div>
-            <div class="navbar">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="material-icons" style="font-size: 50px;">list</i>
-                </label>
 
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <button class="downloadcv">Download CV</button>
-                </ul>
+
+                <div class="navbar">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="material-icons" style="font-size: 50px;">list</i>
+                    </label>
+
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <button class="downloadcv">Download CV</button>
+                    </ul>
+                </div>
             </div>
 
         </div>
 
-        <div class="intro">
+
+        <div class="intro" id="home">
             <div class="info">
                 <p class="line1">Hi i am</p>
                 <p class="line2">Muhammad Umair</p>
@@ -67,7 +80,7 @@
         </div>
 
 
-        <div class="about">
+        <div class="about" id="aboutme">
             <div>
                 <img src="./man2.png" alt="myphoto" class="photo2">
                 <img src="./Rectangle.png" alt="eyemask" class="eye2">
@@ -93,7 +106,7 @@
         </div>
 
 
-        <div class="services">
+        <div class="services" id="services">
             <div class="service">
                 <p class="line9">Services</p>
                 <p class="line10">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus </p>
@@ -136,7 +149,7 @@
 
 
 
-        <div class="myprojects">
+        <div class="myprojects" id="projects">
             <div class="projecttitle">
                 <p class="line11">My Projects</p>
                 <p class="line12">Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus </p>
@@ -170,16 +183,16 @@
         </div>
 
 
-        <div>
+        <div id="testimonials" class="testimonials">
             <div class="testi">
                 <p class="line15">Testimonials</p>
                 <p class="line16">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus</p>
                 <p class="line16">netus in. Aliquet donec morbi convallis pretium</p>
             </div>
 
-            <div class="wrapper">
-                <div class="carousel">
-                    <div class="carousel1">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div class="carousel1" id="slide1">
                         <img src="./photo1.png" alt="man1" class="img1">
                         <div>
                             <p class="line17">“</p>
@@ -191,7 +204,7 @@
                             <p class="line20">CEO</p>
                         </div>
                     </div>
-                    <!-- <div class="carousel1">
+                    <div class="carousel1" id="slide2">
                         <img src="./photo2.png" alt="man1" class="img1">
                         <div>
                             <p class="line17">“</p>
@@ -202,14 +215,45 @@
                             <p class="line19">Name</p>
                             <p class="line20">CEO</p>
                         </div>
-                    </div> -->
-                </div>
+                    </div>
+                    <div class="carousel1" id="slide3">
+                        <img src="./photo1.png" alt="man1" class="img1">
+                        <div>
+                            <p class="line17">“</p>
+                            <p class="line18">Lorem ipsum dolor sit amet consectetur. In enim cursus odio</p>
+                            <p class="line18">accumsan. Id leo urna velit neque mattis id tellus arcu</p>
+                            <p class="line18">condimentum. Augue dictum dolor elementum convallis </p>
+                            <p class="line18">dignissim malesuada commodo ultrices.</p>
+                            <p class="line19">Name</p>
+                            <p class="line20">CEO</p>
+                        </div>
+                    </div>
+                    <div class="carousel1" id="slide4">
+                        <img src="./photo2.png" alt="man1" class="img1">
+                        <div>
+                            <p class="line17">“</p>
+                            <p class="line18">Lorem ipsum dolor sit amet consectetur. In enim cursus odio</p>
+                            <p class="line18">accumsan. Id leo urna velit neque mattis id tellus arcu</p>
+                            <p class="line18">condimentum. Augue dictum dolor elementum convallis </p>
+                            <p class="line18">dignissim malesuada commodo ultrices.</p>
+                           
+                            <p class="line19">Name</p>
+                            <p class="line20">CEO</p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="dots">
+                <a href="#slide1"></a>
+                <a href="#slide2"></a>
+                <a href="#slide3"></a>
+                <a href="#slide4"></a>
             </div>
         </div>
 
 
 
-        <div class="email">
+        <div class="email" id="contact">
             <div class="mailheading">
                 <h2 class="line21">Lets Design Together</h2>
                 <p class="line22">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus </p>
@@ -231,12 +275,12 @@
                 </div>
                 <div>
                     <ul class="footerul">
-                        <li class="footerbar">Home</li>
-                        <li class="footerbar">About Me</li>
-                        <li class="footerbar">Services</li>
-                        <li class="footerbar">Projects</li>
-                        <li class="footerbar">Testimonials</li>
-                        <li class="footerbar">Contact</li>
+                        <li><a href="#home" class="footerbar">Home</a></li>
+                        <li><a href="#aboutme" class="footerbar">About Me</a></li>
+                        <li><a href="#services" class="footerbar">Services</a></li>
+                        <li><a href="#projects" class="footerbar">Projects</a></li>
+                        <li><a href="#testimonials" class="footerbar">Testimonials</a></li>
+                        <li><a href="#contact" class="footerbar">Contact</a></li>
                     </ul>
                 </div>
             </div>
