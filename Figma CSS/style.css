@@ -25,7 +25,7 @@
     align-items: center;
     position: fixed;
     padding: 12px 0 0 30px;
-width: 100%;
+    width: 100%;
     top: 0;
     background-color: white;
     z-index: 1;
@@ -65,7 +65,7 @@ ul {
 /* li {
     float: left;
 } */
-li a{
+li a {
     text-decoration: none;
     color: black;
     padding: 23px;
@@ -397,7 +397,7 @@ li a{
 }
 
 
-.testimonials{
+.testimonials {
     display: flex;
     flex-direction: column;
     gap: 110px;
@@ -482,21 +482,21 @@ li a{
 }
 
 .slider-wrapper::before,
-.slider-wrapper::after{
-background: linear-gradient(to left, rgba(254, 254, 254,0) 0% ,
-rgba(254,254,254,1)100%) ;
-content: "";
-height: 100%;
-position: absolute;
-width: 15%;
+.slider-wrapper::after {
+    background: linear-gradient(to left, rgba(254, 254, 254, 0) 0%,
+            rgba(254, 254, 254, 1)100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 15%;
 }
 
-.slider-wrapper::before{
+.slider-wrapper::before {
     left: 0;
     top: 0;
 }
 
-.slider-wrapper::after{
+.slider-wrapper::after {
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
@@ -508,7 +508,7 @@ width: 15%;
     align-items: center;
     justify-content: center;
 
-    a{
+    a {
         width: 57px;
         height: 16px;
         border-radius: 8px;
@@ -521,17 +521,11 @@ width: 15%;
             background-color: #FD6F00;
         }
 
-        &:active{
+        &:active {
             background-color: #FD6F00;
         }
     }
 }
-
-
-
-
-
-
 
 .email {
     display: flex;
@@ -782,6 +776,28 @@ width: 15%;
         font-size: 19px;
     }
 
+    .carousel1 {
+        width: 658px;
+        height: 224px;
+    }
+
+    .line18 {
+        font-size: 11px;
+    }
+
+    .line19 {
+        font-size: 18px;
+    }
+
+    .line20 {
+        font-size: 14px;
+    }
+
+    .img1 {
+        width: 156px;
+        height: 156px;
+    }
+
     .line22 {
         font-size: 18px;
     }
@@ -798,10 +814,10 @@ width: 15%;
         margin: 0 0 0 -40px;
     }
 
-.footerbar{
-    color: black;
-    padding: 0 30px 0 0;
-}
+    .footerbar {
+        color: black;
+        padding: 0 30px 0 0;
+    }
 
 }
 
