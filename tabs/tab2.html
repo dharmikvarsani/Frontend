@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .projectimg {
+        width: 445px;
+        height: 489px;
+        border-radius: 10px;
+    }
+
+    .content {
+        display: grid;
+        gap: 46px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .line13 {
+        font-size: 19px;
+        font-weight: 400;
+        color: #FD6F00;
+        margin: 25px 0 9px 0
+    }
+
+    .line14 {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+
+    .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 22px;
+        row-gap: 120px;
+    }
+
+
+    .tabslabel {
+        font-size: 24px;
+        font-weight: 400;
+        padding: 10px 15px;
+        cursor: pointer;
+        border: 0.4px solid #545454;
+        border-radius: 12px;
+        background-color: #f8f8f8;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .tabsradio {
+        display: none;
+    }
+
+    .tabscontent {
+        order: 1;
+        width: 100%;
+        display: none;
+    }
+
+    .tabsradio:checked+.tabslabel {
+        color: white;
+        background-color: #FD6F00;
+        font-weight: bold;
+    }
+
+    .tabsradio:checked+.tabslabel+.tabscontent {
+        display: initial;
+    }
+</style>
+
+<body>
+
+
+    <div class="tabs">
+
+        <input type="radio" class="tabsradio" name="mywork" id="all">
+        <label for="all" class="tabslabel">All</label>
+        <div class="tabscontent">
+            <div class="content">
+                <div>
+                    <img src="./UIUX.jpg" alt="projectimg" class="projectimg">
+                    <p class="line13">UI/UX </p>
+                    <p class="line14">Fitness Website Design </p>
+                </div>
+                <div>
+                    <img src="./UIUX2.png" alt="projectimg" class="projectimg">
+                    <p class="line13">UI/UX </p>
+                    <p class="line14">Beauty Product Website Design</p>
+                </div>
+                <div>
+                    <img src="./UIUX3.png" alt="projectimg" class="projectimg">
+                    <p class="line13">UI/UX </p>
+                    <p class="line14">Ecom Web Page </p>
+                </div>
+            </div>
+            <div class="content">
+                <div>
+                    <img src="./project.png" alt="projectimg" class="projectimg">
+                    <p class="line13">Web Design </p>
+                    <p class="line14">AirCalling Landing Page Design </p>
+                </div>
+                <div>
+                    <img src="./project.png" alt="projectimg" class="projectimg">
+                    <p class="line13">Web Design </p>
+                    <p class="line14">Business Landing Page Design </p>
+                </div>
+                <div>
+                    <img src="./project.png" alt="projectimg" class="projectimg">
+                    <p class="line13">Web Design </p>
+                    <p class="line14">Ecom Web Page Design </p>
+                </div>
+            </div>
+            <div class="content">
+                <div>
+                    <img src="./appui.png" alt="projectimg" class="projectimg">
+                    <p class="line13">App Design</p>
+                    <p class="line14">Car Selling App Design </p>
+                </div>
+                <div>
+                    <img src="./appui2.png" alt="projectimg" class="projectimg">
+                    <p class="line13">App Design</p>
+                    <p class="line14">Social Media App Design </p>
+                </div>
+                <div>
+                    <img src="./appui3.png" alt="projectimg" class="projectimg">
+                    <p class="line13">App Design </p>
+                    <p class="line14">News App Design </p>
+                </div>
+            </div>
+            <div class="content">
+                <div>
+                    <img src="./graphicdesign.png" alt="projectimg" class="projectimg">
+                    <p class="line13">Graphic Design</p>
+                    <p class="line14"> Product Label Design </p>
+                </div>
+                <div>
+                    <img src="./graphicdesign2.jpg" alt="projectimg" class="projectimg">
+                    <p class="line13">Graphic Design </p>
+                    <p class="line14">Book Cover Design </p>
+                </div>
+                <div>
+                    <img src="./graphicdesign3.jpg" alt="projectimg" class="projectimg">
+                    <p class="line13">Graphic Design </p>
+                    <p class="line14">Poster Design </p>
+                </div>
+            </div>
+        </div>
+
+
+        <input type="radio" class="tabsradio" name="mywork" id="uiux">
+        <label for="uiux" class="tabslabel">UI/UX</label>
+        <div class="tabscontent">
+            <div class="content">
+                <div>
+                    <img src="./UIUX.jpg" alt="projectimg" class="projectimg">
+                    <p class="line13">UI/UX </p>
+                    <p class="line14">UI/UX Design </p>
+                </div>
+                <div>
+                    <img src="./UIUX2.png" alt="projectimg" class="projectimg">
+                    <p class="line13">UI/UX </p>
+                    <p class="line14">Beauty Product Website Design </p>
+                </div>
+                <div>
+                    <img src="./UIUX3.png" alt="projectimg" class="projectimg">
+                    <p class="line13">UI/UX </p>
+                    <p class="line14">Fitness Website Design </p>
+                </div>
+            </div>
+        </div>
+
+
+        <input type="radio" class="tabsradio" name="mywork" id="webdesign" checked>
+        <label for="webdesign" class="tabslabel">Web Design</label>
+        <div class="tabscontent">
+            <div class="content">
+                <div>
+                    <img src="./project.png" alt="projectimg" class="projectimg">
+                    <p class="line13">Web Design </p>
+                    <p class="line14">AirCalling Landing Page Design </p>
+                </div>
+                <div>
+                    <img src="./project.png" alt="projectimg" class="projectimg">
+                    <p class="line13">Web Design </p>
+                    <p class="line14">Business Landing Page Design </p>
+                </div>
+                <div>
+                    <img src="./project.png" alt="projectimg" class="projectimg">
+                    <p class="line13">Web Design </p>
+                    <p class="line14">Ecom Web Page Design </p>
+                </div>
+            </div>
+        </div>
+
+
+        <input type="radio" class="tabsradio" name="mywork" id="appdesign">
+        <label for="appdesign" class="tabslabel">App Design</label>
+        <div class="tabscontent">
+            <div class="content">
+                <div>
+                    <img src="./appui.png" alt="projectimg" class="projectimg">
+                    <p class="line13">App Design</p>
+                    <p class="line14">Car Selling App Design </p>
+                </div>
+                <div>
+                    <img src="./appui2.png" alt="projectimg" class="projectimg">
+                    <p class="line13">App Design</p>
+                    <p class="line14">Social Media App Design </p>
+                </div>
+                <div>
+                    <img src="./appui3.png" alt="projectimg" class="projectimg">
+                    <p class="line13">App Design </p>
+                    <p class="line14">News App Design </p>
+                </div>
+            </div>
+        </div>
+
+
+        <input type="radio" class="tabsradio" name="mywork" id="graphicdesign">
+        <label for="graphicdesign" class="tabslabel">Graphic Design</label>
+        <div class="tabscontent">
+            <div class="content">
+                <div>
+                    <img src="./graphicdesign.png" alt="projectimg" class="projectimg">
+                    <p class="line13">Graphic Design</p>
+                    <p class="line14"> Product Label Design </p>
+                </div>
+                <div>
+                    <img src="./graphicdesign2.jpg" alt="projectimg" class="projectimg">
+                    <p class="line13">Graphic Design </p>
+                    <p class="line14">Book Cover Design </p>
+                </div>
+                <div>
+                    <img src="./graphicdesign3.jpg" alt="projectimg" class="projectimg">
+                    <p class="line13">Graphic Design </p>
+                    <p class="line14">Poster Design </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

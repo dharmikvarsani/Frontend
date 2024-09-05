@@ -24,7 +24,8 @@
     display: flex;
     align-items: center;
     position: fixed;
-    padding: 12px 0 0 30px;
+    justify-content: center;
+    padding: 12px 0 0 0;
     width: 100%;
     top: 0;
     background-color: white;
@@ -54,7 +55,6 @@
     font-family: "Montserrat";
 }
 
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -62,9 +62,6 @@ ul {
     align-items: center;
 }
 
-/* li {
-    float: left;
-} */
 li a {
     text-decoration: none;
     color: black;
@@ -82,11 +79,6 @@ li a {
     font-size: 21px;
     font-weight: 400;
 }
-
-/* .navbar {
-    display: flex;
-    align-items: center;
-} */
 
 .intro {
     display: flex;
@@ -338,31 +330,55 @@ li a {
     margin: 0;
 }
 
-.btns {
+.content {
     display: flex;
+    gap: 45px;
     justify-content: center;
-    gap: 21px;
 }
 
-.btn {
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 22px;
+    row-gap: 110px;
+}
+
+.tabslabel {
     font-size: 24px;
     font-weight: 400;
-    border-radius: 12px;
+    padding: 10px 15px;
+    cursor: pointer;
     border: 0.4px solid #545454;
+    border-radius: 12px;
+    background-color: #f8f8f8;
     padding: 10px 20px 10px 20px;
-    gap: 10px;
 }
 
-.projects {
-    display: grid;
-    gap: 46px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+.tabsradio {
+    display: none;
+}
+
+.tabscontent {
+    order: 1;
+    width: 100%;
+    display: none;
+}
+
+.tabsradio:checked+.tabslabel {
+    color: white;
+    background-color: #FD6F00;
+    font-weight: bold;
+}
+
+.tabsradio:checked+.tabslabel+.tabscontent {
+    display: initial;
 }
 
 .projectimg {
     width: 445px;
     height: 489px;
+    border-radius: 10px;
 }
 
 .line13 {
@@ -629,10 +645,13 @@ li a {
 }
 
 .footericon {
+    display: flex;
+    gap: 21px;
+}
+
+.mediaicon {
     height: 32px;
     width: 32px;
-    float: left;
-    margin-right: 21px;
 }
 
 .line24 {
@@ -669,10 +688,142 @@ li a {
 
 
 
+
+@media screen and (max-width:1024px) {
+    .container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .m {
+        font-size: 42px;
+        padding-left: 15px;
+    }
+
+    .name {
+        font-size: 42px;
+    }
+
+    li a {
+        padding: 11px;
+        font-size: 15px;
+    }
+
+    .downloadcv {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .tabs {
+        row-gap: 50px;
+    }
+
+    .projectimg {
+        width: 301px;
+        height: 355px;
+    }
+
+    .line13 {
+        font-size: 16px;
+    }
+
+    .line14 {
+        font-size: 19px;
+    }
+
+    .slider-wrapper {
+        width: 1000px;
+    }
+
+    .carousel1 {
+        width: 658px;
+        height: 224px;
+    }
+
+    .line18 {
+        font-size: 11px;
+    }
+
+    .line19 {
+        font-size: 18px;
+    }
+
+    .line20 {
+        font-size: 14px;
+    }
+
+    .img1 {
+        width: 156px;
+        height: 156px;
+    }
+
+    .slider-wrapper::before,
+    .slider-wrapper::after {
+        background: linear-gradient(to left, rgba(254, 254, 254, 0) 0%,
+                rgba(254, 254, 254, 1)100%);
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 15%;
+    }
+
+    .slider-wrapper::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slider-wrapper::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    .line23 {
+        width: 590px;
+    }
+
+    .mailbtn {
+        font-size: 20px;
+        padding: 0 29px;
+    }
+
+}
+
+
+
+
+
 @media screen and (max-width:768px) {
 
     .container {
-        width: 768px;
+        width: 752px;
         overflow: hidden;
     }
 
@@ -681,8 +832,9 @@ li a {
         display: flex;
         align-items: center;
         position: fixed;
+        justify-content: flex-start;
         top: 0;
-        padding: 14px 0 0 0;
+        padding: 14px 0 10px 0;
         left: 7px;
         background: white;
         z-index: 1;
@@ -694,14 +846,19 @@ li a {
 
     .navbar ul {
         position: fixed;
-        display: block;
-        top: 95px;
-        left: -108%;
+        display: flex;
+        top: 84px;
+        left: -101%;
+        gap: 17px;
         transition: all .5s;
-        width: 100%;
+        width: 95%;
         height: 100vh;
         z-index: 1;
         background: black;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
     }
 
     ul li a {
@@ -711,6 +868,10 @@ li a {
         color: white;
     }
 
+    .downloadcv {
+        font-size: 22px;
+        border-radius: 5px;
+    }
 
     .checkbtn {
         display: block;
@@ -771,9 +932,34 @@ li a {
         font-size: 18px;
     }
 
+    .content {
+        gap: 25px;
+    }
+
+    .tabslabel {
+        font-size: 16px;
+    }
+
+    .projectimg {
+        width: 226px;
+        height: 276px;
+        object-fit: fill;
+    }
+
+    .line13 {
+        font-size: 14px;
+    }
+
+    .line14 {
+        font-size: 14px;
+    }
 
     .line16 {
         font-size: 19px;
+    }
+
+    .slider-wrapper {
+        width: 721px;
     }
 
     .carousel1 {
@@ -811,7 +997,7 @@ li a {
     }
 
     .footerul {
-        margin: 0 0 0 -40px;
+        margin: 0 0 0 -18px;
     }
 
     .footerbar {
@@ -825,17 +1011,21 @@ li a {
 
 @media screen and (max-width:425px) {
 
+    .container {
+        overflow: hidden;
+    }
+
     .logo {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 
     .m {
-        font-size: 87px;
+        font-size: 75px;
     }
 
     .name {
-        font-size: 87px;
+        font-size: 75px;
     }
 
     .nav {
@@ -843,12 +1033,24 @@ li a {
     }
 
     .checkbtn {
-        right: 27px;
-        top: 54px;
+        right: 40px;
+        top: 43px;
     }
 
     .navbar ul {
-        top: 175px;
+        top: 125px;
+        height: 100%;
+        gap: 79px;
+    }
+
+    ul li a {
+        font-size: 50px;
+    }
+
+    .downloadcv {
+        font-size: 45px;
+        padding: 10px 42px;
+        border-radius: 15px;
     }
 
     .skills {
