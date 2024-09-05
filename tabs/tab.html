@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<!-- https://codepen.io/MPDoctor/pen/mpJdYe -->
+
+
+<style>
+    .projectimg {
+        width: 445px;
+        height: 489px;
+        border-radius: 10px;
+    }
+
+    .line13 {
+        font-size: 19px;
+        font-weight: 400;
+        color: #FD6F00;
+        margin: 25px 0 9px 0
+    }
+
+    .line14 {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .projects1 {
+        display: grid;
+        gap: 46px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .projects2 {
+        display: grid;
+        gap: 46px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .projects3 {
+        display: grid;
+        gap: 46px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .projects4 {
+        display: grid;
+        gap: 46px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .tabbed {
+	overflow-x: hidden; /* so we could easily hide the radio inputs */
+	margin: 32px 0;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #ccc;
+}
+
+.tabbed [type="radio"] {
+	/* hiding the inputs */
+	display: none;
+}
+
+.tabs {
+	display: flex;
+	align-items: stretch;
+	list-style: none;
+	padding: 0;
+	border-bottom: 1px solid #ccc;
+}
+.tab > label {
+	display: block;
+	margin-bottom: -1px;
+	padding: 12px 15px;
+	border: 1px solid #ccc;
+	background: #eee;
+	color: #666;
+	font-size: 12px; 
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;	
+	transition: all 0.3s;
+}
+.tab:hover label {
+	border-top-color: #333;
+	color: #333;
+}
+
+.projects1 {
+	display: none;
+	color: #777;
+}
+
+
+    .tabbed [type="radio"]:nth-of-type(1):checked~.tabs .tab:nth-of-type(1) label,
+    .tabbed [type="radio"]:nth-of-type(2):checked~.tabs .tab:nth-of-type(2) label,
+    .tabbed [type="radio"]:nth-of-type(3):checked~.tabs .tab:nth-of-type(3) label,
+    .tabbed [type="radio"]:nth-of-type(4):checked~.tabs .tab:nth-of-type(4) label,
+    .tabbed [type="radio"]:nth-of-type(5):checked~.tabs .tab:nth-of-type(5) label {
+        border-bottom-color: #fff;
+        border-top-color: #B721FF;
+        background: #fff;
+        color: #222;
+    }
+
+    .tabbed [type="radio"]:nth-of-type(1):checked~.tab-content:nth-of-type(1),
+    .tabbed [type="radio"]:nth-of-type(2):checked~.tab-content:nth-of-type(2),
+    .tabbed [type="radio"]:nth-of-type(3):checked~.tab-content:nth-of-type(3),
+    .tabbed [type="radio"]:nth-of-type(4):checked~.tab-content:nth-of-type(4) {
+        display: block;
+    }
+</style>
+
+<body>
+
+    <div class="tabbed">
+        <input type="radio" id="tab1" name="css-tabs" checked>
+        <input type="radio" id="tab2" name="css-tabs">
+        <input type="radio" id="tab3" name="css-tabs">
+        <input type="radio" id="tab4" name="css-tabs">
+        <input type="radio" id="tab5" name="css-tabs">
+
+        <div class="tabs">
+            <button class="tab"><label for="tab1">All</label></button>
+            <button class="tab"><label for="tab2">UI/UX</label></button>
+            <button class="tab"><label for="tab3">Web Design</label></button>
+            <button class="tab"><label for="tab4">App Design</label></button>
+            <button class="tab"><label for="tab5">Graphic Design</label></button>
+        </div>
+
+        <div class="projects1">
+            <div>
+                <img src="./project.png" alt="projectimg" class="projectimg">
+                <p class="line13">Web Design </p>
+                <p class="line14">AirCalling Landing Page Design </p>
+            </div>
+            <div>
+                <img src="./project.png" alt="projectimg" class="projectimg">
+                <p class="line13">Web Design </p>
+                <p class="line14">Business Landing Page Design </p>
+            </div>
+            <div>
+                <img src="./project.png" alt="projectimg" class="projectimg">
+                <p class="line13">Web Design </p>
+                <p class="line14">Ecom Web Page Design </p>
+            </div>
+        </div>
+
+        <div class="projects2">
+            <div>
+                <img src="./UIUX.jpg" alt="projectimg" class="projectimg">
+                <p class="line13">UI/UX </p>
+                <p class="line14">AirCalling Landing Page Design </p>
+            </div>
+            <div>
+                <img src="./UIUX2.png" alt="projectimg" class="projectimg">
+                <p class="line13">UI/UX </p>
+                <p class="line14">Business Landing Page Design </p>
+            </div>
+            <div>
+                <img src="./UIUX3.png" alt="projectimg" class="projectimg">
+                <p class="line13">UI/UX </p>
+                <p class="line14">Ecom Web Page Design </p>
+            </div>
+        </div>
+
+        <div class="projects3">
+            <div>
+                <img src="./appui.png" alt="projectimg" class="projectimg">
+                <p class="line13">App Design</p>
+                <p class="line14">AirCalling Landing Page Design </p>
+            </div>
+            <div>
+                <img src="./appui2.png" alt="projectimg" class="projectimg">
+                <p class="line13">App Design</p>
+                <p class="line14">Business Landing Page Design </p>
+            </div>
+            <div>
+                <img src="./appui3.png" alt="projectimg" class="projectimg">
+                <p class="line13">App Design </p>
+                <p class="line14">Ecom Web Page Design </p>
+            </div>
+        </div>
+
+        <div class="projects4">
+            <div>
+                <img src="./graphicdesign.png" alt="projectimg" class="projectimg">
+                <p class="line13">Graphic Design</p>
+                <p class="line14">AirCalling Landing Page Design </p>
+            </div>
+            <div>
+                <img src="./graphicdesign2.jpg" alt="projectimg" class="projectimg">
+                <p class="line13">Graphic Design </p>
+                <p class="line14">Business Landing Page Design </p>
+            </div>
+            <div>
+                <img src="./graphicdesign3.jpg" alt="projectimg" class="projectimg">
+                <p class="line13">Graphic Design </p>
+                <p class="line14">Ecom Web Page Design </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
