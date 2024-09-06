@@ -8,9 +8,11 @@
     height: auto;
     display: flex;
     justify-content: center;
+    align-content: center;
     gap: 122px;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .nav {
@@ -18,6 +20,9 @@
     justify-content: center;
     align-items: center;
     gap: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .logo0 {
@@ -77,14 +82,15 @@ li a {
     background-color: #FD6F00;
     border-radius: 5px;
     border: none;
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 400;
 }
 
 .intro {
     display: flex;
     justify-content: center;
-    gap: 184px;
+    /* gap: 184px; */
+    gap: 130px;
 }
 
 .info {
@@ -164,7 +170,8 @@ li a {
 .about {
     display: flex;
     justify-content: center;
-    gap: 47px;
+    /* gap: 47px; */
+    gap: 10px;
 }
 
 
@@ -688,7 +695,14 @@ li a {
 }
 
 
+@media screen and (max-width:2560px) {
 
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 @media screen and (max-width:1024px) {
     .container {
@@ -716,8 +730,8 @@ li a {
     }
 
     .downloadcv {
-        font-size: 13px;
-        padding: 5px 11px;
+        font-size: 12px;
+        padding: 5px 7px;
     }
 
     .intro {
@@ -1010,7 +1024,387 @@ li a {
 
 }
 
-@media screen and (max-width:425px) {
+
+@media screen and (max-width:820px) {
+
+    .container {
+        /* width: 752px; */
+        overflow: hidden;
+    }
+
+    .logo0 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        justify-content: flex-start;
+        top: 0;
+        padding: 14px 0 10px 0;
+        left: 7px;
+        background: white;
+        z-index: 1;
+    }
+
+    .nav {
+        gap: 317px;
+    }
+
+    .navbar ul {
+        position: fixed;
+        display: flex;
+        padding: 0;
+        top: 84px;
+        left: -100%;
+        gap: 23px;
+        transition: all .5s;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    ul li a {
+        display: block;
+        font-size: 24px;
+        text-align: left;
+        color: white;
+    }
+
+    .downloadcv {
+        font-size: 22px;
+        border-radius: 5px;
+    }
+
+    .checkbtn {
+        display: block;
+        margin: 0;
+        position: fixed;
+        right: 10px;
+        top: 19px;
+    }
+
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .line10 {
+        font-size: 19px;
+    }
+
+    .Services {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn {
+        font-size: 19px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .line12 {
+        font-size: 18px;
+    }
+
+    .content {
+        gap: 25px;
+    }
+
+    .tabslabel {
+        font-size: 16px;
+    }
+
+    .projectimg {
+        width: 226px;
+        height: 276px;
+        object-fit: fill;
+    }
+
+    .line13 {
+        font-size: 14px;
+    }
+
+    .line14 {
+        font-size: 14px;
+    }
+
+    .line16 {
+        font-size: 19px;
+    }
+
+    .slider-wrapper {
+        width: 721px;
+    }
+
+    .carousel1 {
+        width: 658px;
+        height: 224px;
+    }
+
+    .line18 {
+        font-size: 11px;
+    }
+
+    .line19 {
+        font-size: 18px;
+    }
+
+    .line20 {
+        font-size: 14px;
+    }
+
+    .img1 {
+        width: 156px;
+        height: 156px;
+    }
+
+    .line22 {
+        font-size: 18px;
+    }
+
+    .line23 {
+        width: 500px;
+    }
+
+    .mailbtn {
+        font-size: 20px;
+    }
+
+    .footerul {
+        margin: 0 0 0 -18px;
+    }
+
+    .footerbar {
+        color: black;
+        padding: 0 30px 0 0;
+    }
+
+}
+
+
+@media screen and (max-width:912px) {
+
+    .container {
+        /* width: 752px; */
+        overflow: hidden;
+    }
+
+    .logo0 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        justify-content: flex-start;
+        top: 0;
+        padding: 14px 0 10px 0;
+        left: 7px;
+        background: white;
+        z-index: 1;
+    }
+
+    .nav {
+        gap: 317px;
+    }
+
+    .navbar ul {
+        position: fixed;
+        display: flex;
+        padding: 0;
+        top: 84px;
+        left: -100%;
+        gap: 23px;
+        transition: all .5s;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    ul li a {
+        display: block;
+        font-size: 24px;
+        text-align: left;
+        color: white;
+    }
+
+    .downloadcv {
+        font-size: 22px;
+        border-radius: 5px;
+    }
+
+    .checkbtn {
+        display: block;
+        margin: 0;
+        position: fixed;
+        right: 10px;
+        top: 19px;
+    }
+
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .line10 {
+        font-size: 19px;
+    }
+
+    .Services {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn {
+        font-size: 19px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .line12 {
+        font-size: 18px;
+    }
+
+    .content {
+        gap: 25px;
+    }
+
+    .tabslabel {
+        font-size: 16px;
+    }
+
+    .projectimg {
+        width: 226px;
+        height: 276px;
+        object-fit: fill;
+    }
+
+    .line13 {
+        font-size: 14px;
+    }
+
+    .line14 {
+        font-size: 14px;
+    }
+
+    .line16 {
+        font-size: 19px;
+    }
+
+    .slider-wrapper {
+        width: 721px;
+    }
+
+    .carousel1 {
+        width: 658px;
+        height: 224px;
+    }
+
+    .line18 {
+        font-size: 11px;
+    }
+
+    .line19 {
+        font-size: 18px;
+    }
+
+    .line20 {
+        font-size: 14px;
+    }
+
+    .img1 {
+        width: 156px;
+        height: 156px;
+    }
+
+    .line22 {
+        font-size: 18px;
+    }
+
+    .line23 {
+        width: 500px;
+    }
+
+    .mailbtn {
+        font-size: 20px;
+    }
+
+    .footerul {
+        margin: 0 0 0 -18px;
+    }
+
+    .footerbar {
+        color: black;
+        padding: 0 30px 0 0;
+    }
+
+}
+
+@media screen and (max-width:426px) {
 
     .container {
         overflow: hidden;
@@ -1041,7 +1435,7 @@ li a {
     .navbar ul {
         top: 125px;
         height: 100%;
-        gap: 95px;
+        gap: 73px;
     }
 
     ul li a {
@@ -1079,4 +1473,91 @@ li a {
     .skillinfo {
         font-size: 34px;
     }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 42px;
+    }
+
+    .projectimg {
+        width: 445px;
+        height: 449px;
+        object-fit: fill;
+    }
+
+    .line13 {
+        font-size: 30px;
+    }
+
+    .line14 {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width:431px) {
+
+    /* .navbar ul {
+        gap: 100px;
+    }
+
+    ul li a {
+        font-size: 60px;
+    }
+
+    .downloadcv {
+        font-size: 57px;
+        padding: 25px 45px;
+        border-radius: 15px;
+    } */
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 57px;
+        width: 100%;
+    }
+
+    .Service1 {
+        height: 445px;
+        width: 90%;
+    }
+
+    .skillimg1 .skillimg2 .skillimg3 .skillimg4 {
+        height: 100px;
+        width: 100px;
+    }
+
+    .skilltitle1 {
+        font-size: 40px;
+    }
+
+    .skillinfo {
+        font-size: 34px;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 42px;
+    }
+
+    .projectimg {
+        width: 445px;
+        height: 449px;
+        object-fit: fill;
+    }
+
+    .line13 {
+        font-size: 30px;
+    }
+
+    .line14 {
+        font-size: 30px;
+    }
+
 }
