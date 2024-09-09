@@ -89,8 +89,7 @@ li a {
 .intro {
     display: flex;
     justify-content: center;
-    /* gap: 184px; */
-    gap: 130px;
+    gap: 184px;
 }
 
 .info {
@@ -170,8 +169,7 @@ li a {
 .about {
     display: flex;
     justify-content: center;
-    /* gap: 47px; */
-    gap: 10px;
+    gap: 47px;
 }
 
 
@@ -830,9 +828,6 @@ li a {
     }
 
 }
-
-
-
 
 
 @media screen and (max-width:768px) {
