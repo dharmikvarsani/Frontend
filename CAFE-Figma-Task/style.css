@@ -2,6 +2,14 @@
     font-family: "poppins";
 }
 
+body {
+    height: 245vh;
+    background-image: linear-gradient(to bottom, #F6EBDA 0%,
+            #F6EBDA 50%,
+            white 50%,
+            white 100%)
+}
+
 .container {
     width: 100%;
     height: auto;
@@ -10,10 +18,6 @@
     flex-direction: column;
     gap: 70px;
 }
-
-/* .upperpart{
-    background-color: #F6EBDA;
-} */
 
 /* style whole nav bar */
 
@@ -59,7 +63,7 @@
     margin: 0;
 }
 
-.nav ul li a:hover{
+.nav ul li a:hover {
     color: #FF902B;
 }
 
@@ -86,34 +90,34 @@
     border: 1px solid black;
 }
 
-.cart{
+.cart {
     height: 32px;
     width: 32px;
 }
 
 /* style first content  */
 
-.intro{
+.intro {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15rem;
 }
 
-.intro1{
+.intro1 {
     display: flex;
     flex-direction: column;
     gap: 27px;
 }
 
-.line1{
+.line1 {
     font-size: 48px;
     font-weight: 600;
     margin: 0;
     line-height: 72px;
 }
 
-.line2{
+.line2 {
     font-size: 18px;
     font-weight: 400;
     color: #7e7d7a;
@@ -123,14 +127,14 @@
 
 /* style Order button and More Menu */
 
-.orderbtns{
+.orderbtns {
     display: flex;
     align-items: center;
     gap: 25px;
 }
 
-.order{
-    background-color:  #2F2105;
+.order {
+    background-color: #2F2105;
     width: 170px;
     height: 46px;
     border: none;
@@ -144,12 +148,12 @@
     gap: 10px;
 }
 
-.ordercart{
+.ordercart {
     width: 22px;
     height: 22px;
 }
 
-.moremenu{
+.moremenu {
     width: 118px;
     height: 38px;
     border: none;
@@ -157,11 +161,11 @@
     padding: 10px 24px 10px 24px;
     font-size: 12px;
     font-weight: 700;
-    color:#F4AE26;    
+    color: #F4AE26;
     background-color: transparent;
 }
 
-.coffeeimg1{
+.coffeeimg1 {
     width: 526px;
     height: 416px;
     object-fit: cover;
@@ -169,8 +173,8 @@
     z-index: 2;
 }
 
-.coffeebeans1{ 
-    width: 564px;
+.coffeebeans1 {
+    width: 555px;
     height: 394px;
     object-fit: contain;
     position: absolute;
@@ -179,14 +183,199 @@
 
 /* styling Popular Items */
 
-.line3{
+.line3 {
     font-size: 32px;
     font-weight: 600;
     line-height: 48px;
+    padding: 0 0 0 8rem;
     /* margin: 0; */
 }
 
-.line3-now{
- border-bottom: 4px solid #ff902b;
- border-radius: 3px;
+.line3-now {
+    border-bottom: 4px solid #ff902b;
+    border-radius: 3px;
+}
+
+/* style background img  */
+
+.coffeebeans2 {
+    width: 569px;
+    height: 394px;
+    position: absolute;
+    transform: translate(-170px, -183px);
+}
+
+/* style all popularcoffee  */
+
+.popularcoffee {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    position: relative;
+}
+
+/* .rating{
+    margin: 0;
+    position: absolute;
+    color: black;
+    background: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;
+    width: 52px;
+    height: 26px;
+    text-align: center;
+}
+
+.star{
+    height: 14px;
+    width: 14px;
+} */
+
+
+/* style popularcoffee container */
+
+.coffee {
+    width: 343px;
+    height: 373px;
+    background-color: white;
+    border: 6px solid #faf4eb;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.popularcoffee1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+
+.popularcoffeeimg-1 {
+    width: 307px;
+    height: 226px;
+}
+
+/* style desc of popular items */
+
+.populardesc1 {
+    gap: 85px;
+    display: flex;
+    justify-content: center;
+}
+
+.populardesc-2 {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.populardesc-3 {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.line4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.line5 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.populardesc2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+}
+
+/* style desc btns */
+
+.populardescbtns {
+    display: flex;
+    gap: 20px;
+}
+
+.populardescbtn {
+    width: 64px;
+    height: 32px;
+    border: 2px solid #ff902b;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #ff902b;
+    background-color: white;
+    opacity: 0.5;
+}
+
+.populardescbtn:hover {
+    opacity: 1;
+}
+
+.populardescimg {
+    height: 43px;
+    width: 43px;
+    object-fit: contain;
+}
+
+
+.line6 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.line6-service {
+    border-bottom: 4px solid #ff902b;
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.service1 {
+    width: 370px;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 1rem;
+}
+
+.serviceimg {
+    width: 159px;
+    height: 159px;
+}
+
+.servicedesc1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin: 0;
+    text-align: center;
+}
+
+.servicedesc2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 0;
+    padding: 5px 0 0 0;
+    text-align: center;
 }
