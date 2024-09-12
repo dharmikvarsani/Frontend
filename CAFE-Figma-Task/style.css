@@ -171,17 +171,9 @@
     z-index: 2;
 }
 
-.coffeebeans1 {
-    width: 555px;
-    height: 394px;
-    object-fit: contain;
-    position: absolute;
-    transform: translate(-417px, -178px);
-}
-
 /* styling Popular Items */
 
-.popular{
+.popular {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -200,43 +192,58 @@
     border-radius: 3px;
 }
 
-/* style background img  */
-
-.coffeebeans2 {
-    width: 636px;
-    height: 394px;
-    position: absolute;
-    transform: translate(-170px, -183px);
-}
-
 /* style all popularcoffee  */
 
 .popularcoffee {
     display: flex;
     justify-content: center;
     gap: 35px;
-    position: relative;
 }
 
-/* .rating{
-    margin: 0;
+/* style rating */
+
+.rating {
+    display: flex;
+    background-clip: padding-box;
+    width: 78px;
+    height: 34px;
+    padding: 11px 5px;
+    background-repeat: no-repeat;
+    border-radius: 27px;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%);
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
     position: absolute;
-    color: black;
-    background: white;
+    z-index: 1;
+    top: 29px;
+    left: 28px;
+}
+
+.ratinginfo {
+    width: 68px;
+    height: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.star {
+    width: 16px;
+    height: 16px;
+}
+
+.rating-no {
     font-size: 14px;
     font-weight: 700;
-    padding: 10px;
-    border-radius: 10px;
-    width: 52px;
-    height: 26px;
-    text-align: center;
+    line-height: 21px;
 }
-
-.star{
-    height: 14px;
-    width: 14px;
-} */
-
 
 /* style popularcoffee container */
 
@@ -249,7 +256,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    z-index: 1;
+    position: relative;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
@@ -262,6 +269,7 @@
 .popularcoffeeimg-1 {
     width: 307px;
     height: 226px;
+    position: relative;
 }
 
 /* style desc of popular items */
@@ -336,7 +344,7 @@
 
 /* style How To Use Delivery Service  */
 
-.deliveryservice{
+.deliveryservice {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -396,7 +404,7 @@
 
 /* style About Us */
 
-.aboutus{
+.aboutus {
     display: flex;
     gap: 11rem;
     justify-content: center;
@@ -407,6 +415,14 @@
     background-position: bottom;
 }
 
+.aboutcoffee {
+    padding: 6px 6px 1px 6px;
+    background-repeat: no-repeat;
+    border-radius: 17px;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%);
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.16);
+}
+
 .aboutcoffee-img {
     width: 359px;
     height: 497px;
@@ -414,7 +430,7 @@
     object-fit: contain;
 }
 
-.aboutinfo{
+.aboutinfo {
     display: flex;
     gap: 25px;
     flex-direction: column;
@@ -458,4 +474,24 @@
     width: 142px;
     height: 38px;
     background-color: #2F2105;
+}
+
+
+/* style special menu for you */
+
+.specialmenu {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.line10 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    padding: 0 0 0 8rem;
+}
+
+.line10-you {
+    border-bottom: 4px solid #ff902b;
 }
