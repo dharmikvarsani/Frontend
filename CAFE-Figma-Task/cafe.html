@@ -19,23 +19,44 @@
 
 <body>
     <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="./coffe logo.png" alt="Coffe Logo" />
-            </div>
-            <div class="nav">
-                <ul class="navul">
-                    <li><a href="#aboutus">About Us</a></li>
-                    <li><a href="#ourproduct">Our Product</a></li>
-                    <li><a href="#delivery">Delivery</a></li>
-                </ul>
-                <div class="searchbar">
-                    <input type="text" placeholder="Cappuccino" class="search">
-                    <img src="./cart.png" alt="cart" class="cart">
+        <div>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./coffe logo.png" alt="Coffe Logo" />
+                </div>
+                <div class="nav">
+
+                    <input type="checkbox" id="sidebar">
+                    <label for="sidebar" class="open-sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                            fill="black">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg>
+                    </label>
+
+                    <div class="link">
+                        <!-- <ul class="navul"> -->
+                        <label for="sidebar" class="close-sidebar">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                                fill="black">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg>
+                        </label>
+                        <div class="nav-link">
+                            <a href="#aboutus">About Us</a>
+                            <a href="#ourproduct">Our Product</a>
+                            <a href="#delivery">Delivery</a>
+                        </div>
+                        <!-- </ul> -->
+                        <div class="searchbar">
+                            <input type="text" placeholder="Cappuccino" class="search">
+                            <img src="./cart.png" alt="cart" class="cart">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
 
         <!-- style intro -->
 
@@ -143,7 +164,7 @@
 
         <!-- style delivery service -->
 
-        <div class="deliveryservice">
+        <div class="deliveryservice" id="delivery">
             <div>
                 <h2 class="line6">How to use delivery <span class="line6-service">service </span></h2>
             </div>
@@ -177,7 +198,7 @@
 
         <!-- style about us -->
 
-        <div class="aboutus">
+        <div class="aboutus" id="aboutus">
             <div>
                 <div class="aboutcoffee">
                     <img src="./about-coffee-img.png" alt="Coffee" class="aboutcoffee-img">
@@ -201,7 +222,7 @@
 
         <!-- style special menu for you -->
 
-        <div class="specialmenu">
+        <div class="specialmenu" id="ourproduct">
             <div>
                 <h2 class="line10">Special menu for <span class="line10-you">you</span></h2>
             </div>
