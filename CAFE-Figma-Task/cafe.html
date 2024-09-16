@@ -15,150 +15,159 @@
         rel="stylesheet" />
     <!-- google icon  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Link For Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="container">
-        <div>
-            <div class="navbar">
-                <div class="logo">
-                    <img src="./coffe logo.png" alt="Coffe Logo" />
-                </div>
-                <div class="nav">
+        <div class="herobg">
+            <div>
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="./coffe logo.png" alt="Coffe Logo" />
+                    </div>
+                    <div class="nav">
 
-                    <input type="checkbox" id="sidebar">
-                    <label for="sidebar" class="open-sidebar">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
-                            fill="black">
-                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                        </svg>
-                    </label>
-
-                    <div class="link">
-                        <!-- <ul class="navul"> -->
-                        <label for="sidebar" class="close-sidebar">
+                        <input type="checkbox" id="sidebar">
+                        <label for="sidebar" class="open-sidebar">
                             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
                                 fill="black">
-                                <path
-                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                             </svg>
                         </label>
-                        <div class="nav-link">
-                            <a href="#aboutus">About Us</a>
-                            <a href="#ourproduct">Our Product</a>
-                            <a href="#delivery">Delivery</a>
-                        </div>
-                        <!-- </ul> -->
-                        <div class="searchbar">
-                            <input type="text" placeholder="Cappuccino" class="search">
-                            <img src="./cart.png" alt="cart" class="cart">
+
+                        <div class="link">
+                            <label for="sidebar" class="close-sidebar">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960"
+                                    width="32px" fill="black">
+                                    <path
+                                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                </svg>
+                            </label>
+                            <div class="nav-link">
+                                <a href="#aboutus">About Us</a>
+                                <a href="#ourproduct">Our Product</a>
+                                <a href="#delivery">Delivery</a>
+                            </div>
+                            <div class="searchbar">
+                                <input type="text" placeholder="Cappuccino" class="search">
+                                <img src="./cart.png" alt="cart" class="cart">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- style intro -->
+            <!-- style intro -->
 
-        <div class="intro">
-            <div class="intro1">
+            <div class="intro">
+                <div class="intro1">
+                    <div>
+                        <p class="line1">Enjoy your <span style="color: #FF902B;">coffee</span></p>
+                        <p class="line1"> before your activity</p>
+                    </div>
+                    <div>
+                        <p class="line2">Boost your productivity and build your </p>
+                        <p class="line2">mood with a glass of coffee in the morning</p>
+                    </div>
+                    <div class="orderbtns">
+                        <button class="order">Order now <img src="./cart2.png" alt="cart" class="ordercart"></button>
+                        <button class="moremenu">More menu</button>
+                    </div>
+                </div>
+                <div class="intro2">
+                    <img src="./coffee-img-1.png" alt="coffeeimg" class="coffeeimg1">
+                </div>
+            </div>
+
+            <!-- style popular coffee -->
+
+            <div class="popular">
                 <div>
-                    <p class="line1">Enjoy your <span style="color: #FF902B;">coffee</span></p>
-                    <p class="line1"> before your activity</p>
-                </div>
-                <div>
-                    <p class="line2">Boost your productivity and build your </p>
-                    <p class="line2">mood with a glass of coffee in the morning</p>
-                </div>
-                <div class="orderbtns">
-                    <button class="order">Order now <img src="./cart2.png" alt="cart" class="ordercart"></button>
-                    <button class="moremenu">More menu</button>
-                </div>
-            </div>
-            <div class="intro2">
-                <img src="./coffee-img-1.png" alt="coffeeimg" class="coffeeimg1">
-            </div>
-        </div>
-
-
-        <!-- style popular coffee -->
-
-        <div class="popular">
-            <div>
-                <p class="line3">Popular <span class="line3-now">Now</span></p>
-            </div>
-
-            <div class="popularcoffee">
-                <div class="coffee">
-                    <div class="rating">
-                        <div class="ratinginfo">
-                            <p class="rating-no">4.8</p>
-                            <img src="./star.png" alt="" class="star">
-                        </div>
-                    </div>
-                    <div class="popularcoffee1">
-                        <img src="./popularcoffeeimg-1.png" alt="vanilla latte" class="popularcoffeeimg-1">
-                    </div>
-                    <div class="populardesc1">
-                        <div class="line4">Vanilla Latte</div>
-                        <div class="line5">21 K</div>
-                    </div>
-                    <div class="populardesc2">
-                        <div class="populardescbtns">
-                            <button class="populardescbtn">Hot</button>
-                            <button class="populardescbtn">Cold</button>
-                        </div>
-                        <div><img src="./cart2.png" alt="cart" class="populardescimg"></div>
-                    </div>
+                    <p class="line3">Popular <span class="line3-now">Now</span></p>
                 </div>
 
-                <div class="coffee">
-                    <div class="rating">
-                        <div class="ratinginfo">
-                            <p class="rating-no">4.8</p>
-                            <img src="./star.png" alt="" class="star">
+                <div class="popularcoffee">
+                    <div class="coffee">
+                        <div class="rating">
+                            <div class="ratinginfo">
+                                <p class="rating-no">4.8</p>
+                                <img src="./star.png" alt="" class="star">
+                            </div>
+                        </div>
+                        <div class="popularcoffee1">
+                            <img src="./popularcoffeeimg-1.png" alt="vanilla latte" class="popularcoffeeimg-1">
+                        </div>
+                        <div class="populardesc1">
+                            <div class="line4">Vanilla Latte</div>
+                            <div class="line5">21 K</div>
+                        </div>
+                        <div class="populardesc2">
+                            <div class="populardescbtns">
+                                <button class="populardescbtn">Hot</button>
+                                <button class="populardescbtn">Cold</button>
+                            </div>
+                            <div><img src="./cart2.png" alt="cart" class="populardescimg"></div>
                         </div>
                     </div>
-                    <div class="popularcoffee1">
-                        <img src="./popularcoffeeimg-2.png" alt="Espresso" class="popularcoffeeimg-1">
-                    </div>
-                    <div class="populardesc-2">
-                        <div class="line4">Espresso</div>
-                        <div class="line5">12 K</div>
-                    </div>
-                    <div class="populardesc2">
-                        <div class="populardescbtns">
-                            <button class="populardescbtn">Hot</button>
-                            <button class="populardescbtn">Cold</button>
-                        </div>
-                        <div><img src="./cart2.png" alt="cart" class="populardescimg"></div>
-                    </div>
-                </div>
 
-                <div class="coffee">
-                    <div class="rating">
-                        <div class="ratinginfo">
-                            <p class="rating-no">4.8</p>
-                            <img src="./star.png" alt="" class="star">
+                    <div class="coffee">
+                        <div class="rating">
+                            <div class="ratinginfo">
+                                <p class="rating-no">4.8</p>
+                                <img src="./star.png" alt="" class="star">
+                            </div>
+                        </div>
+                        <div class="popularcoffee1">
+                            <img src="./popularcoffeeimg-2.png" alt="Espresso" class="popularcoffeeimg-1">
+                        </div>
+                        <div class="populardesc-2">
+                            <div class="line4">Espresso</div>
+                            <div class="line5">12 K</div>
+                        </div>
+                        <div class="populardesc2">
+                            <div class="populardescbtns">
+                                <button class="populardescbtn">Hot</button>
+                                <button class="populardescbtn">Cold</button>
+                            </div>
+                            <div><img src="./cart2.png" alt="cart" class="populardescimg"></div>
                         </div>
                     </div>
-                    <div class="popularcoffee1">
-                        <img src="./popularcoffeeimg-3.png" alt="Hazelnut Latte" class="popularcoffeeimg-1">
-                    </div>
-                    <div class="populardesc-3">
-                        <div class="line4">Hazelnut Latte</div>
-                        <div class="line5">23 K</div>
-                    </div>
-                    <div class="populardesc2">
-                        <div class="populardescbtns">
-                            <button class="populardescbtn">Hot</button>
-                            <button class="populardescbtn">Cold</button>
+
+                    <div class="coffee">
+                        <div class="rating">
+                            <div class="ratinginfo">
+                                <p class="rating-no">4.8</p>
+                                <img src="./star.png" alt="" class="star">
+                            </div>
                         </div>
-                        <div><img src="./cart2.png" alt="cart" class="populardescimg"></div>
+                        <div class="popularcoffee1">
+                            <img src="./popularcoffeeimg-3.png" alt="Hazelnut Latte" class="popularcoffeeimg-1">
+                        </div>
+                        <div class="populardesc-3">
+                            <div class="line4">Hazelnut Latte</div>
+                            <div class="line5">23 K</div>
+                        </div>
+                        <div class="populardesc2">
+                            <div class="populardescbtns">
+                                <button class="populardescbtn">Hot</button>
+                                <button class="populardescbtn">Cold</button>
+                            </div>
+                            <div><img src="./cart2.png" alt="cart" class="populardescimg"></div>
+                        </div>
+                    </div>
+                    <div class="shape">
+
                     </div>
                 </div>
             </div>
-            <!-- <div class="shape">  </div> -->
         </div>
 
 
@@ -207,8 +216,8 @@
             <div class="aboutinfo">
                 <h2 class="line7">About <span class="line7-us">us</span></h2>
                 <div>
-                    <h3 class="line8">We provide quality coffee,</h3>
-                    <h3 class="line8">and ready to deliver.</h3>
+                    <h3 class="line8">We provide quality coffee, and ready to deliver.</h3>
+                    <!-- <h3 class="line8"></h3> -->
                 </div>
                 <div>
                     <p class="line9">We are a company that makes and distributes </p>
@@ -370,6 +379,7 @@
         <!-- style what they say about us -->
 
 
+
         <div class="customer-review">
 
             <div class="review-info">
@@ -377,8 +387,8 @@
                 <h5 class="line15">We always provide the best service and always maintain the quality of coffee</h5>
             </div>
 
-            <div class="reviews">
-                <div class="review-part1">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
                     <div class="review">
                         <img src="./customer1.png" alt="customer photo" class="customerimg">
                         <div class="customercomment">
@@ -388,7 +398,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="item">
                     <div class="review">
                         <img src="./customer2.png" alt="customer photo" class="customerimg2">
                         <div class="customercomment">
@@ -398,7 +410,81 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="item">
+                    <div class="review">
+                        <img src="./customer3.png" alt="customer photo" class="customerimg2">
+                        <div class="customercomment">
+                            <div class="comment">
+                                <h2 class="line16">Azura</h2>
+                                <p class="line17">the coffee menu here is very much </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="review">
+                        <img src="./customer1.png" alt="customer photo" class="customerimg">
+                        <div class="customercomment">
+                            <div class="comment">
+                                <h2 class="line16">Naura</h2>
+                                <p class="line17">I really love the cappucino, the coffee was very smooth </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="review">
+                        <img src="./customer2.png" alt="customer photo" class="customerimg2">
+                        <div class="customercomment">
+                            <div class="comment">
+                                <h2 class="line16">John</h2>
+                                <p class="line17">this coffee shop is very convenient </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="review">
+                        <img src="./customer3.png" alt="customer photo" class="customerimg2">
+                        <div class="customercomment">
+                            <div class="comment">
+                                <h2 class="line16">Azura</h2>
+                                <p class="line17">the coffee menu here is very much </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="review">
+                        <img src="./customer1.png" alt="customer photo" class="customerimg">
+                        <div class="customercomment">
+                            <div class="comment">
+                                <h2 class="line16">Naura</h2>
+                                <p class="line17">I really love the cappucino, the coffee was very smooth </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="review">
+                        <img src="./customer2.png" alt="customer photo" class="customerimg2">
+                        <div class="customercomment">
+                            <div class="comment">
+                                <h2 class="line16">John</h2>
+                                <p class="line17">this coffee shop is very convenient </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
                     <div class="review">
                         <img src="./customer3.png" alt="customer photo" class="customerimg2">
                         <div class="customercomment">
@@ -412,8 +498,32 @@
             </div>
 
 
-        </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+                integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+            <script type="text/javascript">
+                $('.owl-carousel').owlCarousel({
+                    loop: false,
+                    margin: 0,
+                    nav: false,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3
+                        }
+                    }
+                })
+            </script>
+        </div>
 
         <!-- style footer section -->
 
