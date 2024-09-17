@@ -35,6 +35,10 @@
     gap: 19rem;
     justify-content: center;
     padding: 40px 0 0 0;
+    position: fixed;
+    left: 140px;
+    height: 80px;
+    z-index: 3;
 }
 
 /* style logo */
@@ -404,6 +408,7 @@
     width: 370px;
     height: 290px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -696,7 +701,7 @@
     display: flex;
     align-items: center;
     gap: 4rem;
-    padding-left: 8rem;
+    padding-left: 9rem;
     background-image: url(./customer-review-bg.png);
     background-repeat: no-repeat;
     background-size: 945px 484px;
@@ -850,18 +855,457 @@
 
 
 
-@media screen and (max-width:768px) {
+@media screen and (min-width:2560px) {
+
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    .herobg {
+        background-size: 2560px 1106px;
+    }
+
+    /* style navbar */
+
+    .navbar {
+        left: 41rem;
+    }
+
+    /* style popular items */
+
+    .line3 {
+        padding: 0 0 0 42rem;
+    }
+
+    /* style delivery service */
+
+
+    .line6 {
+        padding: 0 0 0 42rem;
+    }
+
+    /* style about us */
+
+    .aboutus {
+        background-size: 161rem 484px;
+    }
+
+
+    /* style special menu */
+
+    .line10 {
+        padding: 0 0 0 42rem;
+    }
+
+
+    /* style customer review */
+
+    .customer-review {
+        padding-left: 42rem;
+        background-size: 100rem 484px;
+    }
+}
+
+
+@media screen and (max-width:1280px) {
+
+    /* style navbar */
+
+    .navbar {
+        gap: 15rem;
+        left: 55px;
+    }
+
+    /* style intro */
+
+    .intro {
+        gap: 9rem;
+    }
+
+    /* style popular items */
+
+    .line3 {
+        padding: 0px 0 0 3rem;
+    }
+
+    /* style delivery service */
+
+    .line6 {
+        padding: 0px 0 0 3rem;
+    }
+
+    /* style special menu  */
+
+    .line10 {
+        padding: 0px 0 0 3rem;
+    }
+
+    /* style customer review */
+
+    .customer-review {
+        gap: 9rem;
+        padding-left: 4rem;
+    }
+
+    .line14 {
+        width: 410px;
+    }
+
+    .owl-theme .owl-dots {
+        padding-left: 15rem;
+    }
+
+    .owl-dots .owl-dot span {
+        background-color: gray !important;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    .herobg {
+        height: 1128px;
+    }
+
+    /* style navbar */
+
+
+    .navbar {
+        gap: 11rem;
+        left: 26px;
+    }
+
+    .link {
+        gap: 3rem;
+    }
+
+    .link a {
+        font-size: 16px;
+    }
+
+
+    .search {
+        background-size: 22px 22px;
+        width: 198px;
+        height: 36px;
+    }
+
+    .cart {
+        height: 28px;
+        width: 28px;
+    }
+
+
+    /* style intro */
+
+    .line3 {
+        font-size: 30px;
+        padding: 0 0 0 2rem;
+    }
+
+    .coffeeimg1 {
+        width: 448px;
+        height: 352px;
+    }
+
+    .intro {
+        gap: 4rem;
+    }
+
+    .intro1 {
+        gap: 19px;
+    }
+
+    .line1 {
+        font-size: 45px;
+        line-height: 59px;
+    }
+
+    .line2 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+
+    /* style popular item */
+
+    .popularcoffee {
+        height: 443px;
+    }
+
+    .popularcoffeeimg-1 {
+        width: 254px;
+        height: 182px;
+    }
+
+    .line4 {
+        font-size: 20px;
+    }
+
+    .line5 {
+        font-size: 20px;
+    }
+
+    .populardesc-2 {
+        gap: 119px;
+    }
+
+    .populardesc-3 {
+        gap: 59px;
+    }
+
+    .populardescbtn {
+        width: 54px;
+        height: 28px;
+        font-size: 15px;
+    }
+
+    .populardescimg {
+        height: 34px;
+        width: 34px;
+    }
+
+    .coffee {
+        width: 292px;
+        height: 311px;
+        gap: 7px;
+    }
+
+    .shape {
+        top: 6rem;
+        width: 996px;
+        height: 249px;
+        border-radius: 32px;
+    }
+
+
+    /* style delivery service */
+
+
+    .line6 {
+        font-size: 30px;
+        padding: 0 0 0 2rem;
+    }
+
+    .serviceimg {
+        width: 150px;
+        height: 150px;
+    }
+
+    .servicedesc1 {
+        font-size: 22px;
+    }
+
+    .servicedesc2 {
+        font-size: 16px;
+    }
+
+
+    /* style about us */
+
+    .aboutus {
+        gap: 7rem;
+    }
+
+    .aboutcoffee-img {
+        width: 347px;
+        height: 479px;
+    }
+
+    .aboutinfo {
+        gap: 15px;
+    }
+
+    .line7 {
+        font-size: 30px;
+    }
+
+    .line8 {
+        font-size: 22px;
+        width: 339px;
+        line-height: 32px;
+    }
+
+
+    .line9 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .aboutbtn {
+        width: 132px;
+        height: 36px;
+        font-size: 11px;
+    }
+
+
+    /* style special menu */
+
+    .line10 {
+        font-size: 30px;
+        padding: 0 0 0 2rem;
+    }
+
+    .menu {
+        width: 300px;
+        height: 329px;
+        gap: 8px;
+    }
+
+    .specialmenu1 {
+        gap: 28px;
+    }
+
+    .specialmenu2 {
+        gap: 28px;
+    }
+
+    .specialimg {
+        width: 269px;
+        height: 201px;
+    }
+
+    .specialdesc {
+        gap: 5px;
+    }
+
+    .specialdesc1 {
+        gap: 7rem;
+    }
+
+    .specialdesc2-1 {
+        gap: 133px;
+    }
+
+    .specialdesc3-1 {
+        gap: 43px;
+    }
+
+    .specialdesc4-1 {
+        gap: 98px;
+    }
+
+    .specialdesc5-1 {
+        gap: 84px;
+    }
+
+    .specialdesc5-1 {
+        gap: 43px;
+    }
+
+    .line11,
+    .line12 {
+        font-size: 22px;
+    }
+
+    .line13 {
+        font-size: 12px;
+        width: 140px;
+        line-height: 17px;
+    }
+
+    .special-cart {
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-rating {
+        top: 27px;
+        left: 27px;
+    }
+
+
+    /* style customer review */
+
+
+    .customer-review {
+        gap: 1rem;
+        padding-left: 2rem;
+        background-size: 1053px 450px;
+    }
+
+    .line14 {
+        font-size: 30px;
+        width: 378px;
+    }
+
+    .line15 {
+        font-size: 16px;
+    }
+
+    .line16 {
+        font-size: 16px;
+    }
+
+    .line17 {
+        font-size: 12px;
+        width: 206px;
+    }
+
+    .comment {
+        width: 210px;
+        height: 80px;
+    }
+
+    .customercomment {
+        width: 225px;
+        height: 94px;
+    }
+
+    .owl-dots .owl-dot span {
+        background-color: gray !important;
+    }
+
+    .owl-theme .owl-dots {
+        padding-left: 14rem;
+    }
+
+
+    /* style footer */
+
+    .footerinfo {
+        background-size: 961px 344px;
+        height: 375px;
+    }
+
+    .footerline {
+        font-size: 30px;
+    }
+
+    .email {
+        width: 462px;
+        height: 52px;
+        font-size: 15px;
+    }
+
+    .emailbtn {
+        width: 126px;
+        height: 40px;
+    }
+}
+
+
+
+@media screen and (max-width:912px) {
     .container {
         width: 100%;
         height: auto;
         gap: 90px;
+        overflow: hidden;
     }
 
     /* style background */
 
     .herobg {
-        background-size: 768px 987px;
+        /* background-size: 854px 987px; */
+        background-size: 912px 987px;
         gap: 90px;
+        height: auto;
     }
 
     /* style navbar */
@@ -876,6 +1320,7 @@
         position: fixed;
         z-index: 3;
         left: 28px;
+        height: 55px;
         padding-top: 15px;
     }
 
@@ -885,7 +1330,8 @@
         gap: 2rem;
         position: fixed;
         top: 0;
-        height: 41rem;
+        /* height: 1280px; */
+        height: 1368px;
         right: -100%;
         z-index: 10;
         width: 300px;
@@ -944,12 +1390,12 @@
     .popularcoffee {
         flex-direction: column;
         align-items: center;
-        height: 1360px;
+        height: 1183px;
     }
 
     .shape {
-        width: 500px;
-        height: 85rem;
+        width: 487px;
+        height: 74rem;
         top: auto;
     }
 
@@ -1063,13 +1509,33 @@
         height: auto;
     }
 
+    /* style navbar */
+
+    .link {
+        width: 425px;
+    }
+
+    .logo {
+        height: 27px;
+        width: 136px;
+    }
+
+    .navbar {
+        left: 20px;
+    }
+
+    .nav {
+        top: 10px;
+        right: 20px;
+    }
+
+    /* style intro  */
+
     .coffeeimg1 {
         width: 431px;
         height: 307px;
         object-fit: contain;
     }
-
-    /* style intro  */
 
     .line1 {
         font-size: 33px;
@@ -1100,12 +1566,10 @@
         font-size: 25px;
     }
 
-
-
     /* style delivery service */
 
     .popularcoffee {
-        height: 1220px;
+        height: 1114px;
     }
 
     .line6 {
@@ -1114,8 +1578,8 @@
     }
 
     .shape {
-        width: 400px;
-        height: 79rem;
+        width: 373px;
+        height: 68rem;
         border-radius: 30px;
     }
 
@@ -1199,8 +1663,192 @@
 }
 
 
+@media screen and (max-width:431px) {
+    /* style intro */
+
+    .coffeeimg1 {
+        width: 430px;
+        height: 323px;
+    }
+
+    .line1 {
+        font-size: 37px;
+        line-height: 51px;
+    }
+
+    .line2 {
+        font-size: 17px;
+        line-height: normal;
+    }
+
+    /* style popular items */
+
+    .line3 {
+        font-size: 24px;
+    }
+
+    .popularcoffee {
+        height: 1119px;
+    }
+
+    .shape {
+        width: 373px;
+        height: 68rem;
+        top: auto;
+    }
+
+
+    /* style delivery service */
+
+    .line6 {
+        font-size: 24px;
+    }
+
+    /* style about us */
+
+    .line8 {
+        font-size: 17px;
+    }
+
+    /* style special menu */
+
+    .line10 {
+        font-size: 24px;
+    }
+
+    /* style customer review */
+
+    .owl-theme .owl-dots {
+        padding-left: 7rem;
+    }
+
+    .line14 {
+        width: 380px;
+    }
+
+    /* style footer */
+
+    .footerinfo {
+        background-size: 393px 210px;
+        height: 260px;
+    }
+
+    .footerline {
+        font-size: 17px;
+    }
+
+    .email {
+        width: 275px;
+        height: 40px;
+        font-size: 13px;
+        padding-left: 18px;
+    }
+
+    .emailbtn {
+        width: 82px;
+        height: 30px;
+        font-size: 11px;
+        right: 6px;
+    }
+}
+
+@media screen and (max-width:413px) {
+
+    .link {
+        width: 412px;
+    }
+}
+
+
+@media screen and (max-width:415px) {
+
+    /* style popular items */
+
+    .shape {
+        width: 355px;
+        height: 67rem;
+        border-radius: 30px;
+    }
+
+    .popularcoffee {
+        height: 1121px;
+    }
+}
+
+@media screen and (max-width:391px) {
+
+    /* style sidebar */
+
+    .link {
+        width: 390px;
+    }
+
+    /* style intro */
+
+    .coffeeimg1 {
+        width: 395px;
+        height: 283px;
+    }
+
+    /* style about us */
+
+    .line8 {
+        font-size: 15px;
+    }
+
+    .line9 {
+        font-size: 14px;
+    }
+
+    /* style footer */
+
+    .footerinfo {
+        height: 203px;
+        background-size: 370px 178px;
+    }
+
+    .footerline {
+        font-size: 16px;
+    }
+
+    .email {
+        width: 269px;
+        height: 34px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (min-width:360px) {
+
+    /* .link {
+        height: 1280px;
+    } */
+
+    .line14 {
+        width: auto;
+    }
+}
+
 @media screen and (max-width:376px) {
 
+    /* style navbar */
+
+    .link {
+        width: auto;
+    }
+
+    .logo {
+        height: 24px;
+        width: 121px;
+    }
+
+    .navbar {
+        left: 16px;
+    }
+
+    .nav {
+        right: 16px;
+    }
 
     /* style intro */
 
@@ -1267,6 +1915,12 @@
         height: 69rem;
     }
 
+    .rating {
+        width: 64px;
+        height: 30px;
+        top: 28px;
+        left: 21px;
+    }
 
     /* style delivery service */
 
@@ -1290,8 +1944,427 @@
         height: 426px;
     }
 
+    .aboutinfo {
+        gap: 13px;
+    }
+
+    .line7 {
+        font-size: 20px;
+    }
+
+
+    .line8 {
+        font-size: 15px;
+    }
+
+    .line9 {
+        font-size: 14px;
+    }
+
+    .aboutbtn {
+        width: 112px;
+        height: 33px;
+        font-size: 9px;
+    }
+
+
+    /* style special menu */
+
+    .line10 {
+        font-size: 20px;
+    }
+
+    .menu {
+        width: 310px;
+        height: 342px;
+    }
+
+    .specialimg {
+        width: 265px;
+        height: 196px;
+    }
+
+    .specialdesc {
+        align-items: center;
+    }
+
+    .specialdesc1 {
+        gap: 7rem;
+    }
+
+    .line11,
+    .line12 {
+        font-size: 20px;
+    }
+
+    .specialdesc2-1 {
+        gap: 133px;
+    }
+
+    .specialdesc3-1 {
+        gap: 55px;
+    }
+
+    .specialdesc4-1 {
+        gap: 104px;
+    }
+
+    .specialdesc5-1 {
+        gap: 90px;
+    }
+
+    .specialdesc2 {
+        gap: 3rem;
+    }
+
+    .line13 {
+        font-size: 12px;
+    }
+
+    .special-cart {
+        width: 35px;
+        height: 35px;
+    }
+
+    .menu-rating {
+        width: 64px;
+        height: 30px;
+        /* top: 27px; */
+        left: 30px;
+    }
+
+    .ratinginfo {
+        width: 55px;
+        height: 19px;
+    }
+
+    .rating-no {
+        font-size: 11px;
+    }
+
+    .star {
+        width: 10px;
+        height: 10px;
+    }
+
+
+    /* style customer review */
+
+    .owl-theme .owl-dots {
+        padding-left: 111px;
+    }
+
+
+    /* style footer  */
+
+    .footerinfo {
+        height: 191px;
+        gap: 0;
+        background-size: 355px 171px;
+    }
+
+    .footerline {
+        font-size: 14px;
+    }
+
+    .email {
+        width: 240px;
+        height: 33px;
+        font-size: 10px;
+    }
+
+    .emailbtn {
+        width: 74px;
+        height: 25px;
+        font-size: 9px;
+    }
+}
+
+
+@media screen and (max-width:345px) {
+
+    .container {
+        gap: 57px;
+    }
+
+    .link {
+        width: 321px;
+    }
+
+    .logo {
+        height: 24px;
+        width: 120px;
+    }
+
+    .navbar {
+        left: 18px;
+    }
+
+    .nav {
+        top: 9px;
+        right: 18px;
+    }
+
+    /* style intro  */
+
+    .coffeeimg1 {
+        width: 321px;
+        height: 233px;
+    }
+
+    .line1 {
+        font-size: 25px;
+    }
+
+    .line2 {
+        font-size: 11px;
+    }
+
+    .order {
+        width: 97px;
+        height: 34px;
+        font-size: 9px;
+    }
+
+    .ordercart {
+        width: 19px;
+        height: 18px;
+    }
+
+    .moremenu {
+        font-size: 11px;
+    }
+
+
+    /* style popular items */
+
+    .line3 {
+        font-size: 18px;
+        padding: 0 0 0 1rem;
+    }
+
+    .popularcoffee {
+        height: 856px;
+        gap: 20px;
+    }
+
+    .coffee {
+        width: 259px;
+        height: 272px;
+        gap: 1px;
+    }
+
+    .popularcoffeeimg-1 {
+        width: 226px;
+        height: 163px;
+    }
+
+    .line4,
+    .line5 {
+        font-size: 15px;
+    }
+
+    .populardesc2 {
+        gap: 59px;
+    }
+
+    .populardesc-2 {
+        gap: 108px;
+    }
+
+    .populardescbtn {
+        width: 49px;
+        height: 26px;
+        font-size: 11px;
+    }
+
+    .populardescimg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .shape {
+        width: 295px;
+        height: 56rem;
+    }
+
+
+    /* style delivery service */
+
+    .line6 {
+        font-size: 18px;
+        padding: 0 0 0 1rem;
+    }
+
+    .service1 {
+        width: 320px;
+        height: 250px;
+    }
+
+    .serviceimg {
+        width: 147px;
+        height: 147px;
+    }
+
+    .servicedesc1 {
+        font-size: 17px;
+    }
+
+
+    .servicedesc2 {
+        font-size: 15px;
+    }
+
+
+    /* style about us */
+
+
+    .aboutus {
+        gap: 3rem;
+        height: 672px;
+    }
+
+    .aboutcoffee-img {
+        width: 259px;
+        height: 360px;
+    }
+
+    .aboutinfo {
+        gap: 15px;
+    }
+
+    .line8 {
+        font-size: 13px;
+        line-height: normal;
+    }
+
+    .line9 {
+        font-size: 11px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .aboutbtn {
+        width: 105px;
+        height: 31px;
+        font-size: 9px;
+    }
 
 
 
-    
+    /* style special menu  */
+
+    .line10 {
+        font-size: 18px;
+        padding: 0 0 0 1rem;
+    }
+
+    .specialmenu1 {
+        gap: 28px;
+    }
+
+    .menu {
+        width: 275px;
+        height: 306px;
+        gap: 2px;
+    }
+
+    .specialimg {
+        width: 243px;
+        height: 179px;
+    }
+
+    .specialdesc {
+        gap: 0;
+    }
+
+    .line11,
+    .line12 {
+        font-size: 17px;
+    }
+
+    .specialdesc2 {
+        gap: 31px;
+    }
+
+    .line13 {
+        font-size: 10px;
+        line-height: normal;
+    }
+
+    .special-cart {
+        width: 27px;
+        height: 27px;
+    }
+
+
+    /* style customer review */
+
+    .customer-review {
+        gap: 2rem;
+        height: 494px;
+    }
+
+    .customercomment {
+        width: 221px;
+        height: 95px;
+    }
+
+    .comment {
+        width: 210px;
+    }
+
+    .line16 {
+        font-size: 16px;
+    }
+
+    .line17 {
+        font-size: 12px;
+        line-height: normal;
+        width: 206px;
+    }
+
+    .owl-theme .owl-dots {
+        padding-left: 69px;
+    }
+
+    .review-info {
+        gap: 4px;
+    }
+
+    .line14 {
+        font-size: 23px;
+        width: 294px;
+    }
+
+    .line15 {
+        width: 258px;
+        font-size: 13px;
+        line-height: normal;
+    }
+
+
+    /* style footer */
+
+    .footerinfo {
+        height: 166px;
+        background-size: 308px 145px;
+    }
+
+    .footerline {
+        font-size: 12px;
+    }
+
+    .email {
+        width: 210px;
+        height: 29px;
+        font-size: 9px;
+        padding-left: 13px;
+    }
+
+    .emailbtn {
+        width: 63px;
+        height: 21px;
+        font-size: 8px;
+    }
 }
