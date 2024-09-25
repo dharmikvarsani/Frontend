@@ -13,7 +13,6 @@
     display: flex;
     flex-direction: column;
     gap: 130px;
-
 }
 
 /* style background */
@@ -1591,6 +1590,11 @@ ul {
         height: 334px;
     }
 
+    .line3 {
+        font-size: 28px;
+        padding: 0 0 0 3rem;
+    }
+
     .coffee {
         width: 260px;
         height: 278px;
@@ -1665,10 +1669,22 @@ ul {
         height: 240px;
     }
 
+    /* style delivery service */
+
+    .line6 {
+        font-size: 28px;
+        padding: 0px 0 0 3rem;
+    }
+
     /* style special menu  */
 
     .special-menu {
         gap: 27px;
+    }
+
+    .line10 {
+        font-size: 28px;
+        padding: 0 0 0 3rem;
     }
 
     .menu {
@@ -1731,9 +1747,13 @@ ul {
         height: 32px;
     }
 
+    .ratinginfo {
+        gap: 4px;
+    }
+
     .menu-rating {
-        width: 70px;
-        height: 31px;
+        width: 68px;
+        height: 34px;
         top: 30px;
         left: 24px;
     }
@@ -1742,10 +1762,9 @@ ul {
 
     .customer-review {
         gap: 1rem;
-        padding-left: 38px;
+        padding-left: 49px;
         background-size: 789px 425px;
     }
-
 
     .review-info {
         gap: 5px;
@@ -1818,7 +1837,7 @@ ul {
         font-size: 13px;
     }
 
-  
+
 
 }
 
@@ -1853,12 +1872,10 @@ ul {
         gap: 2rem;
         position: fixed;
         top: 0;
-        /* height: 1280px; */
         height: 1368px;
         right: -100%;
         z-index: 10;
-        /* width: 300px; */
-        width: 100vw;
+        width: 100%;
         transition: 0.80s ease;
         background-color: white;
     }
@@ -1926,12 +1943,12 @@ ul {
     .popularcoffee {
         flex-direction: column;
         align-items: center;
-        height: 1183px;
+        height: 1033px;
     }
 
     .shape {
-        width: 487px;
-        height: 74rem;
+        width: 407px;
+        height: 65rem;
         top: auto;
     }
 
@@ -2056,6 +2073,12 @@ ul {
 
 }
 
+@media screen and (max-width:485px) {
+    .navbar{
+        gap: 16rem;
+    }
+}
+
 @media screen and (max-width:426px) {
 
     .container {
@@ -2070,6 +2093,7 @@ ul {
         height: 27px;
         width: 136px;
     }
+
 
     .navbar {
         gap: 14rem;
@@ -2468,15 +2492,11 @@ ul {
 
 
 
-@media screen and (min-width:360px) {
+@media screen and (max-width:390px) {
 
-    /* .link {
-        height: 1280px;
-    } */
-
-    /* .line14 {
-        width: auto;
-    }*/
+ .navbar{
+    gap: 10rem;
+ }
 }
 
 @media screen and (max-width:376px) {
@@ -2728,7 +2748,7 @@ ul {
 }
 
 
-@media screen and (max-width:345px) {
+@media screen and (max-width:370px) {
 
     .container {
         gap: 57px;
@@ -2755,6 +2775,7 @@ ul {
 
     .intro-img {
         height: 286px;
+        width: 444px;
     }
 
     .coffee-bg {
