@@ -134,7 +134,7 @@ ul {
 .line1 {
     font-size: 48px;
     font-weight: 600;
-    margin: 0;
+width: 482px;
     line-height: 72px;
 }
 
@@ -142,7 +142,7 @@ ul {
     font-size: 18px;
     font-weight: 400;
     color: #7e7d7a;
-    margin: 0;
+width: 393px;
     line-height: 27px;
 }
 
@@ -583,7 +583,6 @@ ul {
     font-size: 32px;
     font-weight: 600;
     line-height: 48px;
-    margin: 0;
 }
 
 .line7-us {
@@ -594,7 +593,6 @@ ul {
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
-    margin: 0;
     width: 348px;
 }
 
@@ -602,7 +600,7 @@ ul {
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
-    margin: 0;
+    width: 423px;
     color: #7e7d7a;
 }
 
@@ -1084,6 +1082,9 @@ ul {
 
     .herobg {
         height: 1128px;
+        background-size: cover;
+        width: auto;
+        background-attachment: fixed;
     }
 
     /* style navbar */
@@ -1305,7 +1306,7 @@ ul {
 
     .line8 {
         font-size: 22px;
-        width: 339px;
+        width: 294px;
         line-height: 32px;
     }
 
@@ -1313,6 +1314,7 @@ ul {
     .line9 {
         font-size: 16px;
         line-height: 25px;
+        width: 400px;
     }
 
     .aboutbtn {
@@ -1504,11 +1506,13 @@ ul {
     .line1 {
         font-size: 40px;
         line-height: 53px;
+        width: 400px;
     }
 
     .line2 {
         font-size: 15px;
         line-height: 25px;
+        width: 332px;
     }
 
     .order {
@@ -1852,9 +1856,9 @@ ul {
     /* style background */
 
     .herobg {
-        /* background-size: 854px 987px; */
-        background-size: 912px 987px;
+        background-size: cover;
         gap: 90px;
+        width: auto;
         height: auto;
     }
 
@@ -1979,9 +1983,9 @@ ul {
         align-items: center;
     }
 
-    .line8 {
-        width: auto;
-    }
+     .line8 {
+         width: auto; 
+    } 
 
 
     /* style special menu for you */
@@ -2053,13 +2057,51 @@ ul {
     }
 }
 
-@media screen and (max-width:584) {
+@media screen and (max-width:584px) {
     .navbar {
         gap: 29rem;
     }
 
+    /* style special menu */
+
+    .special-menu {
+        grid-template-columns: auto;
+    }
+
+    /* style customer review */
+
+    .item {
+        width: auto;
+    }
+
+    .owl-theme .owl-dots {
+        padding-left: 8rem;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 7px !important;
+        height: 7px !important;
+    }
+
+/* style footer */
+
+    .footerinfo {
+        background-size: 553px 216px;
+        height: 247px;
+    }
+
+    .footerline {
+        font-size: 21px;
+    }
+
+    .email {
+        width: 346px;
+        height: 41px;
+        font-size: 13px;
+    }
 
 }
+
 
 @media screen and (max-width:540px) {
     .navbar {
@@ -2071,11 +2113,24 @@ ul {
         width: 120px;
     }
 
+    .line8{
+        font-size: 20px;
+    }
+
 }
 
 @media screen and (max-width:485px) {
     .navbar{
         gap: 16rem;
+    }
+
+    .line8{
+        font-size: 18px;
+    }
+
+    .line9 {
+        font-size: 14px;
+        line-height: normal;
     }
 }
 
@@ -2316,42 +2371,6 @@ ul {
 
     /* style intro */
 
-    /* style coffee img */
-
-    /* .intro-img {
-        left: 58px;
-    }
-
-    .rating-product1 {
-        top: 26px;
-        left: -44px;
-    }
-
-    .rating-info1 {
-        width: 198px;
-        height: 51px;
-    }
-
-    .rating-info2 {
-        width: 94px;
-        height: 40px;
-    }
-
-    .rating-product2 {
-        top: 283px;
-        left: 16px;
-    }
-
-    .rating-product3 {
-        top: 87px;
-        left: 270px;
-    }
-
-    .rating-info3 {
-        width: 87px;
-        height: 43px;
-    } */
-
     .line1 {
         font-size: 37px;
         line-height: 51px;
@@ -2387,10 +2406,24 @@ ul {
 
     /* style about us */
 
-    .line8 {
-        font-size: 17px;
+    .aboutinfo {
+        gap: 7px;
     }
 
+    .line8 {
+        font-size: 15px;
+    }
+
+    .line9 {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .aboutbtn {
+        width: 100px;
+        height: 31px;
+        font-size: 9px;
+    }
     /* style special menu */
 
     .line10 {
@@ -2403,9 +2436,9 @@ ul {
         padding-left: 7rem;
     }
 
-    .line14 {
+    /* .line14 {
         width: 380px;
-    }
+    } */
 
     /* style footer */
 
@@ -2529,11 +2562,14 @@ ul {
     }
 
     .line1 {
-        font-size: 29px;
+        font-size: 25px;
+        width: 248px;
+        line-height: normal;
     }
 
     .line2 {
-        font-size: 13px;
+        font-size: 11px;
+        width: 247px;
     }
 
 
@@ -2963,7 +2999,7 @@ ul {
     }
 
     .line8 {
-        font-size: 13px;
+        font-size: 12px;
         line-height: normal;
     }
 
@@ -3062,8 +3098,8 @@ ul {
     }
 
     .line14 {
-        font-size: 23px;
-        width: 294px;
+        font-size: 21px;
+        width: auto;
     }
 
     .line15 {
@@ -3076,8 +3112,8 @@ ul {
     /* style footer */
 
     .footerinfo {
-        height: 166px;
-        background-size: 308px 145px;
+        height: 154px;
+        background-size: 291px 137px;
     }
 
     .footerline {
