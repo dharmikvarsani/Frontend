@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offset</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    .col,
+    .col-2,
+    .col-4,
+    .col-8,
+    .col-3,
+    .col-6,
+    .col-7,
+    .col-5,
+    .col-lg-4,
+    .col-lg-2,
+    .col-lg-9 {
+        border: 1px solid;
+        padding: .75rem 0;
+        text-align: center;
+    }
+
+    .box {
+        height: 20rem;
+        border: 1px solid black;
+        width: 100%;
+        padding: 20px 30px;
+        background-color: powderblue;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <h2>Offset</h2>
+        <hr>
+        <div class="box">
+            <div class="row">
+                <div class="col-3 offset-lg-1 offset-sm-3 bg-success">1</div>
+                <div class="col-3 offset-lg-3 offset-sm-0 bg-warning">2</div>
+            </div>'
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 col-sm-2 offset-2 offset-sm-5 bg-warning">1</div>
+                <div class="col-lg-2 col-sm-2 offset-3 offset-sm-1 bg-success">2</div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-6 offset-4 bg-danger">1</div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <hr>
+        <br>
+
+        <h2>Offset With Margin</h2>
+        <div class="box">
+            <div class="row">
+                <div class="col-4 ms-auto bg-success">1</div>
+                <div class="col-3 bg-warning">2</div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-2 me-5 bg-danger">1</div>
+                <div class="col-5 bg-success">2</div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <h2>Standalon Column</h2>
+        <div class="col-lg-4 col-sm-2 col-md-3  bg-danger p-5 border">1</div>
+        <div class="col-lg-9 col-sm-5 bg-warning p-3 border">2</div>
+        <div class="col-4 bg-success p-2 border">3</div>
+        <br>
+        <br>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
