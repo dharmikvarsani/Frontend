@@ -2,6 +2,14 @@
     font-family: "inter";
 }
 
+body,
+html {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow-x: visible;
+}
+
 .container {
     gap: 30rem;
     display: flex;
@@ -13,6 +21,7 @@
     height: 80px;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
 }
+
 
 .logo {
     max-height: 17px;
@@ -44,6 +53,7 @@ main {
 .landingimg {
     max-height: 45vh;
     margin-bottom: 60px;
+    object-fit: cover;
 }
 
 .heroinfo {
@@ -121,17 +131,19 @@ main {
         align-items: center;
     }
 
+    .navbar>.container {
+        row-gap: 34px;
+    }
+
     .navbar-nav {
         align-items: center;
         background-color: white;
         box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
     }
 
-    .info{
+    .info {
         flex-direction: column-reverse;
     }
-
-   
 }
 
 
@@ -179,11 +191,156 @@ main {
 }
 
 @media screen and (max-width:768px) {
-    
-    .container{
+
+    .container {
         column-gap: 19rem;
         row-gap: 33px;
         /* justify-content: center;
         align-items: center; */
+    }
+
+    .landingimg {
+        max-height: 35vh;
+    }
+
+    .line1 {
+        font-size: 35px;
+    }
+
+    .line2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:617px) {
+
+    main {
+        gap: 75px;
+    }
+
+    .navbar>.container {
+        /* row-gap: 34px; */
+        column-gap: 14rem;
+    }
+
+    .landingimg {
+        max-height: 29vh;
+        margin-bottom: 30px;
+    }
+
+    .line2 {
+        font-size: 15px;
+        word-break: keep-all;
+        width: 90%;
+    }
+
+
+    .ecosystem {
+        width: 467px;
+        height: 433px;
+    }
+}
+
+@media screen and (max-width:465px) {
+    .navbar>.container {
+        column-gap: 9rem;
+    }
+
+    .landingimg {
+        max-height: 23vh;
+        margin-bottom: 20px;
+    }
+
+    .line1 {
+        font-size: 29px;
+    }
+
+    .line2 {
+        font-size: 13px;
+    }
+
+    .line3 {
+        width: 158px;
+        height: 36px;
+        font-size: 13px;
+        margin-top: 6px;
+    }
+
+    .ecosystem {
+        width: 325px;
+        height: 328px;
+    }
+
+    .spaminfo {
+        gap: 0;
+        width: 300px;
+    }
+
+    .line4 {
+        font-size: 25px;
+    }
+
+    .line5 {
+        font-size: 16px;
+    }
+
+    .line6 {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .logo {
+        max-height: 14px;
+    }
+
+    .navbar>.container {
+        column-gap: 7rem;
+    }
+
+    main {
+        gap: 50px;
+    }
+
+    .landingimg {
+        max-height: 20vh;
+        margin-bottom: 16px;
+    }
+
+    .line1 {
+        font-size: 25px;
+    }
+
+    .line2 {
+        font-size: 12px;
+    }
+
+    .line3 {
+        width: 142px;
+        height: 33px;
+        font-size: 11px;
+        margin-top: 4px;
+    }
+
+    .ecosystem {
+        width: 272px;
+        height: 274px;
+    }
+
+    .spaminfo {
+        gap: 0;
+        width: 225px;
+    }
+
+    .line4 {
+        font-size: 21px;
+    }
+
+    .line5 {
+        font-size: 15px;
+    }
+
+    .line6 {
+        font-size: 10px;
     }
 }
