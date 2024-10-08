@@ -150,13 +150,13 @@
 
 /* style company logo */
 
-.company-name{
+/* .company-name{
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
  column-gap: 170px;
 
-}
+} */
 
 .spotify {
     width: 140px;
