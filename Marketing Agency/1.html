@@ -19,8 +19,7 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-
-    <!-- owl-carousel -->
+    <!-- Link For Carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -32,6 +31,13 @@
 
 </head>
 <style>
+
+.aboutus{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
     .carousal {
         display: inline-flex;
         gap: 20px;
@@ -77,6 +83,51 @@
         font-weight: 400;
         line-height: 32px;
     }
+
+    .owl-item {
+        width: 532px !important;
+        /* overflow: hidden; */
+    }
+
+    .owl-carousel {
+        width: 1400px;
+    }
+
+    .owl-nav .owl-prev {
+        background-color: #f8f9ff !important;
+        font-size: 33px !important;
+        width: 85px;
+        height: 85px;
+        border-radius: 50% !important;
+        position: absolute;
+        top: -145px;
+        right: 190px;
+        color: rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .owl-prev:hover {
+        background-color: #3461FF !important;
+        color: white !important;
+        opacity: 1 !important;
+    }
+
+    .owl-nav .owl-next {
+        background-color: #f8f9ff !important;
+        font-size: 33px !important;
+        width: 85px;
+        height: 85px;
+        border-radius: 50% !important;
+        position: absolute;
+        top: -145px;
+        right: 82px;
+        color: rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .owl-next:hover {
+        background-color: #3461FF !important;
+        color: white !important;
+        opacity: 1 !important;
+    }
 </style>
 
 <body>
@@ -90,89 +141,129 @@
 
             <div class="owl-carousel owl-theme">
                 <!-- <div class="carousal"> -->
-                    <div class="item">
-                        <div class="carousal1">
-                            <div class="carousal-header">
-                                <div>
-                                    <img src="./Aboutus-img1.png" alt="aboutusimg" class="aboutus-img">
-                                </div>
-                                <div>
-                                    <h4 class="line27">Amelia Joseph</h4>
-                                    <h5 class="line28">Chief Manager</h5>
-                                </div>
+                <div class="item">
+                    <div class="carousal1">
+                        <div class="carousal-header">
+                            <div>
+                                <img src="./Aboutus-img1.png" alt="aboutusimg" class="aboutus-img">
                             </div>
-                            <div class="carousal-body">
-                                <p class="line29">Use This Section To Describe Your Company And The Products You Offer.
-                                    You
-                                    Could Share Your
-                                    Company’s Story And Details About Why You Are In Business. </p>
+                            <div>
+                                <h4 class="line27">Amelia Joseph</h4>
+                                <h5 class="line28">Chief Manager</h5>
                             </div>
                         </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="carousal1">
-                            <div class="carousal-header">
-                                <div>
-                                    <img src="./Aboutus-img2.png" alt="aboutusimg" class="aboutus-img">
-                                </div>
-                                <div>
-                                    <h4 class="line27">Emma Smith</h4>
-                                    <h5 class="line28">Chief Manager</h5>
-                                </div>
-                            </div>
-                            <div class="carousal-body">
-                                <p class="line29">Use This Section To Describe Your Company And The Products You Offer.
-                                    You
-                                    Could Share Your
-                                    Company’s Story And Details About Why You Are In Business. </p>
-                            </div>
+                        <div class="carousal-body">
+                            <p class="line29">Use This Section To Describe Your Company And The Products You Offer.
+                                You
+                                Could Share Your
+                                Company’s Story And Details About Why You Are In Business. </p>
                         </div>
                     </div>
-
-                    <div class="item">
-                        <div class="carousal1">
-                            <div class="carousal-header">
-                                <div>
-                                    <img src="./Aboutus-img3.png" alt="aboutusimg" class="aboutus-img">
-                                </div>
-                                <div>
-                                    <h4 class="line27">Jacob Joshua</h4>
-                                    <h5 class="line28">Chief Manager</h5>
-                                </div>
-                            </div>
-                            <div class="carousal-body">
-                                <p class="line29">Use This Section To Describe Your Company And The Products You Offer.
-                                    You
-                                    Could Share Your
-                                    Company’s Story And Details About Why You Are In Business. </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="carousal1">
-                            <div class="carousal-header">
-                                <div>
-                                    <img src="./Aboutus-img1.png" alt="aboutusimg" class="aboutus-img">
-                                </div>
-                                <div>
-                                    <h4 class="line27">Amelia Joseph</h4>
-                                    <h5 class="line28">Chief Manager</h5>
-                                </div>
-                            </div>
-                            <div class="carousal-body">
-                                <p class="line29">Use This Section To Describe Your Company And The Products You Offer.
-                                    You
-                                    Could Share Your
-                                    Company’s Story And Details About Why You Are In Business. </p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+
+
+                <div class="item">
+                    <div class="carousal1">
+                        <div class="carousal-header">
+                            <div>
+                                <img src="./Aboutus-img2.png" alt="aboutusimg" class="aboutus-img">
+                            </div>
+                            <div>
+                                <h4 class="line27">Emma Smith</h4>
+                                <h5 class="line28">Chief Manager</h5>
+                            </div>
+                        </div>
+                        <div class="carousal-body">
+                            <p class="line29">Use This Section To Describe Your Company And The Products You Offer.
+                                You
+                                Could Share Your
+                                Company’s Story And Details About Why You Are In Business. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="carousal1">
+                        <div class="carousal-header">
+                            <div>
+                                <img src="./Aboutus-img3.png" alt="aboutusimg" class="aboutus-img">
+                            </div>
+                            <div>
+                                <h4 class="line27">Jacob Joshua</h4>
+                                <h5 class="line28">Chief Manager</h5>
+                            </div>
+                        </div>
+                        <div class="carousal-body">
+                            <p class="line29">Use This Section To Describe Your Company And The Products You Offer.
+                                You
+                                Could Share Your
+                                Company’s Story And Details About Why You Are In Business. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="carousal1">
+                        <div class="carousal-header">
+                            <div>
+                                <img src="./Aboutus-img1.png" alt="aboutusimg" class="aboutus-img">
+                            </div>
+                            <div>
+                                <h4 class="line27">Amelia Joseph</h4>
+                                <h5 class="line28">Chief Manager</h5>
+                            </div>
+                        </div>
+                        <div class="carousal-body">
+                            <p class="line29">Use This Section To Describe Your Company And The Products You Offer.
+                                You
+                                Could Share Your
+                                Company’s Story And Details About Why You Are In Business. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="carousal1">
+                        <div class="carousal-header">
+                            <div>
+                                <img src="./Aboutus-img2.png" alt="aboutusimg" class="aboutus-img">
+                            </div>
+                            <div>
+                                <h4 class="line27">Emma Smith</h4>
+                                <h5 class="line28">Chief Manager</h5>
+                            </div>
+                        </div>
+                        <div class="carousal-body">
+                            <p class="line29">Use This Section To Describe Your Company And The Products You Offer.
+                                You
+                                Could Share Your
+                                Company’s Story And Details About Why You Are In Business. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="carousal1">
+                        <div class="carousal-header">
+                            <div>
+                                <img src="./Aboutus-img3.png" alt="aboutusimg" class="aboutus-img">
+                            </div>
+                            <div>
+                                <h4 class="line27">Jacob Joshua</h4>
+                                <h5 class="line28">Chief Manager</h5>
+                            </div>
+                        </div>
+                        <div class="carousal-body">
+                            <p class="line29">Use This Section To Describe Your Company And The Products You Offer.
+                                You
+                                Could Share Your
+                                Company’s Story And Details About Why You Are In Business. </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </div>
 
 
 
@@ -186,30 +277,39 @@
 
 
     <!-- owl carousel -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
-        integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg=="
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script type="text/javascript">
         $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
+            loop: false,
+            margin: 0,
             nav: true,
+            navText: ["<span class='fa-solid fa-arrow-left'></span>", "<span class='fa-solid fa-arrow-right'></span>"],
+            dots: false,
             responsive: {
                 0: {
                     items: 1
                 },
                 600: {
-                    items: 3
+                    items: 2
                 },
                 1000: {
-                    items: 5
-                }
+                    items: 2
+                },
+                1300: {
+                    items: 2
+                },
+                2560: {
+                    items: 4
+                },
             }
         })
-
     </script>
 
     <!-- Bootstrap Link -->

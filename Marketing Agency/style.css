@@ -8,18 +8,15 @@
 body {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 7rem;
 }
 
 /* style navbar */
 
 .navbar {
-    gap: 30rem;
-}
-
-.navbar-1 {
     gap: 5rem;
 }
+
 
 /* style logo */
 .logo-ellipse {
@@ -43,6 +40,11 @@ body {
 }
 
 /* style navbar */
+
+.nav-section{
+    display: inline-flex;
+    gap: 30rem;
+}
 
 .nav {
     gap: 10px;
@@ -144,6 +146,7 @@ body {
     width: 241px;
     height: 240px;
     object-fit: contain;
+    margin-left: -4px;
 }
 
 .union1 {
@@ -184,6 +187,7 @@ body {
     width: 367px;
     height: 190px;
     object-fit: contain;
+    margin-left: -4px;
 }
 
 .heroimg-5 {
@@ -197,6 +201,7 @@ body {
     height: 240px;
     object-fit: contain;
     position: relative;
+    margin-left: -5px;
 }
 
 .heroimg-6obj {
@@ -213,6 +218,7 @@ body {
     height: 240px;
     object-fit: contain;
     position: relative;
+    margin-left: -4px;
 }
 
 .heroimg-7obj {
@@ -408,7 +414,7 @@ body {
     color: rgba(52, 97, 255, 1);
 }
 
-.fa-arrow-right {
+.arrow {
     width: 14.93px;
     height: 13.06px;
     color: rgba(52, 97, 255, 1);
@@ -604,7 +610,7 @@ body {
 
 /* style meet our team */
 
-.ourteam{
+.ourteam {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -627,13 +633,13 @@ body {
 
 /* style meet our team info */
 
-.ourteam-info{
+.ourteam-info {
     display: flex;
     flex-direction: column;
     gap: 71px;
 }
 
-.ourteam-info1{
+.ourteam-info1 {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -663,30 +669,373 @@ body {
     margin: 0;
 }
 
-.ourteam-btn{
-font-size: 24px;
-font-weight: 500;
-line-height: 32.4px;
-border: none;
-color: white;
-width: 222px;
-height: 64px;
-background-color: rgba(52, 97, 255, 1);
-border-radius: 69px;
-text-align: center;
+.ourteam-btn {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32.4px;
+    border: none;
+    color: white;
+    width: 222px;
+    height: 64px;
+    background-color: rgba(52, 97, 255, 1);
+    border-radius: 69px;
+    text-align: center;
 }
 
 /* style about us */
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
-.line25{
+.line25 {
     font-size: 40px;
     font-weight: 600;
     line-height: 54px;
     letter-spacing: -1px;
 }
 
-.line26{
+.line26 {
     font-size: 18px;
     font-weight: 400;
     line-height: 32px;
+}
+
+.carousal {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.carousal1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 19px;
+    padding: 55px 73px 40px 40px;
+    width: 513px;
+    height: 300px;
+    background-color: rgba(248, 249, 255, 1);
+    border-radius: 30px;
+}
+
+.carousal-header {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.aboutus-img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+}
+
+.line27 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 37.8px;
+}
+
+.line28 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.line29 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.owl-item {
+    width: 532px !important;
+    /* overflow: hidden; */
+}
+
+.owl-carousel {
+    width: 1400px !important;
+}
+
+.owl-nav .owl-prev {
+    background-color: #f8f9ff !important;
+    font-size: 33px !important;
+    width: 85px;
+    height: 85px;
+    border-radius: 50% !important;
+    position: absolute;
+    top: -145px;
+    right: 190px;
+    color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.owl-prev:hover {
+    background-color: #3461FF !important;
+    color: white !important;
+    opacity: 1 !important;
+}
+
+.owl-nav .owl-next {
+    background-color: #f8f9ff !important;
+    font-size: 33px !important;
+    width: 85px;
+    height: 85px;
+    border-radius: 50% !important;
+    position: absolute;
+    top: -145px;
+    right: 82px;
+    color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.owl-next:hover {
+    background-color: #3461FF !important;
+    color: white !important;
+    opacity: 1 !important;
+}
+
+
+/* style start your journey with us now */
+
+.journey {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    background-color: rgba(35, 32, 56, 1);
+    width: 1290px;
+    height: 455px;
+    border-radius: 56px;
+
+}
+
+.journeyinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.line30 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 63px;
+    color: white;
+    width: 469px;
+}
+
+.journeybtn {
+    width: 210px;
+    height: 64px;
+    border-radius: 69px;
+    border: none;
+    background-color: rgba(52, 97, 255, 1);
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32.4px;
+}
+
+/* style start your journey info */
+
+.journeyinfo-2 {
+    background-color: rgba(224, 255, 34, 1);
+    width: 352px;
+    height: 352px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.journeyimg-1 {
+    width: 65px;
+    height: 94.55px;
+    object-fit: contain;
+}
+
+.journeyimg-2 {
+    width: 135.04px;
+    height: 81.04px;
+    object-fit: contain;
+}
+
+/* style how can we help you */
+
+.helpyou {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+/* style accordion */
+
+.accordion {
+    width: 700px;
+    /* --bs-accordion-btn-focus-border-color:none; */
+}
+
+.accordion-button {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+/* style accordion button */
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='19' fill='white' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+    background-color: rgba(52, 97, 255, 1);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='19' fill='white' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+}
+
+/* style help you info-2 */
+
+.helpyou-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.line31 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: -1px;
+    margin: 0 0 1rem 0;
+}
+
+.line32 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 457px;
+    margin: 0;
+}
+
+.helpyou-btn {
+    width: 144px;
+    height: 62px;
+    border: none;
+    border-radius: 70px;
+    background-color: rgba(52, 97, 255, 1);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.line33 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(52, 97, 255, 1);
+}
+
+
+/* style footer section */
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25rem;
+}
+
+.footer-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 392px;
+    background-color: rgba(250, 250, 250, 1);
+
+}
+
+.footer-info1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 36px;
+}
+
+.line34 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 19px 0 0 0;
+}
+
+.insta,
+.twitter,
+.facebook {
+    width: 28px;
+    height: 28px;
+}
+
+.footer-btn {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32.4px;
+    color: white;
+    background-color: rgba(52, 97, 255, 1);
+    width: 295px;
+    height: 64px;
+    border: none;
+    border-radius: 69px;
+}
+
+.footer-links {
+    display: grid;
+    /* grid-template-columns: 134px 133px 96px; */
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 3rem 95px;
+}
+
+.footer-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 41rem;
+}
+
+.footer-2bg {
+    height: 119px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerline-2 {
+    gap: 8rem;
+}
+
+.line35 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: white;
+    margin: 0;
 }
