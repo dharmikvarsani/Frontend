@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 
 }
 
@@ -23,6 +23,8 @@ body {
 
 .navbar {
     gap: 5rem;
+    background-color: white;
+    height: 88px;
 }
 
 
@@ -77,6 +79,17 @@ body {
 
 .nav-btn {
     gap: 5rem;
+}
+
+/* style sidebar */
+
+#sidebar {
+    display: none;
+}
+
+.open-sidebar,
+.close-sidebar {
+    display: none;
 }
 
 /* style Hero-Section */
@@ -1193,9 +1206,28 @@ body {
     .startyourjourney {
         gap: 6rem;
     }
+
+    /* style footer */
+
+    .footer {
+        gap: 18rem;
+    }
+
+    .footer-links {
+        gap: 3rem 64px;
+    }
+
+    .footer-2 {
+        gap: 30rem;
+    }
 }
 
 @media screen and (max-width:1199px) {
+
+    body {
+        gap: 5rem;
+    }
+
     /* styale navbar */
 
     .navbar {
@@ -1244,9 +1276,30 @@ body {
         height: 162px;
     }
 
+    .union1 {
+        width: 128.98px;
+        height: 84.5px;
+        left: 172px;
+        top: -46px;
+    }
+
+    .union1-obj {
+        width: 35px;
+        height: 56px;
+        top: -34px;
+        left: 220px;
+    }
+
     .heroimg-3 {
         width: 164px;
         height: 128px;
+    }
+
+    .heroimg-3obj {
+        width: 64px;
+        height: 75px;
+        top: 191px;
+        left: 51px;
     }
 
     .heroimg-4 {
@@ -1260,16 +1313,44 @@ body {
         margin-top: -6px;
     }
 
+    .union2 {
+        width: 119.98px;
+        height: 82.5px;
+        bottom: 131px;
+        left: 98px;
+    }
+
+    .union2-obj {
+        width: 35px;
+        height: 53px;
+        bottom: 146px;
+        left: 141px;
+    }
+
     .heroimg-6 {
         width: 123px;
         height: 157px;
         margin: -3px 0 0 -7px;
     }
 
+    .heroimg-6obj {
+        width: 79px;
+        height: 85px;
+        right: 151px;
+        bottom: 38px;
+    }
+
     .heroimg-7 {
         width: 128px;
         height: 157px;
         margin-top: -3px;
+    }
+
+    .heroimg-7obj {
+        width: 79px;
+        height: 85px;
+        right: 25px;
+        bottom: 40px;
     }
 
 
@@ -1330,7 +1411,7 @@ body {
 
     .asana {
         width: 117px;
-        object-fit: cover;
+        object-fit: contain;
     }
 
 
@@ -1410,217 +1491,1468 @@ body {
     }
 
 
-/* style our work */
+    /* style our work */
 
-.ourwork {
-    gap: 2rem;
+    .ourwork {
+        gap: 2rem;
+    }
+
+    .line16 {
+        font-size: 36px;
+        line-height: 49px;
+    }
+
+    .line17 {
+        font-size: 15px;
+        line-height: 27px;
+        width: 695px;
+    }
+
+    .ourwork-img {
+        width: 293px;
+        height: 237px;
+    }
+
+    .line18 {
+        font-size: 25px;
+        line-height: 33.8px;
+    }
+
+    .line19 {
+        font-size: 14px;
+        line-height: 20.6px;
+    }
+
+    .ourwork-btn {
+        width: 195px;
+        height: 61px;
+        font-size: 23px;
+        line-height: 26.4px;
+    }
+
+
+    /* start your journey with us now */
+
+    .startyourjourney {
+        gap: 4rem;
+    }
+
+    .line20 {
+        font-size: 36px;
+        width: 325px;
+    }
+
+    .line21 {
+        font-size: 14px;
+        line-height: 26px;
+        width: 538px;
+    }
+
+    /* style meet our team */
+
+    .ourteam {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .ourteam-imgs {
+        grid-template-columns: 170px 170px 170px;
+        gap: 16px;
+    }
+
+    .ourteam-img {
+        width: 170px;
+        height: 170px;
+        object-fit: contain;
+    }
+
+    .ourteam-info {
+        gap: 12px;
+    }
+
+    .line22 {
+        font-size: 35px;
+        line-height: 42px;
+    }
+
+    .line23 {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 35px;
+        color: rgba(0, 0, 0, 0.6);
+        margin: 0;
+    }
+
+    .line24 {
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+
+    .ourteam-btn {
+        font-size: 22px;
+        line-height: 21.4px;
+        width: 194px;
+        height: 57px;
+    }
+
+
+    /* style start your journey with us */
+
+    .journey {
+        gap: 14rem;
+        width: 1290px;
+        height: 385px;
+    }
+
+    .journeyinfo {
+        gap: 4rem;
+    }
+
+    .line30 {
+        font-size: 44px;
+        line-height: 63px;
+    }
+
+    .journeybtn {
+        width: 199px;
+        height: 60px;
+        font-size: 23px;
+        line-height: 32.4px;
+    }
+
+    .journeyinfo-2 {
+        width: 342px;
+        height: 238px;
+    }
+
+    .journeyimg-1 {
+        width: 55px;
+        height: 84.55px;
+    }
+
+    .journeyimg-2 {
+        width: 125.04px;
+        height: 71.04px;
+    }
+
+
+    /* style how we can help you */
+
+    .accordion-button {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+
+    .helpyou-info {
+        gap: 28px;
+    }
+
+    .line31 {
+        font-size: 35px;
+        line-height: 49px;
+    }
+
+    .line32 {
+        font-size: 17px;
+        line-height: 27px;
+        width: 449px;
+    }
+
+    .hero-email {
+        width: 299px;
+        height: 59px;
+        font-size: 15px;
+    }
+
+    .helpyou-btn {
+        width: 132px;
+        height: 59px;
+        font-size: 15px;
+    }
+
+    .line33 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    /* style footer */
+
+    .footer {
+        gap: 7rem;
+    }
+
+    .footer-info1 {
+        gap: 27px;
+    }
+
+    .footer-links {
+        gap: 3rem 63px;
+    }
+
+    .footer-2 {
+        gap: 21rem;
+    }
+
+    .footerline-2 {
+        gap: 6rem;
+    }
 }
 
-.line16 {
-    font-size: 36px;
-    line-height: 49px;
+@media screen and (max-width:992px) {
+
+
+    .hero-section {
+        gap: 2rem;
+        flex-direction: column-reverse;
+    }
+
+    /* style navbar */
+
+    .navbar {
+        gap: 33rem;
+        height: 65px;
+    }
+
+    .nav-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: fixed;
+        top: 0;
+        height: 1368px;
+        right: -100%;
+        z-index: 10;
+        width: 100%;
+        transition: 0.80s ease;
+        background-color: white;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 35px;
+    }
+
+    .open-sidebar,
+    .close-sidebar {
+        display: block;
+    }
+
+    .close-sidebar {
+        position: absolute;
+        left: 11px;
+    }
+
+    #sidebar:checked~.nav-section {
+        right: 0;
+    }
+
+    /* style nav */
+
+    .nav-link {
+        font-size: 17px;
+    }
+
+    .line2 {
+        width: 149px;
+        height: 55px;
+        font-size: 17px;
+    }
+
+    /* style hero section info */
+
+    .line3 {
+        font-size: 89px;
+        line-height: 79px;
+        width: 603px;
+    }
+
+    .line4 {
+        font-size: 17px;
+        width: 603px;
+    }
+
+    .hero-email {
+        width: 464px;
+    }
+
+    /* style hero section img */
+
+    .heroimg-1 {
+        width: 367px;
+        height: 240px;
+        object-fit: contain;
+    }
+
+    .heroimg-2 {
+        width: 241px;
+        height: 240px;
+        object-fit: contain;
+        margin-left: -4px;
+    }
+
+    .union1 {
+        width: 149.98px;
+        height: 110.5px;
+        object-fit: contain;
+        position: absolute;
+        top: -64px;
+        left: 280px;
+    }
+
+    .union1-obj {
+        width: 55px;
+        height: 69px;
+        object-fit: cover;
+        position: absolute;
+        top: -43px;
+        left: 325px;
+    }
+
+    .heroimg-3 {
+        width: 241px;
+        height: 190px;
+        object-fit: contain;
+        position: relative;
+    }
+
+    .heroimg-3obj {
+        width: 84px;
+        height: 105px;
+        object-fit: contain;
+        position: absolute;
+        top: 277px;
+        left: 84px;
+    }
+
+    .heroimg-4 {
+        width: 367px;
+        height: 190px;
+        object-fit: contain;
+        margin-left: -4px;
+    }
+
+    .heroimg-5 {
+        width: 241px;
+        height: 240px;
+        object-fit: contain;
+    }
+
+    .heroimg-6 {
+        width: 184px;
+        height: 240px;
+        object-fit: contain;
+        position: relative;
+        margin-left: -5px;
+    }
+
+    .heroimg-6obj {
+        width: 99px;
+        height: 123px;
+        object-fit: contain;
+        position: absolute;
+        right: 230px;
+        bottom: 67px;
+    }
+
+    .heroimg-7 {
+        width: 183px;
+        height: 240px;
+        object-fit: contain;
+        position: relative;
+        margin-left: -4px;
+    }
+
+    .heroimg-7obj {
+        width: 99px;
+        height: 123px;
+        object-fit: contain;
+        position: absolute;
+        /* top: 30rem; */
+        bottom: 67px;
+        right: 43px;
+    }
+
+    .union2 {
+        width: 149.98px;
+        height: 110.5px;
+        object-fit: contain;
+        position: absolute;
+        bottom: 200px;
+        left: 168px;
+    }
+
+    .union2-obj {
+        width: 55px;
+        height: 69px;
+        object-fit: cover;
+        position: absolute;
+        bottom: 224px;
+        left: 214px;
+    }
+
+    /* style companies we work with */
+
+
+    /* style company logo */
+
+    .company-name-1 {
+        column-gap: 54px;
+    }
+
+    .spotify {
+        width: 110px;
+    }
+
+    .google {
+        width: 83px;
+    }
+
+    .uber {
+        width: 52px;
+    }
+
+    .microsoft {
+        width: 134px;
+    }
+
+    .shopify {
+        width: 97px;
+    }
+
+    .company-name-2 {
+        column-gap: 37px;
+    }
+
+    .evernote {
+        width: 134px;
+    }
+
+    .adobe {
+        width: 103px;
+    }
+
+    .paypal {
+        width: 113px;
+    }
+
+    .amazon {
+        width: 90px;
+    }
+
+    .asana {
+        width: 107px;
+    }
+
+
+    /* style commitment */
+
+    .commitment {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .commitment-1 {
+        grid-template-columns: 202px 247px;
+        gap: 2rem 7rem;
+    }
+
+
+    /* style how it works */
+
+    .howitworks {
+        flex-direction: column;
+    }
+
+    .line13 {
+        width: 514px;
+        font-size: 15px;
+    }
+
+    .howitworks-img1 {
+        width: 514px;
+        height: 377px;
+        object-fit: contain;
+    }
+
+
+    /* style our work */
+
+    .ourwork-img {
+        width: 217px;
+        height: 175px;
+    }
+
+    .line18 {
+        font-size: 23px;
+        line-height: 29.8px;
+    }
+
+    .line19 {
+        font-size: 12px;
+        line-height: 18.6px;
+    }
+
+    .ourwork-btn {
+        width: 158px;
+        height: 54px;
+        font-size: 21px;
+        line-height: 24.4px;
+    }
+
+
+    /* style start your journey with us now */
+
+    .startyourjourney-bg {
+        height: 388px;
+        background-size: 544px 387px;
+        align-items: center;
+    }
+
+    .startyourjourney {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .line20 {
+        width: 539px;
+    }
+
+
+    /* style meet our team */
+
+    .ourteam {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .ourteam-imgs {
+        gap: 25px 50px;
+    }
+
+    .ourteam-info {
+        align-items: center;
+    }
+
+    .ourteam-info1 {
+        align-items: center;
+    }
+
+    .line23 {
+        font-size: 26px;
+    }
+
+    .line24 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .ourteam-btn {
+        font-size: 21px;
+        line-height: 19.4px;
+        width: 185px;
+        height: 54px;
+    }
+
+
+    /* style what our client said about us */
+
+    .line25 {
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    /* style carousel btns */
+
+    .owl-nav .owl-prev {
+        font-size: 29px !important;
+        width: 70px;
+        height: 70px;
+        top: -126px;
+        right: 87px;
+    }
+
+    .owl-nav .owl-next {
+        font-size: 29px !important;
+        width: 70px;
+        height: 70px;
+        top: -126px;
+        right: -1px;
+    }
+
+    /* start your journey with us now */
+
+    .journey {
+        gap: 5rem;
+        width: 1290px;
+        height: 350px;
+    }
+
+    .line30 {
+        font-size: 40px;
+        line-height: 63px;
+        width: 385px;
+    }
+
+    .journeyinfo {
+        gap: 2rem;
+    }
+
+    .journeyinfo-2 {
+        width: 219px;
+        height: 219px;
+    }
+
+    .journeybtn {
+        width: 176px;
+        height: 57px;
+        font-size: 22px;
+        line-height: 32.4px;
+    }
+
+    .journeyimg-1 {
+        width: 45px;
+        height: 74.55px;
+    }
+
+    .journeyimg-2 {
+        width: 115.04px;
+        height: 61.04px;
+    }
+
+
+    /* style how can we help you */
+
+    .helpyou {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .helpyou-info {
+        align-items: center;
+    }
+
+    .line31 {
+        text-align: center;
+    }
+
+    .line32 {
+        width: auto;
+    }
+
+    /* sytle footer */
+
+    .footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-info1 {
+        gap: 17px;
+    }
+
+    .line34 {
+        margin: 13px 0 0 0;
+    }
+
+    .footer-btn {
+        font-size: 23px;
+        width: 242px;
+        height: 57px;
+    }
+
+    .footer-links {
+        grid-template-columns: auto auto auto auto;
+        gap: 2rem 63px;
+    }
+
+    /* style footer-2 */
+
+    .footer-2bg {
+        height: 58px;
+    }
+
+    .line35 {
+        font-size: 13px;
+    }
+
+    .footer-2 {
+        gap: 11rem;
+    }
+
+    .footerline-2 {
+        gap: 3rem;
+    }
 }
 
-.line17 {
-    font-size: 15px;
-    line-height: 27px;
-    width: 695px;
+
+@media screen and (max-width:768px) {
+
+    /* style navbar  */
+
+    .navbar {
+        gap: 22rem;
+        height: 57px;
+    }
+
+    /* style hero section */
+
+    /* style hero section imgs */
+
+    .heroimg-1 {
+        width: 309px;
+        height: 202px;
+    }
+
+    .heroimg-2 {
+        width: 201px;
+        height: 202px;
+    }
+
+    .union1 {
+        width: 138.98px;
+        height: 104.5px;
+        left: 226px;
+    }
+
+    .union1-obj {
+        width: 45px;
+        height: 66px;
+        top: -45px;
+        left: 274px;
+    }
+
+    .heroimg-3 {
+        width: 201px;
+        height: 161px;
+    }
+
+    .heroimg-3obj {
+        width: 74px;
+        height: 85px;
+        top: 243px;
+        left: 64px;
+    }
+
+    .heroimg-4 {
+        width: 309px;
+        height: 163px;
+    }
+
+    .union2 {
+        width: 139.98px;
+        height: 102.5px;
+        bottom: 162px;
+        left: 134px;
+    }
+
+    .union2-obj {
+        width: 45px;
+        height: 63px;
+        bottom: 182px;
+        left: 181px;
+    }
+
+    .heroimg-5 {
+        width: 203px;
+        height: 200px;
+        margin-top: -6px;
+    }
+
+    .heroimg-6 {
+        width: 155px;
+        height: 200px;
+        margin: -3px 0 0 -7px;
+    }
+
+    .heroimg-6obj {
+        width: 89px;
+        height: 95px;
+        right: 187px;
+        bottom: 56px;
+    }
+
+    .heroimg-7 {
+        width: 153px;
+        height: 200px;
+        margin-top: -3px;
+    }
+
+    .heroimg-7obj {
+        width: 89px;
+        height: 95px;
+        right: 32px;
+        bottom: 56px;
+    }
+
+    /* style hero section info */
+
+    .line3 {
+        font-size: 79px;
+        width: 459px;
+    }
+
+    .line4 {
+        width: 459px;
+    }
+
+    .hero-email {
+        width: 333px;
+    }
+
+
+    /* style companies we work with */
+
+    .company-name-1 {
+        column-gap: 49px;
+    }
+
+    .spotify {
+        width: 70px;
+    }
+
+    .google {
+        width: 53px;
+    }
+
+    .uber {
+        width: 42px;
+    }
+
+    .microsoft {
+        width: 84px;
+    }
+
+    .shopify {
+        width: 67px;
+    }
+
+    .company-name-2 {
+        column-gap: 34px;
+    }
+
+    .evernote {
+        width: 94px;
+    }
+
+    .adobe {
+        width: 73px;
+    }
+
+    .paypal {
+        width: 73px;
+    }
+
+    .amazon {
+        width: 60px;
+    }
+
+    .asana {
+        width: 77px;
+    }
+
+
+    /* style our commitment */
+
+    .commitment-1 {
+        gap: 2rem 4rem;
+    }
+
+
+    /* style how it works */
+
+    .line13 {
+        width: 492px;
+    }
+
+    .howitworks-img1 {
+        width: 492px;
+        height: 365px;
+    }
+
+    .howitworks-info2 {
+        grid-template-columns: 221px 221px;
+        gap: 2rem 50px;
+    }
+
+    .howitworks-img {
+        width: 83px;
+        height: 84px;
+    }
+
+    .line14 {
+        font-size: 25px;
+        line-height: 27.8px;
+    }
+
+    .line15 {
+        font-size: 11px;
+        line-height: 19px;
+    }
+
+
+    /* style our work */
+
+    .ourwork {
+        gap: 1rem;
+    }
+
+    .line16 {
+        font-size: 33px;
+        line-height: 44px;
+    }
+
+    .line17 {
+        font-size: 12px;
+        line-height: 22px;
+        width: 494px;
+    }
+
+    .ourwork-img {
+        width: 156px;
+        height: 126px;
+    }
+
+    .line18 {
+        font-size: 20px;
+        line-height: 23.8px;
+    }
+
+    .line19 {
+        font-size: 11px;
+        line-height: 16.6px;
+    }
+
+    .ourwork-btn {
+        width: 141px;
+        height: 47px;
+        font-size: 20px;
+        line-height: 20.4px;
+    }
+
+
+    /* style start your journey */
+
+    .startyourjourney-bg {
+        height: 352px;
+        background-size: 544px 350px;
+    }
+
+    .line20 {
+        font-size: 33px;
+        width: 518px;
+    }
+
+    .line21 {
+        font-size: 12px;
+        line-height: 23px;
+        width: 517px;
+    }
+
+
+    /* style our team */
+
+
+    .ourteam-imgs {
+        grid-template-columns: 140px 140px 140px;
+        gap: 25px 45px;
+    }
+
+    .ourteam-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .line22 {
+        font-size: 33px;
+        line-height: 39px;
+    }
+
+    .line23 {
+        font-size: 19px;
+    }
+
+    .line24 {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .ourteam-btn {
+        font-size: 19px;
+        line-height: 16.4px;
+        width: 168px;
+        height: 50px;
+    }
+
+
+    /* style about us */
+
+
+    .line25 {
+        font-size: 26px;
+        line-height: 39px;
+    }
+
+    .line26 {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    /* style carousel card */
+
+    .aboutus-img {
+        width: 72px;
+        height: 72px;
+    }
+
+    .line27 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 33.8px;
+    }
+
+    .line28 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .line29 {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .carousal1 {
+        gap: 15px;
+        padding: 25px 53px 25px 25px;
+        width: 510px;
+        height: 264px;
+    }
+
+    .owl-item {
+        width: 512px !important;
+    }
+
+
+    /* style carousel nav btns */
+
+    .owl-nav .owl-prev {
+        font-size: 22px !important;
+        width: 50px;
+        height: 50px;
+        top: -105px;
+        right: 65px;
+    }
+
+    .owl-nav .owl-next {
+        font-size: 22px !important;
+        width: 50px;
+        height: 50px;
+        top: -105px;
+        right: 0px;
+    }
+
+
+    /* style your journey with us now */
+
+    .journey {
+        gap: 3rem;
+        width: 1290px;
+        height: 283px;
+    }
+
+    .line30 {
+        font-size: 31px;
+        line-height: 50px;
+        width: 290px;
+    }
+
+    .journeybtn {
+        width: 142px;
+        height: 49px;
+        font-size: 20px;
+        line-height: 30.4px;
+    }
+
+    .journeyinfo-2 {
+        width: 200px;
+        height: 181px;
+    }
+
+    .journeyimg-1 {
+        width: 35px;
+        height: 64.55px;
+    }
+
+    .journeyimg-2 {
+        width: 95.04px;
+        height: 51.04px;
+    }
+
+
+    /* style we can help you */
+
+    .helpyou {
+        gap: 3rem;
+    }
+
+    .accordion {
+        width: 512px;
+    }
+
+    .accordion-button {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .line31 {
+        font-size: 31px;
+        line-height: 46px;
+    }
+
+    .line32 {
+        font-size: 12px;
+    }
+
+    .hero-email {
+        width: 333px;
+    }
+
+    .helpyou-btn {
+        width: 121px;
+        height: 56px;
+        font-size: 15px;
+    }
+
+
+    /* style footer */
+
+    .footer-btn {
+        font-size: 19px;
+        width: 188px;
+        height: 48px;
+    }
+
+    .footer-links {
+        gap: 1rem 47px;
+    }
+
+    .footer-link {
+        font-size: 12px;
+    }
+
+    /* style footer 2 */
+
+    .footer-2bg {
+        height: 51px;
+    }
+
+    .line35 {
+        font-size: 11px;
+    }
+
+    .footer-2 {
+        gap: 5rem;
+    }
+
+    .footerline-2 {
+        gap: 2rem;
+    }
+
 }
 
-.ourwork-img {
-    width: 293px;
-    height: 237px;
-}
+@media screen and (max-width:576px) {
 
-.line18 {
-    font-size: 25px;
-    line-height: 33.8px;
-}
+    /* style navbar */
 
-.line19 {
-    font-size: 14px;
-    line-height: 20.6px;
-}
+    .navbar {
+        gap: 19rem;
+    }
 
-.ourwork-btn {
-    width: 195px;
-    height: 61px;
-    font-size: 23px;
-    line-height: 26.4px;
-}
+    /* style hero-section */
+
+    .heroimg-1 {
+        width: 251px;
+        height: 162px;
+    }
+
+    .heroimg-2 {
+        width: 156px;
+        height: 162px;
+    }
+
+    .union1 {
+        width: 128.98px;
+        height: 84.5px;
+        left: 172px;
+        top: -46px;
+    }
+
+    .union1-obj {
+        width: 35px;
+        height: 56px;
+        top: -34px;
+        left: 220px;
+    }
+
+    .heroimg-3 {
+        width: 164px;
+        height: 128px;
+    }
+
+    .heroimg-3obj {
+        width: 64px;
+        height: 75px;
+        top: 191px;
+        left: 51px;
+    }
+
+    .heroimg-4 {
+        width: 243px;
+        height: 128px;
+    }
+
+    .heroimg-5 {
+        width: 159px;
+        height: 157px;
+        margin-top: -6px;
+    }
+
+    .union2 {
+        width: 119.98px;
+        height: 82.5px;
+        bottom: 131px;
+        left: 98px;
+    }
+
+    .union2-obj {
+        width: 35px;
+        height: 53px;
+        bottom: 146px;
+        left: 141px;
+    }
+
+    .heroimg-6 {
+        width: 123px;
+        height: 157px;
+        margin: -3px 0 0 -7px;
+    }
+
+    .heroimg-6obj {
+        width: 79px;
+        height: 85px;
+        right: 151px;
+        bottom: 38px;
+    }
+
+    .heroimg-7 {
+        width: 128px;
+        height: 157px;
+        margin-top: -3px;
+    }
+
+    .heroimg-7obj {
+        width: 79px;
+        height: 85px;
+        right: 25px;
+        bottom: 40px;
+    }
+
+    .hero-section-info {
+        gap: 8px;
+    }
+
+    .hero-info {
+        gap: 8px;
+    }
+
+    .line3 {
+        font-size: 70px;
+        width: 399px;
+        line-height: 72px;
+    }
+
+    .line4 {
+        font-size: 15px;
+        width: 399px;
+    }
+
+    .hero-email {
+        width: 273px;
+    }
 
 
-/* start your journey with us now */
+    /* style companies we work with */
 
-.startyourjourney {
-    gap: 4rem;
-}
+    .workwith {
+        gap: 2rem;
+    }
 
-.line20 {
-    font-size: 36px;
-    width: 325px;
-}
+    .workwith-info {
+        gap: 1rem;
+        flex-direction: column !important;
+    }
 
-.line21 {
-    font-size: 14px;
-    line-height: 26px;
-    width: 538px;
-}
+    .line6 {
+        width: 406px;
+        font-size: 15px;
+        line-height: 25px;
+    }
 
-/* style meet our team */
 
-.ourteam {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-}
+
+
+    /* style our commitment */
+
+    .commitment {
+        gap: 2rem;
+    }
+
+    .line7 {
+        font-size: 50px;
+        line-height: 68.4px;
+    }
+
+    .commitment-1 {
+        grid-template-columns: 188px 188px;
+        gap: 2rem 2rem;
+    }
+
+    .commitment-2 {
+        gap: 1rem;
+    }
+
+    .line9 {
+        font-size: 33px;
+        line-height: 47px;
+    }
+
+    .line10 {
+        font-size: 12px;
+        line-height: 23px;
+        width: 406px;
+    }
+
+
+    /* style how it works */
+
+    .line13 {
+        width: 406px;
+        font-size: 12px;
+    }
+
+    .howitworks-img1 {
+        width: 406px;
+        height: 302px;
+    }
+
+    .howitworks-img {
+        width: 74px;
+        height: 74px;
+    }
+
+    .line14 {
+        font-size: 23px;
+        line-height: 26.8px;
+    }
+
+    .howitworks-info2 {
+        grid-template-columns: 200px 200px;
+        gap: 1rem 11px;
+    }
+
+    /* style our work */
+
+    .line16 {
+        font-size: 31px;
+        line-height: 41px;
+    }
+
+    .line17 {
+        font-size: 12px;
+        line-height: 20px;
+        width: 406px;
+    }
+
+    .ourwork-info2 {
+        flex-direction: column;
+    }
+
+    .ourwork-img {
+        width: 300px;
+        height: 243px;
+    }
+
+    .line18 {
+        font-size: 28px;
+        line-height: 37.8px;
+    }
+
+    .line19 {
+        font-size: 14px;
+        line-height: 20.6px;
+    }
+
+    /* start your journey with us */
+
+    .startyourjourney-bg {
+        height: 322px;
+        background-size: 404px 322px;
+    }
+
+    .line20 {
+        font-size: 27px;
+        width: 406px;
+    }
+
+    .line21 {
+        font-size: 11px;
+        line-height: 20px;
+        width: 406px;
+    }
+
+/* meet our team */
 
 .ourteam-imgs {
-    grid-template-columns: 170px 170px 170px;
-    gap: 16px;
-}
-
-.ourteam-img {
-    width: 170px;
-    height: 170px;
-    object-fit: contain;
-}
-
-.ourteam-info {
-    gap: 12px;
-}
-
-.line22 {
-    font-size: 35px;
-    line-height: 42px;
+    grid-template-columns: 140px 140px;
 }
 
 .line23 {
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 35px;
-    color: rgba(0, 0, 0, 0.6);
-    margin: 0;
+    font-size: 16px;
 }
 
 .line24 {
-    font-size: 13px;
-    line-height: 25px;
+    font-size: 12px;
+    line-height: 18px;
+    width: 420px;
 }
-
 
 .ourteam-btn {
-    font-size: 22px;
-    line-height: 21.4px;
-    width: 194px;
-    height: 57px;
-}
-
-
-/* style start your journey with us */
-
-.journey {
-    gap: 14rem;
-    width: 1290px;
-    height: 385px;
-}
-
-.journeyinfo {
-    gap: 4rem;
-}
-
-.line30 {
-    font-size: 44px;
-    line-height: 63px;
-}
-
-.journeybtn {
-    width: 199px;
-    height: 60px;
-    font-size: 23px;
-    line-height: 32.4px;
-}
-
-.journeyinfo-2 {
-    width: 342px;
-    height: 238px;
-}
-
-.journeyimg-1 {
-    width: 55px;
-    height: 84.55px;
-}
-
-.journeyimg-2 {
-    width: 125.04px;
-    height: 71.04px;
-  }
-
-
-  /* style how we can help you */
-
-  .accordion-button {
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 32px;
-}
-
-.helpyou-info {
-    gap: 28px;
-}
-
-.line31 {
-    font-size: 35px;
-    line-height: 49px;
-}
-
-.line32 {
-    font-size: 17px;
-    line-height: 27px;
-    width: 449px;
-}
-
-.hero-email {
-    width: 299px;
-    height: 59px;
-    font-size: 15px;
-}
-
-.helpyou-btn {
-    width: 132px;
-    height: 59px;
-    font-size: 15px;
-}
-
-.line33 {
     font-size: 18px;
-    line-height: 20px;
+    width: 156px;
+    height: 47px;
+}
+
+/* style about us */
+
+.owl-item {
+    width: 506px !important;
+}
+
+.carousal1 {
+    width: 500px;
+}
+    /* style satrt your journey */
+
+    .journey {
+        width: auto;
     }
-
-/* style footer */
-
-.footer {
-    gap: 7rem;
-}
-
-.footer-info1 {
-    gap: 27px;
-}
-
-.footer-links {
-    gap: 3rem 63px;
-}
-
-.footer-2 {
-    gap: 21rem;
-}
-
-.footerline-2 {
-    gap: 6rem;
-}
-
-
-
 }
