@@ -2674,7 +2674,7 @@ body {
     /* style navbar */
 
     .navbar {
-        gap: 19rem;
+        gap: 17rem;
     }
 
     /* style hero-section */
@@ -2919,40 +2919,1130 @@ body {
         width: 406px;
     }
 
-/* meet our team */
+    /* meet our team */
 
-.ourteam-imgs {
-    grid-template-columns: 140px 140px;
-}
+    .ourteam-imgs {
+        grid-template-columns: 140px 140px;
+    }
 
-.line23 {
-    font-size: 16px;
-}
+    .line23 {
+        font-size: 16px;
+    }
 
-.line24 {
-    font-size: 12px;
-    line-height: 18px;
-    width: 420px;
-}
+    .line24 {
+        font-size: 12px;
+        line-height: 18px;
+        width: 420px;
+    }
 
-.ourteam-btn {
-    font-size: 18px;
-    width: 156px;
-    height: 47px;
-}
+    .ourteam-btn {
+        font-size: 18px;
+        width: 156px;
+        height: 47px;
+    }
 
-/* style about us */
+    /* style about us */
 
-.owl-item {
-    width: 506px !important;
-}
+    .aboutus {
+        width: 441px;
+    }
 
-.carousal1 {
-    width: 500px;
-}
+    .carousal1 {
+        width: 397px;
+    }
+
+    .owl-item {
+        width: 413px !important;
+    }
+
+    .line25 {
+        font-size: 23px;
+        line-height: 37px;
+    }
+
+    .line26 {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .line29 {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+    /* style carousel btns */
+
+    .owl-nav .owl-next {
+        font-size: 18px !important;
+        width: 45px;
+        height: 45px;
+        top: -101px;
+        right: -5px;
+    }
+
+    .owl-nav .owl-prev {
+        font-size: 18px !important;
+        width: 45px;
+        height: 45px;
+        top: -101px;
+        right: 50px;
+    }
+
+
     /* style satrt your journey */
 
     .journey {
         width: auto;
     }
+
+    .line30 {
+        font-size: 26px;
+        line-height: 36px;
+        width: 245px;
+    }
+
+    .journeybtn {
+        width: 135px;
+        height: 44px;
+        font-size: 19px;
+        line-height: 17.4px;
+    }
+
+    .journeyinfo-2 {
+        width: 155px;
+        height: 157px;
+    }
+
+    .journeyimg-1 {
+        width: 30px;
+        height: 59.55px;
+    }
+
+    .journeyimg-2 {
+        width: 80px;
+        height: 45px;
+    }
+
+    /* style help you */
+
+    .accordion {
+        width: 406px;
+    }
+
+    .accordion-button {
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .accordion-body {
+        padding: 1rem 1.25rem;
+        font-size: 10px;
+    }
+
+    .line31 {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .line32 {
+        font-size: 10px;
+    }
+
+    .hero-email {
+        width: 273px;
+        height: 54px;
+        font-size: 13px;
+    }
+
+    .helpyou-btn {
+        width: 107px;
+        height: 54px;
+        font-size: 14px;
+    }
+
+    .line33 {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    /* style footer */
+
+    .footer-info1 {
+        gap: 11px;
+    }
+
+    .line1 {
+        font-size: 24.24px;
+        font-weight: 700;
+        line-height: 32.47px;
+        letter-spacing: -2px;
+    }
+
+    .line34 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        margin: 10px 0 0 0;
+    }
+
+    .footer-btn {
+        font-size: 18px;
+        width: 162px;
+        height: 45px;
+    }
+
+    .footer-links {
+        gap: 1rem 20px;
+    }
+
+    .footer-link {
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    /* style footer 2 */
+
+    .line35 {
+        font-size: 9px;
+    }
+
+    .footer-2 {
+        gap: 4rem;
+    }
+
+    .footerline-2 {
+        gap: 1rem;
+    }
+}
+
+
+@media screen and (max-width:426px) {
+
+    body {
+        gap: 3rem;
+    }
+
+    /* style navbar */
+
+    .navbar {
+        gap: 11rem;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .line2 {
+        width: 127px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    /* style hero section */
+
+    .heroimg-1 {
+        width: 201px;
+        height: 133px;
+    }
+
+    .heroimg-2 {
+        width: 133px;
+        height: 133px;
+    }
+
+    .heroimg-3 {
+        width: 132px;
+        height: 105px;
+    }
+
+    .union1 {
+        width: 108px;
+        height: 64.5px;
+        left: 139px;
+        top: -34px;
+    }
+
+    .union1-obj {
+        width: 32px;
+        height: 43px;
+        top: -24px;
+        left: 178px;
+    }
+
+    .heroimg-3obj {
+        width: 54px;
+        height: 65px;
+        top: 155px;
+        left: 41px;
+    }
+
+    .heroimg-4 {
+        width: 202px;
+        height: 105px;
+    }
+
+    .union2 {
+        width: 108px;
+        height: 62px;
+        bottom: 111px;
+        left: 76px;
+    }
+
+    .union2-obj {
+        width: 32px;
+        height: 43px;
+        bottom: 121px;
+        left: 115px;
+    }
+
+    .heroimg-5 {
+        width: 132px;
+        height: 132px;
+    }
+
+    .heroimg-6 {
+        width: 103px;
+        height: 133px;
+    }
+
+    .heroimg-6obj {
+        width: 69px;
+        height: 75px;
+        right: 119px;
+        bottom: 30px;
+    }
+
+    .heroimg-7 {
+        width: 102px;
+        height: 133px;
+    }
+
+    .heroimg-7obj {
+        width: 69px;
+        height: 75px;
+        right: 17px;
+        bottom: 32px;
+    }
+
+    .line3 {
+        font-size: 60px;
+        width: 337px;
+        line-height: 65px;
+    }
+
+    .line4 {
+        font-size: 13px;
+        line-height: 23px;
+        width: 337px;
+    }
+
+    .hero-email {
+        width: 210px;
+        height: 54px;
+        font-size: 13px;
+    }
+
+    .hero-btn {
+        width: 114px;
+        height: 54px;
+        font-size: 15px;
+    }
+
+    /* style companies we work with */
+
+    .line5 {
+        font-size: 38px;
+        line-height: 49px;
+    }
+
+    .line6 {
+        width: 336px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .work-section {
+        height: 422px;
+    }
+
+
+
+    /* style our commitment */
+
+    .commitment-1 {
+        grid-template-columns: 160px 160px;
+        gap: 2rem 2rem;
+    }
+
+    .line7 {
+        font-size: 40px;
+        line-height: 54.4px;
+    }
+
+    .line8 {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .line9 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .line10 {
+        font-size: 11px;
+        line-height: 21px;
+        width: 350px;
+    }
+
+    .line11 {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+    /* style how it works */
+
+    .howit-1 {
+        gap: 10px;
+        align-items: center;
+    }
+
+    .line12 {
+        font-size: 36px;
+        line-height: 41px;
+    }
+
+    .line13 {
+        width: 350px;
+        line-height: 21px;
+        font-size: 11px;
+    }
+
+    .howitworks-img1 {
+        width: 350px;
+        height: 261px;
+    }
+
+    .howitworks-info2 {
+        grid-template-columns: 236px;
+        gap: 1rem 11px;
+    }
+
+    .line15 {
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+
+    /* style our work */
+
+    .line17 {
+        font-size: 11px;
+        line-height: 19px;
+        width: 350px;
+    }
+
+
+    /* style start your journey now */
+
+    .startyourjourney-bg {
+        height: 288px;
+        background-size: 305px 288px;
+    }
+
+    .startyourjourney {
+        gap: 1rem;
+    }
+
+    .line20 {
+        font-size: 23px;
+        width: 350px;
+    }
+
+    .line21 {
+        font-size: 11px;
+        line-height: 20px;
+        width: 350px;
+    }
+
+
+    /* style meet our team */
+
+    .ourteam-imgs {
+        gap: 25px 35px;
+    }
+
+    .line22 {
+        font-size: 31px;
+        line-height: 33px;
+    }
+
+    .line23 {
+        font-size: 13px;
+    }
+
+    .line24 {
+        font-size: 11px;
+        line-height: 17px;
+        width: 350px;
+    }
+
+    .ourteam-btn {
+        font-size: 16px;
+        width: 141px;
+        height: 46px;
+    }
+
+
+    /* style about us */
+
+
+    /* style carousel  */
+    .aboutus {
+        width: 350px;
+    }
+
+    .carousal1 {
+        gap: 15px;
+        padding: 10px 25px;
+        width: 319px;
+        height: 228px;
+    }
+
+    .owl-item {
+        width: 322px !important;
+    }
+
+    .line25 {
+        font-size: 21px;
+        line-height: 33px;
+    }
+
+    .line26 {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .aboutus-img {
+        width: 73px;
+        height: 73px;
+    }
+
+    .line27 {
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 31.8px;
+    }
+
+    .line28 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    .line29 {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+
+    /* style carousel btns */
+
+    .owl-nav .owl-prev {
+        font-size: 16px !important;
+        width: 35px;
+        height: 35px;
+        top: 35%;
+        right: 88%;
+    }
+
+    .owl-nav .owl-next {
+        font-size: 16px !important;
+        width: 35px;
+        height: 35px;
+        top: 35%;
+        right: -2%;
+    }
+
+
+    /* style start your journey */
+
+    .line30 {
+        font-size: 22px;
+        line-height: 33px;
+        width: 207px;
+    }
+
+    .journeybtn {
+        width: 125px;
+        height: 44px;
+        font-size: 18px;
+        line-height: 15.4px;
+    }
+
+    .journeyinfo-2 {
+        width: 145px;
+        height: 147px;
+    }
+
+    .journey {
+        gap: 1rem;
+        height: 220px;
+    }
+
+
+    /* style how can we help you */
+
+    .helpyou {
+        gap: 2rem;
+    }
+
+    .accordion {
+        width: 350px;
+    }
+
+    .accordion-button {
+        font-size: 11px;
+    }
+
+    .helpyou-info {
+        gap: 16px;
+    }
+
+    .line31 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .line32 {
+        font-size: 9px;
+        width: 359px;
+    }
+
+
+    /* style footer */
+
+    .line1 {
+        font-size: 21.24px;
+        font-weight: 700;
+        letter-spacing: -2px;
+    }
+
+    .line34 {
+        font-size: 11px;
+        line-height: 17px;
+        margin: 8px 0 0 0;
+    }
+
+    .insta,
+    .twitter,
+    .facebook {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-btn {
+        font-size: 16px;
+        width: 151px;
+        height: 40px;
+        line-height: normal;
+    }
+
+    .footer-link {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .footer-links {
+        gap: 1rem 45px;
+        grid-template-columns: auto auto auto;
+    }
+
+    .line35 {
+        font-size: 8px;
+        line-height: 17px;
+    }
+
+    .footer-2 {
+        gap: 2rem;
+    }
+
+    .footerline-2 {
+        gap: 10px;
+    }
+
+    .footer-2bg {
+        height: 45px;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+
+    /* style navbar */
+
+    .navbar {
+        gap: 8rem;
+    }
+
+
+    /* style hero section */
+
+    /* style hero img */
+
+    .heroimg-1 {
+        width: 171px;
+        height: 113px;
+    }
+
+    .heroimg-2 {
+        width: 114px;
+        height: 113px;
+    }
+
+    .union1 {
+        width: 90px;
+        height: 50px;
+        left: 123px;
+        top: -24px;
+    }
+
+    .union1-obj {
+        width: 28px;
+        height: 37px;
+        top: -18px;
+        left: 155px;
+    }
+
+    .heroimg-3obj {
+        width: 47px;
+        height: 58px;
+        top: 132px;
+        left: 36px;
+    }
+
+    .heroimg-3 {
+        width: 115px;
+        height: 92px;
+    }
+
+    .heroimg-4 {
+        width: 171px;
+        height: 91px;
+    }
+
+    .heroimg-5 {
+        width: 118px;
+        height: 112px;
+    }
+
+    .union2 {
+        width: 90px;
+        height: 50px;
+        bottom: 94px;
+        left: 70px;
+    }
+
+    .union2-obj {
+        width: 26px;
+        height: 36px;
+        bottom: 101px;
+        left: 102px;
+    }
+
+    .heroimg-6 {
+        width: 85px;
+        height: 110px;
+    }
+
+    .heroimg-6obj {
+        width: 62px;
+        height: 65px;
+        right: 99px;
+        bottom: 25px;
+    }
+
+    .heroimg-7 {
+        width: 84px;
+        height: 110px;
+    }
+
+    .heroimg-7obj {
+        width: 62px;
+        height: 64px;
+        right: 13px;
+        bottom: 25px;
+    }
+
+    /* style hero section info */
+
+    .line3 {
+        font-size: 47px;
+        width: 252px;
+        line-height: 48px;
+    }
+
+    .line4 {
+        font-size: 12px;
+        line-height: 21px;
+        width: 285px;
+    }
+
+    .hero-email {
+        width: 173px;
+        height: 47px;
+    }
+
+    .hero-btn {
+        width: 100px;
+        height: 47px;
+        font-size: 14px;
+    }
+
+
+    /* companies we work with */
+
+    .line5 {
+        font-size: 38px;
+        line-height: 43px;
+    }
+
+    .line6 {
+        width: 285px;
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+
+
+
+
+    /* style commitement */
+
+    .commitment-1 {
+        grid-template-columns: auto;
+        gap: 0rem;
+    }
+
+    .line7 {
+        font-size: 35px;
+        line-height: 45.4px;
+        text-align: center;
+    }
+
+    .line8 {
+        font-size: 11px;
+        line-height: 17px;
+        text-align: center;
+    }
+
+    .line9 {
+        font-size: 25px;
+        line-height: 37px;
+    }
+
+    .line10 {
+        font-size: 11px;
+        line-height: 18px;
+        margin: 0;
+        width: 285px;
+    }
+
+
+    /* style how it works  */
+
+    .line12 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .howitworks-info {
+        gap: 1rem;
+    }
+
+    .line13 {
+        width: 285px;
+        line-height: 18px;
+        font-size: 11px;
+        margin: 0;
+    }
+
+    .howitworks-img1 {
+        width: 285px;
+        height: 212px;
+    }
+
+
+    /* style our work */
+
+    .line16 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .line17 {
+        font-size: 11px;
+        line-height: 16px;
+        width: 285px;
+    }
+
+    .ourwork-img {
+        width: 260px;
+        height: 211px;
+    }
+
+    .line18 {
+        font-size: 26px;
+        line-height: 30.8px;
+    }
+
+    .line19 {
+        font-size: 12px;
+        margin: 0;
+        line-height: 16.6px;
+    }
+
+    .ourwork-btn {
+        width: 132px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 13.4px;
+    }
+
+
+    /* style start your journey with us now */
+
+    .startyourjourney-bg {
+        height: 260px;
+        background-size: 257px 258px;
+    }
+
+    .line20 {
+        font-size: 19px;
+        width: 285px;
+        line-height: normal;
+    }
+
+    .line21 {
+        font-size: 11px;
+        line-height: 18px;
+        width: 285px;
+        margin: 0;
+    }
+
+
+    /* style meet our team */
+
+    .ourteam {
+        gap: 2rem;
+    }
+
+    .ourteam-imgs {
+     grid-template-columns: 120px 120px;
+        gap: 18px 25px;
+    }
+
+    .ourteam-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .line22 {
+        font-size: 29px;
+        line-height: 28px;
+    }
+
+    .line23 {
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .line24 {
+        font-size: 11px;
+        line-height: 15px;
+        width: 285px;
+    }
+
+    .ourteam-btn {
+        font-size: 14px;
+        width: 124px;
+        height: 40px;
+    }
+
+
+    /* style about us */
+
+    .aboutus {
+        width: 285px;
+    }
+
+    .line25 {
+        font-size: 18px;
+        line-height: 29px;
+    }
+
+    .line26 {
+margin: 0;
+        line-height: 21px;
+    }
+
+
+    .aboutus-img {
+        width: 53px;
+        height: 53px;
+    }
+
+    .line27 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.8px;
+    }
+
+    .line28 {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 13px;
+    }
+
+    .line29 {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .carousal1 {
+        gap: 11px;
+        padding: 10px;
+        width: 251px;
+        border-radius: 23px;
+        height: 176px;
+    }
+
+    .owl-item {
+        width: 256px !important;
+    }
+
+    .owl-nav .owl-next {
+        font-size: 15px !important;
+        width: 27px;
+        height: 27px;
+        top: 32%;
+        right: -4%;
+    }
+
+    .owl-nav .owl-prev {
+        font-size: 15px !important;
+        width: 27px;
+        height: 27px;
+        top: 32%;
+        right: 90%;
+    }
+
+
+/* style start your journey with us now */
+
+.journey {
+    height: 183px;
+}
+
+.line30 {
+    font-size: 17px;
+    line-height: 22px;
+    width: 160px;
+}
+
+.journeybtn {
+    width: 100px;
+    height: 31px;
+    font-size: 14px;
+    line-height: 15.4px;
+}
+
+.journeyinfo-2 {
+    width: 107px;
+    height: 110px;
+}
+
+.journeyimg-1 {
+    width: 25px;
+    height: 49.55px;
+}
+
+.journeyimg-2 {
+    width: 60px;
+    height: 35px;
+}
+
+
+/* style how can we help you */
+
+.accordion {
+    width: 285px;
+}
+
+.helpyou-info {
+    gap: 13px;
+}
+
+.line31 {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.line32 {
+    font-size: 9px;
+    width: 285px;
+    line-height: normal;
+    text-align: center;
+}
+
+.hero-email {
+    width: 173px;
+    height: 44px;
+    font-size: 11px;
+}
+
+.helpyou-btn {
+    width: 107px;
+    height: 44px;
+    font-size: 13px;
+}
+
+
+/* style footer */
+
+.footer-bg {
+    height: 359px;
+}
+
+.footer-links {
+    gap: 1rem 17px;
+}
+
+
+/* style footer 2 */
+
+.footer-2bg {
+    height: 35px;
+}
+
+.line35 {
+    font-size: 6px;
+    line-height: 17px;
+}
+
+
+
+
+
+
+
+
+
+
 }
