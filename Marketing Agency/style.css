@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 
@@ -308,7 +308,7 @@ body {
 
 /* style company logo */
 
-.company-name-1 {
+/* .company-name-1 {
     display: flex;
     column-gap: 170px;
 }
@@ -316,6 +316,16 @@ body {
 .company-name-2 {
     display: flex;
     column-gap: 155px;
+} */
+
+.company-name-1 {
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content max-content;
+    grid-template-rows: auto auto;
+    column-gap: 141px;
+    row-gap: 6rem;
+    justify-items: center;
+    justify-content: center;
 }
 
 .spotify {
@@ -1062,7 +1072,7 @@ body {
     margin: 0;
 }
 
-@media screen and (max-width:1399px) {
+@media screen and (max-width:1400px) {
 
     /* style navbar  */
 
@@ -1166,12 +1176,12 @@ body {
     /* style companies we work with */
 
     .company-name-1 {
-        column-gap: 125px;
+        column-gap: 96px;
     }
 
-    .company-name-2 {
+    /* .company-name-2 {
         column-gap: 109px;
-    }
+    } */
 
     /* style how it works */
 
@@ -1222,7 +1232,7 @@ body {
     }
 }
 
-@media screen and (max-width:1199px) {
+@media screen and (max-width:1200px) {
 
     body {
         gap: 5rem;
@@ -1357,7 +1367,7 @@ body {
     /* style companies we work with */
 
     .company-name-1 {
-        column-gap: 92px;
+        column-gap: 63px;
     }
 
     .spotify {
@@ -1756,6 +1766,7 @@ body {
 
     .nav-link {
         font-size: 17px;
+        text-align: center;
     }
 
     .line2 {
@@ -1902,7 +1913,7 @@ body {
     /* style company logo */
 
     .company-name-1 {
-        column-gap: 54px;
+        column-gap: 26px;
     }
 
     .spotify {
@@ -1925,9 +1936,9 @@ body {
         width: 97px;
     }
 
-    .company-name-2 {
+    /* .company-name-2 {
         column-gap: 37px;
-    }
+    } */
 
     .evernote {
         width: 134px;
@@ -2309,8 +2320,13 @@ body {
 
     /* style companies we work with */
 
+    .workwith {
+        gap: 4rem;
+    }
+
     .company-name-1 {
-        column-gap: 49px;
+        column-gap: 28px;
+        row-gap: 4rem;
     }
 
     .spotify {
@@ -2333,9 +2349,9 @@ body {
         width: 67px;
     }
 
-    .company-name-2 {
+    /* .company-name-2 {
         column-gap: 34px;
-    }
+    } */
 
     .evernote {
         width: 94px;
@@ -2674,7 +2690,17 @@ body {
     /* style navbar */
 
     .navbar {
-        gap: 17rem;
+        gap: 15rem;
+    }
+
+    .line2 {
+        width: 134px;
+        height: 53px;
+        font-size: 16px;
+    }
+
+    .nav-link {
+        font-size: 15px;
     }
 
     /* style hero-section */
@@ -2807,7 +2833,11 @@ body {
         line-height: 25px;
     }
 
-
+    .company-name-1 {
+        column-gap: 25px;
+        row-gap: 2rem;
+        grid-template-columns: max-content max-content max-content max-content;
+    }
 
 
     /* style our commitment */
@@ -3118,7 +3148,7 @@ body {
 }
 
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:441px) {
 
     body {
         gap: 3rem;
@@ -3263,11 +3293,20 @@ body {
         line-height: 22px;
     }
 
-    .work-section {
-        height: 422px;
+    /* .work-section {
+        height: 425px;
+    } */
+
+    .company-name-1 {
+        column-gap: 5rem;
+        row-gap: 2rem;
+        grid-template-columns: max-content max-content;
+        align-items: center;
     }
 
-
+    .work-section {
+        height: 584px;
+    }
 
     /* style our commitment */
 
@@ -3582,7 +3621,7 @@ body {
 }
 
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
 
     /* style navbar */
 
@@ -3590,6 +3629,9 @@ body {
         gap: 8rem;
     }
 
+    img, svg {
+        height: 29px;
+    }
 
     /* style hero section */
 
@@ -3718,8 +3760,7 @@ body {
         line-height: 16px;
     }
 
-
-
+ 
 
 
     /* style commitement */
