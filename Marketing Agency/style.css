@@ -2164,7 +2164,13 @@ body {
         gap: 2rem;
     }
 
+    .footer-logo {
+        justify-content: center;
+    }
+
     .footer-info1 {
+        justify-content: center;
+        align-items: center;
         gap: 17px;
     }
 
@@ -3024,13 +3030,21 @@ body {
     /* style satrt your journey */
 
     .journey {
-        width: auto;
+        width: 400px;
+        height: 405px;
+        flex-direction: column;
+    }
+
+    .journeyinfo {
+        gap: 1rem;
+        align-items: center;
     }
 
     .line30 {
         font-size: 26px;
         line-height: 36px;
         width: 245px;
+        text-align: center;
     }
 
     .journeybtn {
@@ -3496,15 +3510,15 @@ body {
         font-size: 16px !important;
         width: 35px;
         height: 35px;
-        top: 35%;
-        right: 88%;
+        top: -35%;
+        right: 10%;
     }
 
     .owl-nav .owl-next {
         font-size: 16px !important;
         width: 35px;
         height: 35px;
-        top: 35%;
+        top: -35%;
         right: -2%;
     }
 
@@ -3531,7 +3545,8 @@ body {
 
     .journey {
         gap: 1rem;
-        height: 220px;
+        height: 347px;
+        width: 320px;
     }
 
 
@@ -3629,7 +3644,8 @@ body {
         gap: 8rem;
     }
 
-    img, svg {
+    img,
+    svg {
         height: 29px;
     }
 
@@ -3760,7 +3776,7 @@ body {
         line-height: 16px;
     }
 
- 
+
 
 
     /* style commitement */
@@ -3884,7 +3900,7 @@ body {
     }
 
     .ourteam-imgs {
-     grid-template-columns: 120px 120px;
+        grid-template-columns: 120px 120px;
         gap: 18px 25px;
     }
 
@@ -3928,7 +3944,8 @@ body {
     }
 
     .line26 {
-margin: 0;
+        margin: 0;
+        font-size: 9px;
         line-height: 21px;
     }
 
@@ -3969,113 +3986,115 @@ margin: 0;
     }
 
     .owl-nav .owl-next {
-        font-size: 15px !important;
-        width: 27px;
-        height: 27px;
-        top: 32%;
-        right: -4%;
+        font-size: 13px !important;
+        width: 20px;
+        height: 20px;
+        top: -31%;
+        right: -2%;
     }
 
     .owl-nav .owl-prev {
-        font-size: 15px !important;
-        width: 27px;
-        height: 27px;
-        top: 32%;
-        right: 90%;
+        font-size: 13px !important;
+        width: 20px;
+        height: 20px;
+        top: -31%;
+        right: 10%;
     }
 
 
-/* style start your journey with us now */
+    /* style start your journey with us now */
 
-.journey {
-    height: 183px;
-}
+    .journey {
+        height: 260px;
+        width: 260px;
+        border-radius: 35px;
+    }
 
-.line30 {
-    font-size: 17px;
-    line-height: 22px;
-    width: 160px;
-}
+    .line30 {
+        font-size: 17px;
+        line-height: 22px;
+        width: 160px;
+    }
 
-.journeybtn {
-    width: 100px;
-    height: 31px;
-    font-size: 14px;
-    line-height: 15.4px;
-}
+    .journeybtn {
+        width: 100px;
+        height: 31px;
+        font-size: 14px;
+        line-height: 15.4px;
+    }
 
-.journeyinfo-2 {
-    width: 107px;
-    height: 110px;
-}
+    .journeyinfo-2 {
+        width: 107px;
+        height: 110px;
+    }
 
-.journeyimg-1 {
-    width: 25px;
-    height: 49.55px;
-}
+    .journeyimg-1 {
+        width: 25px;
+        height: 49.55px;
+    }
 
-.journeyimg-2 {
-    width: 60px;
-    height: 35px;
-}
-
-
-/* style how can we help you */
-
-.accordion {
-    width: 285px;
-}
-
-.helpyou-info {
-    gap: 13px;
-}
-
-.line31 {
-    font-size: 22px;
-    line-height: 30px;
-}
-
-.line32 {
-    font-size: 9px;
-    width: 285px;
-    line-height: normal;
-    text-align: center;
-}
-
-.hero-email {
-    width: 173px;
-    height: 44px;
-    font-size: 11px;
-}
-
-.helpyou-btn {
-    width: 107px;
-    height: 44px;
-    font-size: 13px;
-}
+    .journeyimg-2 {
+        width: 60px;
+        height: 35px;
+    }
 
 
-/* style footer */
+    /* style how can we help you */
 
-.footer-bg {
-    height: 359px;
-}
+    .accordion {
+        width: 285px;
+    }
 
-.footer-links {
-    gap: 1rem 17px;
-}
+    .helpyou-info {
+        gap: 13px;
+    }
+
+    .line31 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .line32 {
+        font-size: 9px;
+        width: 285px;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .hero-email {
+        width: 173px;
+        height: 44px;
+        font-size: 11px;
+    }
+
+    .helpyou-btn {
+        width: 107px;
+        height: 44px;
+        font-size: 13px;
+    }
 
 
-/* style footer 2 */
+    /* style footer */
 
-.footer-2bg {
-    height: 35px;
-}
+    .footer-bg {
+        height: 359px;
+    }
 
-.line35 {
-    font-size: 6px;
-    line-height: 17px;
-}
+    .footer-links {
+        gap: 1rem 17px;
+    }
+
+
+    /* style footer 2 */
+
+    .footer-2bg {
+        height: 35px;
+    }
+
+    .line35 {
+        font-size: 6px;
+        line-height: 17px;
+    }
 
 
 
