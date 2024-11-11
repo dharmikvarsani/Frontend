@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Conctructors</title>
+</head>
+
+<body>
+
+    <script>
+
+        {
+            function Info(first, last, age) {
+                this.firstname = first;
+                this.lastname = last;
+                this.age = age;
+            }
+
+            let myinfo = new Info("Rahul", "Kumar", '16')
+
+            console.log(myinfo.firstname)
+            console.log(myinfo.age)
+        }
+
+        {
+            function Student(first, last, age, marks) {
+                this.firstname = first;
+                this.lastname = last;
+                this.age = age;
+                this.marks = marks;
+                this.schoolname = "xyz"
+            }
+
+            Student.prototype.nationality = "Indian"
+
+
+            let studentinfo = new Student("Jay", "Kumar", 13, 76)
+            studentinfo.age = 17;
+            console.log(studentinfo.marks)
+            console.log(studentinfo.firstname + " " + studentinfo.lastname)
+            console.log(studentinfo.schoolname)
+            console.log(studentinfo.age)
+            console.log(studentinfo.nationality)
+
+
+            studentinfo.lastname = function (name) {
+                this.lastname = name;
+            }
+
+            studentinfo.lastname = ("Patel")
+            console.log(studentinfo.lastname)
+        }
+
+
+        {
+            function Person(first, last, age) {
+                this.firstname = first;
+                this.lastname = last;
+                this.age = age;
+                this.nationality = 'Indian'
+            }
+
+            Person.prototype.eye = 'Brown';
+
+            let Person1 = new Person('Dilip', 'Jain', 48)
+            let Person2 = new Person('Rekha', 'Kumari', 40)
+            let Person3 = new Person('Virat', 'Kohali', 38)
+
+            console.log(Person1.firstname)
+            console.log(Person3.age)
+            console.log(Person2.nationality)
+            console.log(Person3.eye)
+
+            Person1.changename = function (name) {
+                this.firstname = name
+            }
+            Person1.changename = ('Raj')
+            console.log(Person1.changename)
+        }
+
+
+        {
+            let a = 2;
+
+            while (a < 10) {
+                console.log(a);
+                a++;
+            }
+
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

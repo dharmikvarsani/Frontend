@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+
+<body>
+    <script>
+        {
+            let a = [21, 53, 86, 42, 23]
+
+            let b = a.reduce((x, y) => x + y)
+            console.log(b)
+        }
+
+
+        {
+            let a = [12, 46, 53, 83, 26, 35]
+
+            let b = a.reduce((x, y) => x - y)
+            console.log(b)
+        }
+
+
+
+        {
+            let a = [1, 2, 3, 4, 5, 6]
+
+            let b = a.reduce((x, y) => {
+                return x > y ? x : y;
+            })
+            console.log(b)
+        }
+
+        {
+            let a = [10, 25, 30, 2, 12, , 42]
+
+            let b = a.reduce((x, y) => {
+                return x < y ? x : y;
+            })
+            console.log(b)
+        }
+
+
+        {
+            let a = [1, 2, 3, 4, 5]
+
+            let b = a.reduce((x, y) => {
+                return x * y
+            })
+            console.log(b)
+        }
+
+
+        // {
+        //     let fruits = ['apple', 'kiwi', 'banana', 'jackfruit']
+
+        //     let find = fruits.reduce((x, y) =>
+        //         x + y.includes("a"), 0);
+
+        //     console.log(find)
+        // }
+
+
+
+        // {
+        //     let a = ['a', 'c', 'e', 'f', 'i', 'm']
+        //     let b = a.reduce((x, y) => {
+        //         return x + 'a'.includes(y)
+        //     })
+        //     console.log(b)
+        // }
+
+
+        {
+            let a = ['a', 'c', 's ', 'a', 's', 'c', 'b']
+
+            let b = a.reduce((x, y) => {
+                x[y] = (x[y] || 0) + 1
+                return x
+            }, {})
+            console.log(b)
+        }
+
+
+        {
+            let fruits = ['apple', 'banana', 'kiwi', 'apple', 'apple', 'banana', 'kiwi', 'banana']
+
+            let fruit = fruits.reduce((x, y) => {
+                x[y] = (x[y] || 0) + 1
+                return x
+            }, {})
+
+            console.log(fruit)
+        }
+
+        {
+            let x = [12, 23, 53, 76, 16, 86, 14, 34]
+
+            let y = x.reduce((x, y) => {
+                return x > y ? x : y
+            })
+
+            console.log(y)
+        }
+
+        {
+            let names = ['raj', 'rakesh', 'jay', 'raj', 'rajesh', 'viraj', 'jay', 'viraj']
+
+            let find = names.reduce((x, y) => {
+                x[y] = (x[y] || 0) + 1
+                return x
+            }, {})
+            console.log(find)
+        }
+
+
+        {
+            let number = [25, 43, 25, 76, 56, 43, 59, 76, 25, 43]
+
+            let find = number.reduce((x, y) => {
+                x[y] = (x[y] || 0) + 1
+                return x
+            }, {})
+            console.log(find)
+        }
+
+        {
+            let Number = [1, 5, 3, 4, 8, 6]
+
+            let bignum = Number.reduce((x, y) => {
+                return x > y ? x : y;
+            })
+            console.log(bignum)
+        }
+
+        {
+            let name = ['a', 'a', 'c', 'b', 's', 'a', 's', 'c', 'b', 'b']
+
+            let find = name.reduce((a, b) => {
+                a[b] = (a[b] || 0) + 1
+                return a
+            }, {})
+            console.log(find)
+        }
+
+        // if else , continue ,break
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map,ForEach,Filter</title>
+</head>
+
+<body>
+    <script>
+
+        // foreach
+
+        {
+            let number = [21, 53, 46, 75, 13, 17]
+
+            number.forEach((num) => {
+                console.log(num / 2 * 3)
+            })
+        }
+
+
+        {
+            let name = ["Raj", "Mihir", "Kartik", "Jay", "Gautam"]
+
+            name.forEach((NAME) => {
+                console.log(NAME + " " + "Is My Friend.")
+            })
+        }
+
+
+        {
+            let students = ["Raju", "Jay", "Keval", "Kartik"]
+
+            students.forEach((studentname, index) => {
+                console.log(index + "-" + studentname)
+            })
+
+        }
+
+        {
+
+            let number = [15, 86, 26, 43, 57, 62]
+            number.forEach(num);
+
+            function num(x, index) {
+                console.log(index + "-" + x + " " + "Is Number")
+            }
+
+        }
+
+
+        {
+            let num = [25, 46, 26, 53, 76]
+            num.forEach(function (number) {
+                console.log(number + " " + "Is A Number.")
+            })
+
+        }
+
+        {
+            let color = ["red", "yellow", "green", "black"]
+
+            color.forEach((colorname) => {
+                console.log(colorname + " " + "Is A Color")
+            })
+
+        }
+
+        // Map Method
+
+        {
+            let number = [25, 46, 12, 3, 45]
+
+            let num = number.map(function (x) {
+                console.log(x + 10)
+            })
+        }
+
+
+        {
+            let color = ["Red", "Yellow", "Pink", "Blue", "Purple"]
+
+            let colorsname = color.map((name) => {
+                console.log(name + " " + "Is Color.")
+            })
+        }
+
+
+        {
+            let obj = [
+                { name: "Rakesh", age: 34 },
+                { name: "yash", age: 16 },
+                { name: "jay", age: 25 }
+            ]
+
+            let objects = obj.map((x) => {
+                console.log("My Name is" + " " + x.name + " And My Age Is" + " " + x.age)
+            })
+        }
+
+        {
+            let numbers = [12, 46, 85, 76, 16]
+            let num = numbers.map(numb)
+            console.log(num)
+
+            function numb(a) {
+                return a * 2
+            }
+        }
+
+
+        {
+            let sports = ["Cricket", "football", "Rugby", "Vollyball"]
+
+            let sportname = sports.map(name)
+            console.log(sportname)
+
+            function name(a) {
+                return "This Is Sports Name" + " " + a
+            }
+        }
+
+        {
+            let numbers = [15, 76, 53, 46, 26, 38]
+
+            let numb = numbers.map(a => a * 2)
+            console.log(numb)
+
+        }
+
+        //filter Method
+
+        {
+            let number = [25, 3, 76, 13, 19, 52, 17]
+
+            let num = number.filter(function (x) {
+                return x <= 18
+            })
+
+            console.log(num)
+        }
+
+        {
+            let color = ["Green", "Orange", "Purple", "Lime", "Black"]
+
+            let colorsname = color.filter((name) => {
+                return name === "Green"
+            })
+
+            console.log(colorsname)
+        }
+
+        {
+            let number = [25, 46, 53, 18, 6, 76, 15, 10]
+
+            let age = number.filter((a) => {
+                return a <= 18
+            })
+
+            console.log(age)
+        }
+
+
+        {
+            let name = ["Raj", "Dinesh", "Gopal", "Jay"]
+
+            let find = name.filter(a => a.includes("a") || a.includes("D"))
+            console.log(find)
+        }
+
+
+        {
+            let number = [42, 12, 76, 53, 62, 94, 25]
+
+            let find = number.filter((z) => {
+                return z % 2 === 0
+            })
+            console.log(find)
+        }
+
+
+
+        {
+            let name = ["Dilip", "Jayesh", "Raghu", "Raghav", "jaggu"]
+
+            let Names = name.filter(a => a.includes("a"))
+            console.log(Names)
+        }
+
+        {
+            let numbers = [25, 12, 46, 76, 16, 86, 6, 20]
+
+            let numb = numbers.filter(a => a >= 18)
+            console.log(numb)
+        }
+     
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+
+<body>
+    <script>
+        {
+            const ages = [25, 56, 10, 25, 16]
+            console.log(ages)
+
+            const a = ages.filter(adult);
+            console.log(a)
+
+            function adult(X) {
+                return X >= 18;
+            }
+
+        }
+
+
+
+        {
+            const age = [42, 12, 63, 18, 19, 16, 63]
+            console.log(age)
+
+            const a = age.filter(adult)
+            console.log(a)
+
+            function adult(x) {
+                return x <= 18
+            }
+        }
+
+        {
+            const num = [45, 18, 26, 17, 52, 34]
+            console.log(num)
+
+            const number = num.filter(adult)
+            console.log(number)
+
+            function adult(x) {
+                return x >= 18
+            }
+        }
+
+
+        {
+            const a = [25, 18, 9, 53, 76, 45, 16, 23, 19]
+
+            const b = a.filter(adult)
+
+            function adult(x) {
+                return x >= 18;
+            }
+
+            console.log(b)
+        }
+    </script>
+</body>
+
+</html>

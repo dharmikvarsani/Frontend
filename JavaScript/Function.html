@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+
+    <script>
+        {
+            function xyz() {
+                console.log("Hiii")
+            }
+        }
+
+        xyz();
+        xyz();
+
+
+        {
+            function abc(a, b) {
+                console.log(a + " " + b)
+            }
+        }
+
+        abc(25, 42)
+        abc("Hii", "Heloo")
+
+
+
+        {
+            function sum(a, b) {
+                console.log(a * b);
+            }
+        }
+
+        sum(25, 3);
+        sum(12.24, 2.8)
+
+
+        {
+            function Name(fname = "Xyz", lname = "abc") {
+                console.log("Heloo " + fname + " " + lname);
+            }
+        }
+
+        Name("Jatin", "Kumar");
+        Name();
+        Name("Rahul", "Kumar")
+
+        {
+            function plus(a, b, c) {
+                return a + b * c
+            }
+
+        }
+
+        console.log(plus(2, 2, 2))
+
+
+        {
+            function fn(fname = "XYZ", lname = "XYZ") {
+                let f = fname + " " + lname
+                return f
+            }
+        }
+
+        let x = fn("Rakesh", "Kumar")
+        console.log(x)
+    </script>
+
+</body>
+
+</html>

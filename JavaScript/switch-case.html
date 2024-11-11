@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+
+<body>
+    <script>
+
+        {
+            let day = 7;
+
+            switch (day) {
+                case 1: console.log("Today Is Monday");
+                    break;
+                case 2: console.log("Today Is Tuesday");
+                    break;
+                case 3: console.log("Today Is Wednesday");
+                    break;
+                case 4: console.log("Today Is Thursday");
+                    break;
+                case 5: console.log("Today Is Friday");
+                    break;
+                case 6: console.log("Today Is Saturday");
+                    break;
+                case 7: console.log("Today Is Sunday");
+                    break;
+                default: console.log("Enter A Valid Day")
+            }
+        }
+
+        {
+            let fruits = "apple"
+
+            switch (fruits) {
+                case "apple":
+                case "kiwi":
+                case "Pinaple":
+                    console.log("Price Is 100 Rs. Per Kilo.");
+                    break;
+                case "banana": console.log("Price IS 30 Rs. Per Kilo")
+                    break;
+                case "watermelon": console.log("Price Is 50 RS. Per Kilo")
+                    break;
+                default:
+                    console.log("Sorry , We Don`t Have That Fruit Right Now.")
+            }
+
+        }
+
+
+        //continue
+
+
+        {
+            for (let a = 1; a <= 10; a++) {
+                if (a == 3) {
+                    console.log(a)
+                    continue;
+                }
+                console.log(a)
+            }
+        }
+
+
+        {
+            for (i = 1; i <= 5; i++) {
+                if (i === 15) {
+                    console.log(i)
+                    continue;
+                }
+                console.log(i)
+            }
+        }
+
+
+        {
+            for (i = 1; i <= 10; i++) {
+                if (i === 4) {
+                    break;
+                }
+                console.log(i)
+            }
+
+        }
+
+        
+
+
+
+    </script>
+</body>
+
+</html>

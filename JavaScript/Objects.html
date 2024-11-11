@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        // objects
+        {
+            const student = {
+                Fullname: "XYZ",
+                age: 24,
+                ispass: true,
+                marks: 91,
+            }
+
+            student["age"] = student["age"] + 2;
+            student["Fullname"] = "ABC";
+            console.log(student)
+            console.log(student.marks)
+        }
+
+        {
+            const student = {};
+
+            student.name = "abc";
+            student.age = 23;
+            student.marks = 85;
+
+            console.log(student.name);
+            console.log(student.age);
+        }
+
+
+        {
+            const fruit = {
+                name: "Orange",
+                color: "Orange",
+                test: "sour",
+                intro: function () {
+                    return "The Test Of" + " " + this.name + " " + "Is" + " " + this.test
+                }
+            }
+
+            fruit.isgood = "Yes";
+            delete fruit.isgood;
+            console.log(fruit)
+            console.log(fruit.name)
+            console.log(fruit.intro())
+        }
+
+
+        {
+            const student = {
+                Fname: "Rahul",
+                Lname: "Kumar",
+                Age: 16,
+                marks: {
+                    English: 80, Maths: 75, Gujarati: 86, Hindi: 92, Snaskrit: 96, Science: 74, SocialScience: 82
+                },
+                ispass: "Yes",
+                FullName: function () {
+                    return this.Fname.toUpperCase() + " " + this.Lname.toUpperCase()
+                }
+            }
+            delete student.marks.English;
+            student.Age = 25;
+
+
+            console.log(student)
+            console.log(student.marks.Gujarati)
+            console.log(student.marks.Maths)
+            console.log(student.FullName())
+        }
+
+
+        {
+            const student = {
+                Fname: "Rohit",
+                Lname: "Kumar",
+                Age: 18,
+                Marks: { Gujarati: 65, English: 46, Hindi: 72, Snaskrit: 40, Science: 51 },
+                ispass: "Yes",
+                FullName : function () {
+                    return this.Fname + " " + this.Lname
+                }
+            }
+
+            let x = JSON.stringify(student)
+            console.log(x)
+
+            student.Age = 19
+            console.log(student)
+            console.log(student.FullName())
+            console.log(Object.values(student))
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
