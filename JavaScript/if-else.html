@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if/else</title>
+</head>
+
+<body>
+    <script>
+
+        {
+            let result;
+
+            function marks(a) {
+                if (a < 32) {
+                    result = "You Are Fail."
+                } else {
+                    result = "You Are pass"
+                }
+                return result;
+            }
+
+        }
+        console.log(marks(57))
+
+
+        {
+            let number;
+
+            function num(a) {
+                if (a > 0) {
+                    number = "Number Is Positive."
+                } else if (a == 0) {
+                    number = "Number Is Zero"
+                } else {
+                    number = "Number Is Negative"
+                }
+                return number
+            }
+            console.log(num(-12))
+        }
+
+        // odd or even
+        {
+            let number = 11;
+
+            if (number % 2 === 0) {
+                console.log("This Number Is Even.")
+            } else {
+                console.log("This Number Is Odd.")
+            }
+
+        }
+
+
+        {
+            let marks = 86;
+
+            if (marks >= 90) {
+                console.log("Your Grade Is A.")
+            } else if (marks >= 80) {
+                console.log("Your Grade Is B ")
+            } else if (marks >= 70) {
+                console.log("Your Grade Is C")
+            } else if (marks >= 60) {
+                console.log("Your Grade Is D")
+            } else if (marks >= 50) {
+                console.log("Your Grade Is E")
+            } else {
+                console.log("YOur Grde Is F")
+            }
+        }
+
+        {
+            let age = 18;
+            let voterid = false;
+
+            if (age >= 18) {
+                if (voterid) {
+                    console.log("You Can Vote")
+                } else {
+                    console.log("You Need Voter Id To Vote.")
+                }
+            } else {
+                console.log("You Are Too Young To Vote.")
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

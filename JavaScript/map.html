@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+
+<body>
+
+    <script>
+
+        {
+            const number = [25, 45, 36, 76, 54]
+            const b = number.map(num)
+
+            function num(a) {
+                return a * 2
+            }
+
+            console.log(b)
+        }
+
+
+        {
+            const a = [25, 65, 76, 15, 43]
+            const b = a.map(num)
+
+            function num(x) {
+                return x + 10
+            }
+
+            console.log(b)
+        }
+
+
+        {
+
+            const names = [
+                { fname: "Rahul", lname: "Singh" },
+                { fname: "Rajesh", lname: "Kumar" },
+                { fname: "Jay", lname: "Kumar" },
+            ]
+
+            let fullName = names.map(x);
+
+            function x(a) {
+                return "Hello " + a.fname + " " + a.lname
+            }
+
+            console.log(fullName)
+        }
+
+
+        {
+            const names = [
+                { name: "Jatin" },
+                { name: "Vishal" },
+                { name: "Raj" }
+            ]
+
+            const name = names.map(x)
+            console.log(name)
+
+            function x(Fname) {
+                return "Hello " + Fname.name
+            }
+        }
+
+        {
+            const num = [25, 43, 26, 85, 16]
+            const a = num.map(sum)
+
+            function sum(x) {
+                return x / 2
+            }
+            console.log(a)
+        }
+
+
+        {
+
+            const a = ["Jaydeep", "Dharmik", "Vaishali", "Hardik", "Dipali"]
+
+            let b = a.filter(name=>name.includes("D") || name.includes("V") || name.includes("d")) 
+
+            console.log(b)
+    
+        }
+
+
+    </script>
+
+</body>
+
+</html>

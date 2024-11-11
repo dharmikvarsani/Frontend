@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Includes</title>
+</head>
+
+<body>
+    <script>
+
+        {
+            let a = ["Sanjay", "Apple", "Orange", "Rahul", "Kamlesh"]
+
+            console.log(a.includes("Sanjay"))
+            console.log(a.includes("Apple"))
+            console.log(a.includes("Neha"))
+        }
+
+        {
+            let b = [1, 42, 23, 12, 23, 42, 76]
+
+            console.log(b.includes(42))
+            console.log(b.includes(42, 3))
+            console.log(b.includes(1, 3))
+        }
+
+        {
+            let c = "Hii My Name Is Rohit And I Am Cricketer"
+
+            console.log(c.includes("Is"))
+            console.log(c.includes("My", 5))
+        }
+
+
+        {
+            let a = { 0: 1, 1: 2, 2: 3, 3: 4, length: 4 }
+
+            console.log(Array.prototype.includes.call(a ,2))
+        }
+
+    </script>
+</body>
+
+</html>

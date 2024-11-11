@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexOf & LastIndexOf</title>
+</head>
+
+<body>
+    <script>
+
+        {  
+            let name = ['Dilip', 'Sanjay', 'Rahul', 'Jay', 'Karan', 'Snajay', 'Ramesh', 'Jay']
+
+
+            //indexof
+
+            let a = name.indexOf('Jay')
+            console.log(a)
+
+            let b = name.indexOf('Jay', 4)
+            console.log(b)
+
+            let c = name.indexOf('Rakesh')
+            console.log(c)
+
+
+            //lastindexof
+
+
+            let d = name.lastIndexOf('Jay')
+            console.log(d)
+
+            let e = name.lastIndexOf("Sanjay", 5)
+            console.log(e)
+        }
+
+
+        {
+            let number = { 0: "a", 1: "b", 2: "c", 3: "d"  , length :4}
+
+            console.log(Array.prototype.indexOf.call(number, "c"))
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
