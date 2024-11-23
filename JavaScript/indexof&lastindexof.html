@@ -10,7 +10,7 @@
 <body>
     <script>
 
-        {  
+        {
             let name = ['Dilip', 'Sanjay', 'Rahul', 'Jay', 'Karan', 'Snajay', 'Ramesh', 'Jay']
 
 
@@ -38,12 +38,37 @@
 
 
         {
-            let number = { 0: "a", 1: "b", 2: "c", 3: "d"  , length :4}
+            let number = { 0: "a", 1: "b", 2: "c", 3: "d", length: 4 }
 
             console.log(Array.prototype.indexOf.call(number, "c"))
         }
 
 
+        {
+            let a = ["cow", "dog", "cat", "bull", "dog"]
+
+            let b = a.indexOf("dog")
+
+
+
+            if (b !== -1) {
+                a.splice(b, 1)
+            }
+            console.log(b)
+            console.log(a)
+        }
+
+
+        {
+            let a = ["book", "paper", "pencil", "pen"]
+
+            if (a.indexOf("pen") !== -1) {
+                console.log("Item Exists")
+            } else {
+                console.log("Item Do Not Exists")
+            }
+
+        }
 
 
 

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Function</title>
+</head>
+
+<body>
+
+    <script>
+
+        // ceil
+
+        {
+
+            console.log(Math.ceil(1.22))
+            console.log(Math.ceil(1.86))
+            console.log(Math.ceil(-2.46))
+            console.log(Math.ceil(-2.99))
+            console.log(Math.ceil(Infinity))
+            console.log(Math.ceil(-Infinity))
+            console.log(Math.ceil(45))
+            console.log(Math.ceil(-29))
+        }
+
+        {
+            let price = 99.98;
+
+            let roundup = Math.ceil(price)
+            console.log(roundup)
+        }
+
+
+        {
+            let page = 5;
+            let itemperpage = 2;
+
+            let roundup = Math.ceil(page / itemperpage)
+            console.log(roundup)
+        }
+
+
+        //Floor
+
+
+        {
+            console.log(Math.floor(25.44))
+            console.log(Math.floor(-20.02))
+            console.log(Math.floor(2))
+            console.log(Math.floor(-23))
+            console.log(Math.floor(0))
+            console.log(Math.floor(-0))
+        }
+
+
+        {
+            let price = 25.99;
+            let discount = 5;
+            let total = Math.floor(price / discount)
+            console.log(total)
+        }
+
+        {
+            let a = 12.22;
+            let b = Math.floor(a * 10) / 10
+            console.log(b)
+        }
+
+
+        // round
+
+        {
+            console.log(Math.round(21.52))
+            console.log(Math.round(2.50))
+            console.log(Math.round(6.46))
+            console.log(Math.round(-52.46))
+            console.log(Math.round(-76.53))
+            console.log(Math.round(-0.23))
+            console.log(Math.round(0.53))
+        }
+
+
+        //trunc
+
+        {
+            console.log(Math.trunc(12.45))
+            console.log(Math.trunc(45.99))
+            console.log(Math.trunc(-1.23))
+            console.log(Math.trunc(-56.86))
+            console.log(Math.trunc(-0.56))
+            console.log(Math.trunc(0.99))
+        }
+
+
+
+        //max
+
+        {
+            console.log(Math.max(25, 46, 0, -2260, 20, 6, 18))
+            console.log(Math.max(-10, -46, -2, -76))
+
+            let a = [25, 46, 83, 10, 23, 56, 76]
+            let b = Math.max(...a)
+            console.log(b)
+        }
+
+        // min 
+
+        {
+            console.log(Math.min(20, 46, 86, 43, 52, 67, 10, 2))
+            console.log(Math.min(-10, -46, -4, -20, -76, -93))
+
+            let a = [20, 46, -42, -20, 82, -12, -3]
+            let b = Math.min(...a)
+            console.log(b)
+        }
+
+
+        //sqrt
+
+        {
+            console.log(Math.sqrt(25))
+            console.log(Math.sqrt(-25))
+            console.log(Math.sqrt(5)) //mdn
+        }
+
+
+        //cbrt
+
+        {
+            console.log(Math.cbrt(125))
+            console.log(Math.cbrt(-1))
+            console.log(Math.cbrt(64))
+            console.log(Math.cbrt(343))
+        }
+
+
+
+        //pow
+
+        {
+            console.log(Math.pow(5, 2))
+            console.log(Math.pow(12, 3))
+            console.log(Math.pow(-2, 3))
+            console.log(Math.pow(NaN, 0))
+            console.log(Math.pow(NaN,))
+            console.log(Math.pow(Infinity, 1))
+            console.log(Math.pow(Infinity, -1))
+            console.log(Math.pow(-Infinity, -1))
+            console.log(Math.pow(0, -1.5))
+            console.log(Math.pow(-0, 1.5))
+        }
+
+
+        //random
+
+        {
+            console.log(Math.random())
+            console.log(Math.floor(Math.random() * 100))
+        }
+
+        //sign
+
+        {
+            console.log(Math.sign(-1))
+            console.log(Math.sign(1))
+            console.log(Math.sign(0))
+            console.log(Math.sign(-0))
+            console.log(Math.sign("Hii"))
+            console.log(Math.sign())
+        }
+
+        //abs
+
+        {
+            console.log(Math.abs(-1))
+            console.log(Math.abs(1))
+            console.log(Math.abs(1.5))
+
+            function abs(x, y) {
+                return x - y
+            }
+
+            console.log(abs(25, 56))
+            console.log(abs(46.46, 79.13))
+        }
+
+        //sin  ,cos
+
+        {
+            console.log(Math.sin(90 * Math.PI / 180))
+            console.log(Math.sin(45 * Math.PI / 180))
+            console.log(Math.cos(90 * Math.PI / 180))
+            console.log(Math.cos(360 * Math.PI / 180))
+        }
+
+
+       
+    </script>
+
+</body>
+
+</html>

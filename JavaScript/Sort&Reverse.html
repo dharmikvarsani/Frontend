@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sort & Reverse</title>
+</head>
+
+<body>
+    <script>
+        //sort
+
+        {
+            let name = ["Sanjay", "Rahul", "Preet", "Jay", "Anuj", "Ram"]
+            name.sort();
+            console.log(name)
+        }
+
+        {
+            let number = [40, 1, 350, 25, 2, 36, 3, 200, 76]
+
+            number.sort((a, b) => a - b)
+            console.log(number)
+        }
+
+        {
+            let fruit = [
+                { name: 'Apple', price: 80 },
+                { name: 'Watermelon', price: 50 },
+                { name: 'Kiwi', price: 120 },
+                { name: 'Pinaple', price: 65 },
+                { name: 'Banana', price: 35 }
+            ]
+
+            fruit.sort((a, b) => a.price - b.price)
+            console.log(fruit)
+        }
+
+
+        {
+            let a = ["a", "b", "c", "d", "e"]
+
+            a.sort((a, b) => b.localeCompare(a))
+            console.log(a)
+        }
+
+        {
+            let dates = [
+                new Date("24, 4, 2018"),
+                new Date("10, 11, 2019"),
+                new Date("2, 8, 2023"),
+                new Date("3, 11, 2024")
+            ]
+
+            dates.sort((a, b) => a - b)
+            console.log(dates)
+        }
+
+        {
+            let a = ['a', 'x', 'c', 'A', 'D', 'C', 'f ']
+
+            a.sort((a, b) => a.toLowerCase().localeCompare(b.toUpperCase()))
+            console.log(a)
+        }
+
+
+        //reverse
+
+        {
+            let a = [1, 2, 3, 4, 5, 6]
+
+            a.reverse()
+            console.log(a)
+        }
+
+        {
+            let b = ['a', 'v', 'c', 'b']
+
+            b.reverse();
+            console.log(b)
+        }
+
+        {
+            let name = [
+                { name: 'raj', age: 45 },
+                { name: 'kajal', age: 23 },
+                { name: 'jay', age: 32 }
+            ]
+
+            name.reverse()
+            console.log(name)
+        }
+
+        {
+            let a = [1, 2, 3, 4, 5, 6]
+            let b = a.reverse()
+            console.log(b)
+        }
+
+        {
+            let a = "hello"
+           let b = a.split().reverse()
+            console.log(b)
+        }
+
+
+    </script>
+</body>
+
+</html>

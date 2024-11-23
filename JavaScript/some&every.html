@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some & Every</title>
+</head>
+
+<body>
+
+    <script>
+
+        //some
+
+        {
+            let a = [12, 3, 16, 17, 18, 21, 15]
+
+            let b = a.some((find) => find >= 18)
+            console.log(b)
+        }
+
+        {
+            let a = { 0: "a", 1: "b", 3: "c", 4: "d", 5: "e", length: 6 }
+
+            let b = Array.prototype.some.call(a, (x) => typeof x === "string")
+            console.log(b)
+
+            let c = Array.prototype.some.call(a, (x) => typeof x === "number")
+            console.log(c)
+        }
+
+
+        {
+            let a = [25, null, 76, 13, undefined, 45]
+
+            let b = a.some((x) => x === null)
+            console.log(b)
+        }
+
+        {
+            let student = [
+                { name: "Rahul", marks: 45 },
+                { name: "Prakash", marks: 50 },
+                { name: "Utsav", marks: 53 }
+            ]
+
+            let check = student.some((pass) => pass.marks >= 50)
+            console.log(check)
+        }
+
+        {
+            let fruit = ["Mango", "Papaya", "Kiwi", "Apple", "Banana"]
+
+            let b = fruit.some((a) => a.includes("P"))
+            console.log(b)
+
+            let length = fruit.some((check) => check.length <= 4)
+            console.log(length)
+        }
+
+
+
+
+        //every  
+
+
+        {
+            let a = [21, 3, 10, 35, 13, 26, 17]
+
+            let b = a.every((check) => check < 40)
+
+            console.log(b)
+        }
+
+
+        {
+            let a = [1, 2, 3, 4, 5]
+            let b = [1, 2, 3, 4, 5]
+
+
+            let c = a.every((value) => b.includes(value))
+            console.log(c)
+        }
+
+        {
+            let fruit1 = ["Apple", "Banana", "kiwi", "Watermelon", "Orange"]
+            let fruit2 = ["Apple", "Banana", "kiwi", "Watermelon", "Orange"]
+            let fruit3 = ["Apple", "Banana", "Orange"]
+
+
+            let check = fruit1.every((value) => fruit2.includes(value))
+            console.log(check)
+
+            let find = fruit1.every((check) => fruit3.includes(check))
+            console.log(find)
+        }
+
+        {
+            let a = {
+                0: 'a',
+                1: 'b',
+                2: 'c',
+                3: 'd',
+                length: 4
+            }
+
+            let b = Array.prototype.every.call(a, (x) => typeof x === "number")
+            console.log(b)
+
+            let c = Array.prototype.every.call(a, (z) => typeof z === "string")
+            console.log(c)
+        }
+
+        {
+            let fruit = [
+                { name: 'Apple', Price: 100 },
+                { name: 'Banana', Price: 40 },
+                { name: 'Orange', Price: 60 }
+            ]
+
+            let check = fruit.every((find) => find.Price >= 40)
+            console.log(check)
+
+            let a = fruit.every((x) => x.Price > 100)
+            console.log(a)
+        }
+
+        
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+
+<body>
+    <script>
+
+        //object
+
+        {
+            let a = {
+                name: 'Gopal',
+                lastname: 'Kumar',
+                age: 32
+            }
+
+            let { name, age, city = 'jaipur', lastname: last } = a
+            console.log(name)
+            console.log(city)
+            console.log(last)
+        }
+        {
+            let a = "Dhansukh";
+            let b = "Savani";
+            let age = 45;
+
+
+            [a, b] = [b, a]
+            console.log(a)
+            console.log(b)
+        }
+
+        //string
+
+        {
+            let a = "Hello"
+
+            let [a1, a2, a3, a4, a5] = a
+            console.log(a1, a2, a3, a4, a5)
+        }
+
+        //array
+
+        {
+            let fruits = ["Apple", "Mango", "Watermelon", "Orange", "Kiwi"]
+
+            let [a1, a2, a3, a4, a5] = fruits
+            console.log(a2)
+            console.log(a5)
+
+            let [fruit1, , , fruit2] = fruits
+            console.log(fruit1, fruit2)
+
+        }
+
+        //rest 
+        {
+            let a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+            let [a1, a2, ...rest] = a
+            console.log(a1)
+            console.log(rest)
+        }
+
+        //map
+
+        {
+            let fruit = new Map([
+                ["Apple", 100],
+                ["Orange", 450],
+                ["Kiwi", 53],
+                ["Watermelon", 45]
+            ])
+
+            for (let [keys, value] of fruit) {
+                console.log(keys + " " + "Is " + value)
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

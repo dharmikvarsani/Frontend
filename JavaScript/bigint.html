@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigint</title>
+</head>
+<body>
+    <script>
+
+{
+    let a =123456789123456789n;
+    let b =123456789987654321n;
+    let c = a* b
+    console.log(c)
+}
+
+{
+    let a= 25n;
+    let b = Number(a) / 2
+   console.log(b)
+
+
+   console.log(Number.isInteger(10))
+   console.log(Number.isInteger(14.56))
+   console.log(Number.isSafeInteger(12345678912345678))
+   console.log(Number.isSafeInteger(12345654534))
+}
+
+    </script>
+
+</body>
+</html>

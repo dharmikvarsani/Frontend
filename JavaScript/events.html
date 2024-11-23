@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+    <script>
+        function capital() {
+            let name = document.getElementById("username");
+            name.value = name.value.toUpperCase();
+        }
+
+        function lowercase() {
+            let username = document.getElementById("focusname").style.backgroundColor = "Red"
+        }
+
+        function userselect() {
+            let select = document.getElementById("Select").style.color = "red"
+        }
+
+        function Submit() {
+            alert("You Submitted Sucessfully")
+            let sub = document.getElementById("submitbtn").alert("bkdjbsD")
+        }
+
+        function input() {
+            let a = document.getElementById("inputtext").style.display = "none"
+        }
+
+        function keydown() {
+            let a = document.getElementById("keydownbtn").style.color = "red"
+
+        }
+
+        function clickfn() {
+            let click = document.getElementById("click").style.fontSize = "20px"
+        }
+
+        function dblclick() {
+            let dbl = document.getElementById("doubleclick").style.color = "white"
+        }
+
+        {
+            function mousedown() {
+                let down = document.getElementById("mousedown").innerHTML = "Hello! :)"
+
+            }
+        }
+        {
+            function mouseup() {
+                let up = document.getElementById("mouseup").style.display = "none"
+            }
+        }
+        {
+            function mouseover() {
+                let over = document.getElementById("mouseover").style.fontSize = "30px"
+            }
+        }
+        {
+            function mousemove() {
+                let over = document.getElementById("mousemove").style.fontSize = "25px"
+            }
+        }
+    </script>
+
+
+    <h3>Blur</h3>
+    <input type="text" name="UserName" id="username" onblur="capital()">
+
+    <h3>Focus</h3>
+    <input type="text" name="UserName" id="focusname" onfocus="lowercase()">
+
+    <h3>Select</h3>
+    <input type="text" name="Select" value="Select" id="Select" onselect="userselect()" placeholder="Select">
+
+    <h3>Submit</h3>
+    <form onsubmit="Submit()">
+        <input type="submit" value="submit" id="submitbtn">
+    </form>
+
+    <h3>OnInvalid</h3>
+    <form>
+        <input type="text" required oninvalid="alert('Enter A Name.')">
+        <input type="submit">
+    </form>
+
+    <h3>OnReset</h3>
+    <form onreset="alert('Are You Sure , You Lost Your Form Data')">
+        <input type="text">
+        <input type="reset">
+    </form>
+
+    <h3>Oninput</h3>
+    <input type="text" oninput="input()" id="inputtext">
+
+
+    <h3>Keydown</h3>
+    <input type="text" onkeydown="keydown()" id="keydownbtn">
+
+    <h3>Keyup</h3>
+    <input type="text" onkeyup="alert('Keep Writing')">
+
+    <h3>Keypress</h3>
+    <input type="text" id="" onkeypress="alert('Write 2 WOrds')">
+
+    <h3>onclick</h3>
+    <p id="click" onclick="clickfn()">Lorem ipsum dolor sit amet.</p>
+
+    <h3>doubleclick</h3>
+    <p id="doubleclick" ondblclick="dblclick()">Lorem ipsum dolor sit amet.</p>
+
+    <h3>mousedown</h3>
+    <p id="mousedown" onmousedown="mousedown()">Lorem ipsum dolor sit amet.</p>
+
+    <h3>mousedown</h3>
+    <p id="mouseup" onmouseup="mouseup()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum!</p>
+
+    <h3>mouseover</h3>
+    <p id="mouseover" onmouseover="mouseover()">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+        numquam!</p>
+
+    <h3>mousemove</h3>
+    <p id="mousemove" onmousemove="mousemove()">Lorem ipsum dolor sit amet.</p>
+
+
+
+
+
+
+
+<!-- dom advantages and disadva , defination , process behined it how dom work -->
+
+</body>
+
+
+</html>

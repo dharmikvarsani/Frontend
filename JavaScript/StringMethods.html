@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+
+<body>
+
+    <script>
+        //Extracting String Characters
+        //charat ,charcodeat ,at 
+
+        {
+            let a = "Hello"
+
+            console.log(a.charAt(1))
+            console.log(a.charCodeAt(0))
+            console.log(a.at(1))
+            console.log(a[1])
+        }
+
+
+        //Extracting String Characters
+        //slice , substring ,substr
+
+        //slice
+        {
+            let a = "Apple"
+            let b = a.slice(0, 5)
+            console.log(b)
+
+            let c = "Hello My Name Is \"Rohit\""
+            let d = c.slice(5)
+            console.log(d)
+
+            let e = "Hello My Name Is \"Rohit\""
+            let f = e.slice(-24)
+            console.log(f)
+        }
+
+        //substring
+
+        {
+            let a = "Hello , How are You!"
+            let b = a.substring(0, 6)
+            console.log(b)
+
+        }
+
+        //substr
+
+        {
+            let a = "hello , how are you"
+            let b = a.substr(7, 4)
+            console.log(b)
+
+            let c = "Apple, Banana ,Orange"
+            let d = c.substr(6)
+            console.log(d)
+
+            let e = "Apple, Banana ,Orange"
+            let f = c.substr(-6)
+            console.log(f)
+
+        }
+
+
+
+        //touppercase and tolowercase
+
+        {
+            let a = "hello"
+            let b = a.toUpperCase()
+            console.log(b)
+
+            let c = "APPLE,BANANA,ORANGE"
+            let d = c.toLowerCase()
+            console.log(d)
+        }
+
+
+        //concat
+
+        {
+            let a = "hello"
+            let b = "how are you"
+            let c = a.concat(" , " + b)
+            console.log(c)
+
+            let x = "Apple"
+            let y = "Orange"
+            let z = "Kiwi"
+            let h = x.concat(" " + y + " " + z)
+            console.log(h)
+        }
+
+
+
+        //trim  ,trimstart ,trimend
+        {
+            let a = "       Hello       "
+            let b = a.trim()
+            console.log(b)
+
+            let c = "           Orange      , Apple     "
+            let d = c.trimStart()
+            console.log(d)
+
+            let x = "       apple       "
+            let y = x.trimEnd()
+            console.log(y)
+        }
+
+
+        //padstart , padend
+
+        {
+            let a = 5
+            let c = a.toString()
+            let b = c.padStart(5, "0")
+            console.log(b)
+
+            let x = '454683543565';
+            let y = x.slice(-4)
+            let z = y.padStart(x.length, "*")
+            console.log(z)
+
+
+            let e = 4;
+            let f = e.toString()
+            let g = f.padEnd(5, 0)
+            console.log(g)
+
+            let h = "6547543243547353"
+            let j = h.slice(-5)
+            let u = j.padEnd(h.length, "*")
+            console.log(u)
+
+        }
+
+        //repet
+
+        {
+            let a = "Hiii ,HoW Are You!"
+            let b = a.repeat(3)
+            console.log(b)
+
+        }
+
+
+        //replace
+
+        {
+            let a = "Hiii , I am fine."
+            let b = a.replace("fine", "Good")
+            console.log(b)
+
+        }
+
+
+        //replaceall
+
+        {
+            let a = "Hii How are You , I am Fine , You Are Not Fine"
+            let b = a.replaceAll("Fine", "Good")
+            console.log(b)
+        }
+
+        //split
+
+        {
+            let a = "Hii"
+            let b = a.split(",")
+            console.log(a[2])
+            for (let i = 0; i < a.length; i++) {
+                console.log(a[i])
+            }
+
+        }
+
+
+        //indexof ,last indexof
+
+        {
+            let a = "Hii, My Name Is \"Rahul\""
+            let b = a.indexOf("Name", 5)
+            console.log(b)
+
+            let c = a.lastIndexOf("Is")
+            console.log(c)
+
+            let d = a.lastIndexOf("Raghu")
+            console.log(d)
+
+
+            let e = a.lastIndexOf("Is")
+            console.log(e)
+        }
+
+        //search
+
+        {
+            let a = "Apple ,Orange ,Banana ,WaterMelon ,Mango"
+
+            console.log(a.search("Banana"))
+            console.log(a.search("Mango"))
+            console.log(a.search("Kiwi  "))
+
+        }
+
+        //match ,matchall
+
+        {
+            let a = "Hii ,How Are You."
+            let b = a.match("H")
+            console.log(b)
+
+
+
+
+        }
+
+        //includes
+
+        {
+            let a= "Hii , How Are You"
+        
+            console.log(a.includes("Hii"))
+            console.log(a.includes("Hello"))
+            console.log(a.includes("Are" , 5))
+            console.log(a.includes("Hii ,3"))
+        }
+
+
+        //startwith , endwith 
+         {
+            let a = "Hello , My Name Is Dharmik."
+        
+            //startwith
+            console.log(a.startsWith("Hello"))
+            console.log(a.startsWith("Hii"))
+            console.log(a.startsWith("My" ,8))
+        
+
+            //endwith
+
+            console.log(a.endsWith("Hello"))
+            console.log(a.endsWith("Dharmik."))
+            console.log(a.endsWith("Name" , 15))
+        }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

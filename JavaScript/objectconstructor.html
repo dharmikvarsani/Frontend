@@ -82,14 +82,19 @@
 
 
         {
-            let a = 2;
-
-            while (a < 10) {
-                console.log(a);
-                a++;
+            function people(first, last, age) {
+                this.firstname = first;
+                this.lastname = last;
+                this.age = age;
+                this.nationality = "indian"
             }
 
+            let a = new people("Raju", "Kakadiya", 46)
+            let b = new people("Vishal", "Kakadiya", 21)
 
+            a.changename = ((x) => this.firstname = x)
+            a.changename = ("Bhadresh")
+            console.log(a.changename)
         }
 
 

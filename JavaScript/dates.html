@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates</title>
+</head>
+
+<body>
+    <script>
+
+        {
+            let a = new Date()
+            console.log(a)
+
+            console.log(new Date("2024-7-29"))
+            console.log(new Date("march-24-2023"))
+            console.log(new Date("may-2021-26"))
+            console.log(new Date(2024, 10, 15, 16, 24, 30))
+        }
+
+        {
+            console.log(new Date(2024, 15, 26, 15, 46, 56))
+            console.log(new Date(2024, 4, 23, 32, 46, 56))
+
+        }
+
+
+        {
+            let a = Date.parse("2024-11-15")
+            console.log(a)
+        }
+
+
+        //get dates
+
+
+        {
+            let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+            let date = new Date()
+            console.log(months[date.getMonth()])
+            console.log(days[date.getDay()])
+
+
+            console.log(date)
+            console.log(date.getFullYear())
+            console.log(date.getMonth())
+            console.log(date.getDate())
+            console.log(date.getDay())
+            console.log(date.getHours())
+            console.log(date.getMinutes())
+            console.log(date.getSeconds())
+            console.log(date.getMilliseconds())
+            console.log(date.toDateString())
+            console.log(date.getTime())
+            console.log(date.getTimezoneOffset())
+        }
+
+        {
+            let days = new Date()
+            days.setDate(29)
+            days.setMonth(6)
+            days.setFullYear(2004)
+            days.setHours(18)
+            days.setMinutes(46)
+            days.setSeconds(46)
+            days.setMilliseconds(466)
+            console.log(days)
+        }
+
+    </script>
+</body>
+
+</html>

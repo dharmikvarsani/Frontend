@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RexgExp</title>
+</head>
+
+<body>
+
+    <script>
+
+        {
+            let a = "Hii, What Is Your Name"
+            let b = a.search("What")
+            console.log(b)
+            let c = a.replace("Hii", "Hello")
+            console.log(c)
+        }
+
+        //i
+
+        {
+            let a = "Hii , My Name Is \"Dharmik\""
+            console.log(a)
+
+            let b = a.match(/name/i)
+            console.log(b)
+            console.log(a.match(/is/i))
+        }
+
+        //g
+
+        {
+            let a = "Apple ,Orange ,Apple ,Orange ,Kiwi"
+
+            let b = a.match(/Orange/g)
+            console.log(b)
+
+
+            console.log(a.match(/apple/ig))
+        }
+
+        //M
+
+        {
+            let a = "Apple ,Kiwi ,Kiwi ,Orange ,Mango ,Mango"
+
+            let b = a.match(/Apple/m)
+            console.log(b)
+
+            console.log(a.match(/kiwi/im))
+        }
+
+        //d
+
+        {
+            let a = "appleappleorange"
+
+            let b = a.match(/(apple)(orange)/d)
+            console.log(b)
+
+        }
+
+
+        //[] ,()
+
+        {
+            let a = "Hii, What Is Going On."
+
+            let b = a.match(/[i]/ig)
+            console.log(b)
+        }
+
+        {
+            let x = "1234567891234566"
+            let y = x.match(/[1-4]/g)
+            console.log(y)
+        }
+
+        {
+            let a = "Apple , Bnana ,Orange ,Mango ,Apple ,Mango ,Orange ,Mango"
+
+            let b = a.match(/(Apple|Mango)/ig)
+            console.log(b)
+
+        }
+
+
+        //Metacharacters
+
+        // \d
+
+        {
+            let a = "I Have A  10 Oranges And 4 Apple"
+            let b = a.match(/\d/g)
+            console.log(b)
+        }
+
+        // \s
+
+        {
+            let a = "Hii how Are you"
+            console.log(a.match(/\s/g))
+
+            let b = '45 54 6 5 4  5 4'
+            console.log(b.match(/\s/g))
+        }
+
+
+        // \b
+
+        {
+            let a = "What is your Name , My Name Is Xyz"
+            let b = a.search(/\bis/)
+            console.log("Position Is " + b)
+
+            let c = a.search(/is\b/)
+            console.log("POsition Is " + c)
+        }
+
+
+        // \u
+
+        {
+            let a = "Welcome To My Home"
+
+            let b = a.match(/\u0057/)
+            console.log(b)
+
+            let c = a.match(/\u006f/)
+            console.log(c)
+
+        }
+
+
+        //Quantifiers
+
+        {
+            let a = "Helloo , how are you"
+            console.log(a.match(/o+/g))
+
+            let b = "Heyyy , What Is Going On There"
+            console.log(b.match(/e*/g))
+
+            let c = "My Name Is Dharmik And WHat Is Your Name."
+            console.log(c.match(/a?/ig))
+        }
+
+
+
+        //test
+
+        {
+            let a = "Apple"
+            let b = /e/.test(a)
+            console.log(b)
+            console.log(/j/.test(a))
+        }
+
+
+        //exec
+
+        {
+            let a = "Orange"
+            let b = /a/.exec(a)
+            console.log(b)
+            console.log(/f/.exec(a))
+        }
+    </script>
+
+</body>
+
+</html>
