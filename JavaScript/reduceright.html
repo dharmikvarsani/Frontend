@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduceright</title>
+</head>
+
+<body>
+    <script>
+
+        {
+            let a = [25, 46, 23, 10, 19, 76]
+
+            let b = a.reduceRight((x, y) => {
+                return x + y
+            })
+            console.log(b)
+        }
+
+        {
+            let a = [25, 46, 23, 25, 46, 76, 23, 76, 25]
+
+            let b = a.reduceRight((a, b) => {
+                a[b] = (a[b] || 0) + 1
+                return a
+            }, {})
+            console.log(b)
+        }
+
+        {
+            let a = [25, 46, 82, 20, 43, 19, 16]
+
+            let b = a.reduceRight((a, b) => {
+                return a > b ? a : b
+            })
+            console.log(b)
+        }
+
+    </script>
+</body>
+
+</html>

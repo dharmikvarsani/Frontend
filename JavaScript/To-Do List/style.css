@@ -1,0 +1,65 @@
+
+*{
+    font-family: "poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 200px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 8px 8px 9px -6px #666464;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#inputtext {
+    height: 20px;
+    width: 14rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#addbtn{
+    height: 23px;
+    width: 4rem;
+    margin-left: 10px;
+    background-color: #33a333;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.alltask ul{
+    position: relative;
+    text-align: left;
+    font-size: 18px;
+    left: 10px;
+    padding-right: 50px;
+
+}
+
+.alltask ul li {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}

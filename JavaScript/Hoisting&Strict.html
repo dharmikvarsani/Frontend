@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting & Use Strict</title>
+</head>
+
+<body>
+
+    <script>
+        "use strict";
+
+        //Hoisting
+        {
+            console.log(a)
+            var a = 10
+
+            console.log(a)
+        }
+
+        {
+            // console.log(a)
+            let a = 10
+            console.log(a)
+
+
+            hello()
+            function hello() {
+                console.log("hii")
+            }
+            hello()
+        }
+
+        {
+            // a()
+
+            let a = function abc() {
+                console.log("Hi")
+            }
+            a()
+        }
+
+
+
+
+        //Use Strict
+
+
+
+        // {
+        //     info = 3.14;
+        //     console.log(info)
+
+        // }
+
+
+        // {
+        //     let in =10
+        //     console.log(in)
+        // }
+
+        // {
+        //     function a(x, y, y) {
+        //         return console.log(x + y + y)
+        //     }
+
+        //     a(10, 20, 30)
+
+        // }
+
+
+        // arrow function
+
+        {
+            let a = () => {
+                return console.log("Arrow Function")
+            }
+
+            a()
+        }
+
+        {
+            let b = () => console.log("Hello")
+            b()
+
+
+            let c = value => console.log(value)
+            c(10)
+
+            let d = (x, y) => {
+                return console.log(x * y)
+            }
+            d(10, 5)
+        }
+
+
+
+        {
+            function design(x, y) {
+                for (let i = 0; i <= 5; i++) {
+                    let a = "";
+                    for (let m = 0; m <= 5; m++) {
+                        if (i == 0 || m == 0 || i == x || m == y) {
+                            a += "*"
+                        } else {
+                            a += " "
+                        }
+                    }
+                    document.write(a + "<br>")
+                }
+            }
+            design(5, 5)
+        }
+
+
+    </script>
+
+</body>
+
+</html>

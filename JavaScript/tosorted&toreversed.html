@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToSorted & TOReversed</title>
+</head>
+
+<body>
+
+    <script>
+
+        {
+            let a = ['A', 'H', 'K', 'E', 'B', 'Q']
+            let b = a.toSorted()
+            console.log(b)
+
+            let c = a.toReversed()
+            console.log(c)
+        }
+
+        {
+            let a = [
+                { name: 'apple', price: 80 },
+                { name: 'watermelon', price: 40 },
+                { name: 'orange', price: 60 }
+            ]
+
+            let b = a.toSorted((a, b) => b.price - a.price);
+            console.log(b)
+
+            let c = a.toReversed((a, b) => b.name - a.name)
+            console.log(c)
+        }
+
+
+
+
+
+    </script>
+ 
+</body>
+
+</html>

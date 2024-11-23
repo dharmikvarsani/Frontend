@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Of </title>
+</head>
+
+<body>
+    <script>
+        // instanceof 
+        {
+            let a = { 0: 'a', 1: 'b', 2: 'c' }
+
+            console.log((a instanceof Object))
+            console.log((a instanceof Array))
+        }
+
+        {
+            let a = ['a', 'b', 'c', 'd']
+
+            console.log((a instanceof Array))
+            console.log((a instanceof Object))
+        }
+
+        {
+            let a = new Map([
+                ['apple', 500],
+                ['banana', 200],
+                ['orange', 102]
+            ])
+
+            console.log((a instanceof Map))
+            console.log((a instanceof Object))
+        }
+
+        {
+            let a = new Set(['apple', 'orange', 'kiwi'])
+
+            console.log((a instanceof Object))
+            console.log((a instanceof Set))
+        }
+
+        {
+
+            let car;
+            console.log(typeof car)
+
+            let a = "xyz"
+            a = undefined;
+
+            console.log(typeof a)
+        }
+
+
+        //null
+
+        {
+            let a = {
+                name: 'kamlesh',
+                age: 32
+            }
+            
+            a =null
+            console.log(typeof a )
+        }
+
+
+        
+    </script>
+</body>
+
+</html>

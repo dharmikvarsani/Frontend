@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+
+<body>
+    <script>
+        {
+            class student {
+                constructor(name, age, marks) {
+                    this.firstname = name;
+                    this.age = age;
+                    this.marks = marks
+                }
+
+                info() {
+                    console.log("Hello")
+                }
+
+            }
+
+            let a = new student("Rahul", 12, 46)
+            console.log(a)
+
+            let b = new student("Sahil", 12, 43)
+            console.log(b)
+            a.info()
+        }
+
+        {
+            class info {
+                constructor(fname, lname, age, marks) {
+                    this.firstname = fname;
+                    this.lastname = lname;
+                    this.age = age;
+                    this.marks = marks;
+                }
+
+                fullname() {
+                    console.log(`My Name Is ${this.firstname} ${this.lastname}.`)
+                }
+            }
+
+            let person1 = new info("Munna", "Tripathi", 16, 89)
+            console.log(person1)
+            person1.fullname()
+
+            let person2 = new info("Kalin", "Tripathi", 20, 96)
+            console.log(person2)
+            person2.fullname()
+        }
+
+
+        {
+            let Animal = class {
+                constructor(name, type) {
+                    this.name = name;
+                    this.type = type;
+                }
+
+                fullinfo() {
+                    console.log(`${this.name} Is ${this.type} Animal.`)
+                }
+            }
+
+            let animal1 = new Animal("Dog", "Domestic")
+            console.log(animal1)
+            animal1.fullinfo()
+
+            let animal2 = new Animal("Lion", "Wild")
+            console.log(animal2)
+            animal2.fullinfo()
+        }
+
+        {
+            class sum {
+                static add(x, y) {
+                    return x + y
+                }
+            }
+            console.log(sum.add(5, 6))
+
+        }
+
+
+        // Private Fields
+
+        {
+            class Bank {
+                #balance = 0
+
+                amount(value) {
+                    if (value > 0) this.#balance += value
+                }
+
+                getbalance() {
+                    return this.#balance
+                }
+            }
+
+            let money = new Bank();
+            money.amount(10500)
+            console.log(money.getbalance())
+        }
+
+        {
+            class Bank {
+                #balance = 0;
+
+                Amount(value) {
+                    if (value > 0) this.#balance += value
+                }
+
+                getbalance() {
+                    return this.#balance
+                }
+            }
+
+            let Money = new Bank()
+            Money.Amount(10536)
+            console.log(Money.getbalance())
+        }
+
+
+        // Functions and Classes
+
+        {
+            function BMI(weigth, height) {
+                return weigth / (height ** 2)
+            }
+
+            class Person {
+                constructor(name, weigth, height) {
+                    this.name = name;
+                    this.weigth = weigth;
+                    this.height = height;
+                }
+
+                getbmi() {
+                    return BMI(this.weigth, this.height)
+                }
+            }
+
+            let person1 = new Person("Jay", 62, 1.6)
+            console.log(person1.getbmi())
+        }
+
+
+        //Inheritance
+
+        {
+            class company {
+                constructor(name, age, salary) {
+                    this.name = name;
+                    this.age = age;
+                    this.salary = salary;
+                }
+
+                yoursalary() {
+                    console.log(`${this.name} Your Salary Is ${this.salary} `)
+                }
+            }
+
+            class manager extends company {
+                yoursalary() {
+                    super.yoursalary()
+                    let vehicalexpense = 1200;
+                    let residenceexpense = 4500;
+                    let totalsalary = this.salary + vehicalexpense + residenceexpense;
+                    console.log(`${this.name} Your Salary Is ${totalsalary}`)
+                }
+            }
+            let person5 = new company("Rahul", 25, 20000)
+            console.log(person5)
+
+            let Manager = new manager("Karan", 30, 20000)
+            Manager.yoursalary()
+        }
+
+        {
+            class carname {
+                constructor(brand) {
+                    this.brand = brand;
+                }
+
+                fullname() {
+                    console.log(`Your Car Brand Is ${this.brand}`)
+                }
+            }
+
+            class caryear extends carname {
+                constructor(brand, year) {
+                    super(brand)
+                    this.year = year;
+                }
+
+                fullname() {
+                    super.fullname();
+                    console.log(`Your Car Name is ${this.brand} And Year Is ${this.year}`)
+                }
+            }
+
+            let car1 = new carname("Toyota")
+            car1.fullname()
+
+            let car2 = new caryear("Toyota", 2022)
+            car2.fullname()
+        }
+
+
+    </script>
+</body>
+
+</html>

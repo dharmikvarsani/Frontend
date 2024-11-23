@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set & Map</title>
+</head>
+
+<body>
+    <script>
+        //set
+
+        {
+            let a = new Set(['a', 'b', 'c'])
+            a.add('e')
+            a.add('f')
+
+            for (let x of a) {
+                console.log(x)
+            }
+
+            let find = a.has('e')
+            console.log(find)
+            console.log(a.has("b"))
+
+
+            a.forEach(function (x) {
+                console.log(x + " " + "Is Letter")
+            })
+
+            let b = a.values()
+            console.log(b)
+
+
+            let c = a.keys()
+            console.log(c)
+
+            let d = a.entries()
+            console.log(d)
+
+            console.log(a.size)
+        }
+
+
+        {
+            let a = new Set(['Apple', 'Orange', 'Banana', 'Kiwi', 'WaterMelon'])
+
+            // a.clear()
+            // console.log(a)
+
+            a.delete(3);
+            console.log(a)
+        }
+
+
+        {
+            let a = new Set([45, 46, 42, 43, 48])
+            let b = new Set([45, 79, 46, 23, 53, 48])
+
+            let c = new Set([...a].filter(x => b.has(x)))
+            console.log(c)
+
+            let d = new Set([...b].filter(x => !a.has(x)))
+            console.log(d)
+
+            console.log(a.length === b.size)
+
+        }
+
+        //map
+
+
+        {
+            let a = new Map([
+                ["Apple", 5],
+                ["Orange", 4],
+                ["Kiwi", 8]
+            ])
+
+            a.set("Banana", 12)
+            a.set("Apple", 6)
+            console.log(a)
+
+            for (let x of a) {
+                console.log(x)
+            }
+
+            console.log(a.get("Kiwi"))
+
+            console.log(a.values())
+            console.log(a.entries())
+            console.log(a.keys())
+            console.log(a.get("Apple"))
+          
+
+
+            
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Errors</title>
+</head>
+
+<body>
+    <script>
+        "use strict"
+        {
+          let  x = 6;
+
+            try {
+                if (x == '') throw "Enter A Number"
+                if (isNaN(x)) throw "Enter A Number"
+                x = Number(x)
+                if (x > 10) throw "Number Is Higher Than \"10\""
+                if (x < 5) throw "Number Is Lower Than \"5\""
+
+            } catch (error) {
+                console.log(error)
+            }
+
+        }
+
+        //Range Error
+
+        // {
+        //     let a = 10;
+
+        //     try {
+        //         a.toPrecision(101)
+        //     } catch (error) {
+        //         console.log(error)
+        //     }
+        // }
+
+
+
+        //Reference Error
+
+        // {
+        //     let a =10
+        //     let b = h+ 10
+        // }
+
+
+
+        //SyntaxError
+        // {
+        //     let a= 10
+        //     let b = 25
+        //     let c = a + b
+        //     console.log("Sum IS  + c)
+        // }
+
+
+
+        //typeError
+
+        // {
+        //     let a = 10;
+        //     a.toUpperCase()
+        // }
+
+
+
+     
+
+
+    </script>
+</body>
+
+</html>

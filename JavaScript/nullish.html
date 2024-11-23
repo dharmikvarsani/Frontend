@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nullish Coalescing & Optional Chaining </title>
+</head>
+
+<body>
+    <script>
+        //Nullish Coalescing
+        {
+            let a = null;
+            let b = "Heloo"
+            let c = a ?? b
+            console.log(c)
+
+            let x = undefined;
+            let y = "xyz"
+            let z = x ?? y
+            console.log(z)
+
+
+            let g = "hIii"
+            let h = "456"
+            let j = g ?? h
+            console.log(j)
+
+
+            let t = " "
+            let r = 45
+            let w = t ?? r
+            console.log(w)
+        }
+
+
+        //Optional Chaining 
+
+        {
+            let a = {
+                car: "ford",
+                model: "fortuner",
+                year: 2022
+            }
+
+            let b = a?.b
+            console.log(b)
+
+            let c = {
+                car: "ford",
+                model: "fortuner",
+                year: 2022
+            }
+
+            let d = "Nothing"
+            let e = c?.d
+            console.log(e)
+
+        }
+
+
+        {
+            let a = {
+                name: "rahul",
+                marks: 46,
+                std: 7
+            }
+
+            let b = a?.name ?? "nothing";
+            console.log(b)
+
+
+            let c = a?.std ?? "sfnmls"
+            console.log(c)
+
+            let d = a?.city
+            console.log(d)
+
+
+            let e = a?.city ?? "Not City Include."
+            console.log(e)
+        }
+    </script>
+</body>
+
+</html>

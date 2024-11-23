@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keys</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        //keys
+        {
+            let a = [25, 46, 43, 53, 12, 63]
+
+            console.log(Object.keys(a))
+        }
+
+        {
+
+            let a = { 0: 'a', 1: 'b', 2: 'c', 3: 'd' }
+
+            console.log(Object.keys(a))
+
+
+            let b = { 5: 'a', 2: 'b', 7: 'c', 3: 'd' }
+            console.log(Object.keys(b))
+
+
+            console.log(Object.keys("heloo"))
+            console.log(Object.keys(123))
+        }
+
+
+        //entries
+
+        {
+            let a = { 0: 'a', 1: 'b', 2: 'c' }
+            console.log(Object.entries(a))
+
+            let b = [25, 13, 46, 52, 76]
+            console.log(Object.entries(b))
+
+
+            let c = [23, 82, 12, 30, 53, 46]
+            for (let x of Object.entries(c)) {
+                console.log(x)
+            }
+
+        }
+
+
+        //with
+
+        {
+            let a = [1, 2, 3, 4, 5, 6]
+            console.log(a.with(3, 12))
+
+            let b = ["apple", "Orange", "Kiwi", "Watermelon"]
+            console.log(b.with(3, "pinaple"))
+
+
+            let c = [1, 2, 3, 4, 5, 6, 7]
+            console.log(c.with(3, 2).map((i) => i + 5));
+        }
+
+        {
+            let a = {
+                0: 'a',
+                1: 'b',
+                2: 'g',
+                3: 'd',
+                length: 5
+            }
+
+            console.log(Array.prototype.with.call(a, 2, 'c'))
+        }
+
+
+
+        //spread
+
+        {
+            let a = [25, 46, 2, 10, 79]
+
+            let b = [...a]
+
+            console.log(b)
+        }
+
+        {
+            let a = [12, 46, 79]
+
+            let b = [56, 20]
+
+            let c = [0, ...a, ...b, 99]
+            console.log(c)
+        }
+
+        {
+            let obj1 = {
+                name: 'Jay',
+                age: 23
+            }
+
+            let obj2 = {
+                marks: 89
+            }
+
+            let obj3 = { ...obj1, ...obj2 }
+            console.log(obj3)
+        }
+
+        {
+            function sum(x, y, z) {
+                return x + y + z
+            }
+
+            let a = [25, 46, 76]
+            console.log(sum(...a))
+        }
+
+        {
+            function find(x, y, z) {
+                return x * y / z
+            }
+
+            let a = [2, 20, 2]
+            console.log(find(...a))
+        }
+
+
+        //from
+        {
+            let a = "Hii"
+            console.log(Array.from(a))
+
+
+            let b = [1, 2, 3, 4, 5]
+            let c = Array.from(b, (x => x + x))
+            console.log(c)
+
+            let x = ["A", "B", "C", "D"]
+            let y = Array.from(x, ((X, Y) => X + " : " + Y))
+            console.log(y)
+        }
+
+        {
+            let a = {
+                0: 1,
+                1: 2,
+                2: 3,
+                length: 4
+            }
+
+            let b = Array.from(a)
+            console.log(b)
+        }
+
+
+    
+
+
+    </script>
+
+</body>
+
+</html>
