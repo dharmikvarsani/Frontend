@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: radial-gradient(circle at center, #1e1e2f, #000);
+        }
+
+        h1 {
+            position: relative;
+            font-size: 6rem;
+            letter-spacing: 10px;
+            color: #0e3742;
+            text-transform: uppercase;
+            /* width: 100%; */
+            outline: none;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+            line-height: 0.70em;
+            animation: light 5s linear infinite;
+        }
+
+        @keyframes light {
+
+            0% {
+                color: #0e3742;
+                box-shadow: none;
+            }
+
+            100% {
+                color: white;
+                text-shadow: 0 0 10px #03bcf4,
+                    0 0 20px #03bcf4,
+                    0 0 40px #03bcf4,
+                    0 0 160px #03bcf4;
+
+            }
+        }
+
+    </style>
+    <h1 contenteditable="true">Hii</h1>
+</body>
+
+</html>

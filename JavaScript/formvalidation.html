@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+
+<body>
+
+    <form onsubmit="return validform()" name="validation-form" id="form-sub">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="Fname" oninput="uppercase()">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="Lname" oninput="uppercase()">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <br>
+    <form>
+        Enter A Number Between 1-100 :
+        <input type="text" name="number" id="number">
+        <button onclick="num()">Click</button>
+    </form>
+    <br>
+    <br>
+    <h2 id="css">CSS</h2>
+    <button onclick="document.getElementById('css').style.color ='red'">CLick</button>
+    <br>
+    <br>
+    <h2 onclick="this.innerHTML = 'Hii!'">Click On Me</h2>
+    <h2 onmousedown="this.innerHTML='Hii'" onmouseup="this.innerHTML='Hello'">Click</h2>
+    <p id="Date"></p>
+    <button onclick="date()">Date</button>
+    <button id="datebtn">Date</button>
+    <h3 id="dateh3"></h3>
+
+    <h1 id="event-1">Click</h1>
+
+    <div id="event-bg">
+        <h1 id="event-2">Bubbling</h1>
+    </div>
+
+    <div>
+        <p id="node-1">Node</p>
+        <h1 id="node-2"></h1>
+    </div>
+
+    <div id="node-3">
+        <p>hiii</p>
+        <p>hello</p>
+        <p id="node-4"></p>
+        <p id="node-5"></p>
+        <p id="node-6"></p>
+    </div>
+
+    <div id="main-node">
+        <p>Hello Everyone</p>
+        <p>Hii Everyone</p>
+    </div>
+
+    <div id="main-node2">
+        <p>Heloo Once Again</p>
+    </div>
+
+    <div id="main-node3">
+        <p id="node-7">Lorem ipsum dolor sit amet.</p>
+        <p id="node-8">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <p id="node-9">nfandlvnad</p>
+
+    <div id="main-node4">
+        <p id="node-10">Lorem ipsum dolor sit amet.</p>
+        <p id="node-11">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    </div>
+
+    <p id="collection"></p>
+    <p id="node-collection"></p>
+    <script>
+
+        function validform() {
+
+            let a = document.forms["validation-form"]["fname"].value
+            let b = document.forms["validation-form"]["lname"].value
+
+            if (a == "" || b == "" || c == "") {
+                alert("Please Fill All Required Details.")
+                return false
+            } else {
+                alert("Your Form Submited Sucessfully.")
+            }
+        }
+
+        function uppercase() {
+            let x = document.getElementById("Fname")
+            let y = document.getElementById("Lname")
+
+            x.value = x.value.toUpperCase()
+            y.value = y.value.toUpperCase()
+        }
+
+        function num() {
+            let a = document.getElementById("number").value
+
+            if (isNaN(a) || a <= 0 || a > 100) {
+                alert("Enter Number Between 1-100")
+            } else {
+                return true
+            }
+        }
+
+        function date() {
+            document.getElementById("Date").innerHTML = Date()
+        }
+
+        document.getElementById("datebtn").onclick = showdate
+        function showdate() {
+            document.getElementById("dateh3").innerHTML = Date()
+        }
+
+        {
+            document.getElementById("event-1").addEventListener("click", function () { this.style.color = "red" })
+        }
+        {
+            document.getElementById("event-bg").addEventListener("click", eventbg)
+            document.getElementById("event-2").addEventListener("click", function () { this.style.fontSize = "40px" })
+
+            function eventbg() {
+                let a = document.getElementById("event-bg").style.background = "red"
+            }
+
+            document.getElementById("event-bg").removeEventListener("click", eventbg)
+        }
+
+        {
+            let a = document.getElementById("node-2").innerHTML = document.getElementById("node-1").innerHTML
+            document.getElementById("node-4").innerHTML = document.getElementById("node-3").firstChild.nodeValue
+            document.getElementById("node-5").innerHTML = document.getElementById("node-1").nodeName
+            document.getElementById("node-6").innerHTML = document.getElementById("node-1").nodeType
+        }
+
+        {
+            let a = document.createElement("p")
+            let b = document.createTextNode("This Node Is Created")
+            a.appendChild(b)
+
+            let c = document.getElementById("main-node")
+            c.appendChild(a)
+        }
+
+        {
+            let a = document.createElement("h1")
+            let b = document.createTextNode("This Is Also Created")
+            a.appendChild(b)
+
+            let c = document.getElementById("main-node2")
+            c.appendChild(a)
+        }
+
+        {
+            let a = document.createElement("h1")
+            let b = document.createTextNode("This Is InsertBefore First Child.")
+            a.appendChild(b)
+
+            let c = document.getElementById("main-node3")
+            let d = document.getElementById("node-7")
+            c.insertBefore(a, d)
+
+            let e = document.getElementById("node-8")
+            e.remove()
+
+            let f = document.getElementById("node-9")
+            f.remove()
+        }
+
+        {
+            let a = document.createElement("h3")
+            let b = document.createTextNode("This Is Repleced Child.")
+            a.appendChild(b)
+
+            let c = document.getElementById("main-node4")
+            let d = document.getElementById("node-10")
+            c.replaceChild(a, d)
+        }
+
+        {
+            let a = document.getElementsByTagName("p")
+            let b = document.getElementById("collection").innerHTML = a.length
+        }
+
+        let element = document.all
+        console.log(element)
+
+        // fileupload functionlity
+
+        //css , how dom works ,dom use
+        //todo list creat ,update ,delete
+    </script>
+</body>
+
+</html>

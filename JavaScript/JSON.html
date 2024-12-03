@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+
+<body>
+    <script>
+        {
+            let jsonobj = ' {"Name" : "Rahul" , "Age" : 26 ,  "isMarried": false}'
+            let obj = JSON.parse(jsonobj)
+            console.log(obj)
+
+            let jsonarr = '["Prasant" , "Neel" , "Yash" ,"Akhil"]'
+            let arr = JSON.parse(jsonarr)
+            console.log(arr)
+        }
+
+        //convert date 
+        {
+            let info = '{"Name" : "Jaydeep" , "Age" : 24 ,"BirthDate" : "2000-12-25"}'
+            let obj = JSON.parse(info)
+            obj.BirthDate = new Date(obj.BirthDate)
+            console.log(obj)
+        }
+
+        {
+            let date = '{"Date" : "2004-07-29"}'
+            let obj = JSON.parse(date)
+            obj.Date = new Date(obj.Date)
+            console.log(obj)
+        }
+
+        {
+            let info = '{"Name" :"Dharmik" , "DateOfBirth" :" 2004-07-29" , "Age" : 20 }'
+            let obj = JSON.parse(info, function (x, y) {
+                if (x === "DateOfBirth") {
+                    return new Date(y)
+                } else {
+                    return y
+                }
+            })
+            console.log(obj)
+        }
+
+        // JSON.stringify
+
+        {
+            let jsonobj = { Name: "Rakesh", Age: 32, IsMarried: true }
+            let str = JSON.stringify(jsonobj)
+            console.log(str)
+
+        }
+
+        {
+            let jsonstr = ["Naman", "Samay", "Priyank", "Raju"]
+            let arr = JSON.stringify(jsonstr)
+            console.log(arr)
+
+        }
+
+        //store data
+
+        {
+            let obj = { Name: "JayKishan", Age: 35, IsMarried: true }
+            let arr = JSON.stringify(obj)
+            localStorage.setItem("Info", arr)
+
+            let jsonarr = localStorage.getItem("Info")
+            let jsonobj = JSON.parse(jsonarr)
+            console.log(jsonobj)
+
+        }
+
+        //Coverting Date And Function
+        {
+            let a = { Name: "Ajay", Age: 34, Date: new Date() }
+            let b = JSON.stringify(a)
+            console.log(b)
+        }
+
+        {
+            let a = { Name: "Ajay", Age: 34, Date: () => { return new Date() } }
+            let b = JSON.stringify(a)
+            console.log("Json WIll Remove Function In Process Of Converting To String   :    " + b)
+        }
+
+        {
+            let a = { Name: "Ajay", Age: function () { return 34 }, IsMarried: true }
+            a.Age = a.Age.toString()
+            let b = JSON.stringify(a)
+            console.log(b)
+            localStorage.setItem("Data", b)
+
+            let c = localStorage.getItem("Data")
+            let d = JSON.parse(c)
+            console.log(d)
+        }
+
+        //obj
+
+        {
+            let jsonobj = '{"Name" : "Priyank" ,"Age" : 16 , "IsPassed" : true }'
+            let obj = JSON.parse(jsonobj)
+            console.log(obj)
+            let x = obj.Name
+            console.log(x)
+        }
+
+        //array
+
+        {
+            let a = '["Apple" , "Banana" , "Orange" , "Kiwi"]'
+            let b = JSON.parse(a)
+            console.log(b)
+            console.log(b[2])
+        }
+
+        {
+            let jsonarr = '{"Name":"Raju","Age":12,"Subject":["Guj" , "Hindi" , "Math" , "Science" , "SOcial Science"] }'
+            let jsonobj = JSON.parse(jsonarr)
+            console.log(jsonobj)
+            console.log(jsonobj.Subject[2])
+
+            for (let i in jsonobj){
+                console.log(jsonobj[i] + ",")
+            }
+        }
+
+    </script>
+</body>
+
+</html>
