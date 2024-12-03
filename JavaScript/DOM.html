@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <p id="id1">Hiii, Everyone</p>
+    <p class="class1">This is a class.</p>
+    <script>document.write("This Is document.write")</script><br>
+    <a id="atag" href="./dates.html">ARRAYS</a>
+    <p id="id2"></p>
+
+
+    <form name="myform" onsubmit="return submitform()">
+        First Name: <input type="text" name="Fname" id="fname">
+        Last Name: <input type="text" name="Lname" id="lname">
+        <input type="submit" value="submit">
+    </form>
+
+    <form>
+        <input id="number">
+        <button onclick="clickbuton()" type="button">click</button>
+    </form>
+
+    <form>
+        <input type="text" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p onmouseover="change(this)" onmouseout="out(this)">Hello, Everyone</p>
+    <p onmousedown="down(this)" onmouseup="up(this)">Click On Me </p>
+
+    <button id="eventid">Click</button>
+    <p id="eventdate"></p>
+
+    <div id="div1">
+        <p>This Is a Paragraph.</p>
+    </div>
+
+    <p id="pnode"></p>
+    <div id="divnode"></div>
+    <p id="removep">This content Is Going To Be Removed</p>
+
+    <div id="div2">
+        <p id="removep2">This Content IS Removed</p>
+        <p>First Child Is Removed.</p>
+    </div>
+
+    <div id="div3">
+        <p id="replaced">This IS Change</p>
+        <p>previous sibling was replaced</p>
+    </div>
+
+    <p id="Ptag"></p>
+
+    <div id="div-remove">
+        <p id="remove-element">this</p>
+    </div>
+    <script>
+
+        document.getElementById("id1").innerHTML = "Hello, Everyone."
+        document.getElementsByClassName("class1").innerHTML = "This Class Was Changed"
+        document.getElementById("atag").href = "./arrays.html"
+        document.getElementById("id2").innerHTML = "Date IS :" + Date();
+
+        function submitform() {
+            let x = document.forms["myform"]["Fname"].value
+            if (x == "") {
+                alert("Enter A Name");
+                return false;
+            }
+        }
+
+        function clickbuton() {
+            let clickbtn = document.getElementById("number").value;
+            let text;
+            if (isNaN(clickbtn) || clickbtn < 1 || clickbtn > 20) {
+                alert("Enter A Valid Number")
+            } else {
+                alert("Ok")
+            }
+        }
+
+        function change(id) {
+            id.innerHTML = "Heyy Everybody"
+
+        }
+
+        function out(id) {
+            id.innerHTML = "Hello, Everyone"
+        }
+
+        function down(id) {
+            id.innerHTML = "Relised Me :("
+        }
+
+        function up(id) {
+            id.innerHTML = "Click On Me :)"
+        }
+
+        document.getElementById("eventid").addEventListener("click", eventlistener)
+
+        function eventlistener() {
+            document.getElementById("eventdate").innerHTML = Date()
+        }
+
+        {
+            let a = document.createElement('p')
+            let b = document.createTextNode("Hii This Is Text Node")
+            a.appendChild(b)
+
+            let c = document.getElementById("div1")
+            c.appendChild(a)
+        }
+
+        {
+            let a = document.createTextNode("This Is NOde")
+            let c = document.getElementById("pnode")
+            c.appendChild(a)
+        }
+
+        {
+            let a = document.createElement('h2')
+            let b = document.createTextNode("This Is  Another Text Node.")
+            a.appendChild(b)
+
+            let c = document.getElementById('divnode')
+            c.appendChild(a)
+
+        }
+        let removeele = document.getElementById("removep")
+        removeele.remove();
+
+        {
+            let parent = document.getElementById("div2");
+            let Child = document.getElementById("removep2");
+            parent.removeChild(Child)
+        }
+
+        {
+            let parentdiv = document.getElementById("div3")
+            let childele = document.getElementById("replaced")
+
+            let newele = document.createElement("p")
+            let newpara = document.createTextNode("This Was Replaced.")
+            newele.appendChild(newpara)
+
+            parentdiv.replaceChild(newele, childele)
+
+        }
+
+        let ptag = document.getElementsByTagName("p")
+        document.getElementById("Ptag").innerHTML = ptag.lengthf
+
+        for (let i = 0; i < ptag.length; i++) {
+            ptag[i].style.color = 'red'
+            ptag[i].style.fontSize = '18px'
+        }
+
+
+        {
+            let a = document.getElementById("div-remove")
+            let b = document.getElementById("remove-element")
+            a.removeChild(b)
+        }
+
+    </script>
+
+</body>
+
+</html>
