@@ -1,16 +1,14 @@
-let inputTask = document.getElementById("inputtask")
-let addButton = document.getElementById("addbtn")
-let taskList = document.getElementById("tasklist")
-
+const inputTask = document.getElementById("inputtask")
+const addButton = document.getElementById("addbtn")
+const taskList = document.getElementById("tasklist")
 
 function addTask() {
     let task = inputTask.value.trim()
-
     if (inputTask.value == "") {
-        alert("Please Enter A Task First.")
+        alert("Please Enter A Task First")
     } else {
-        createElement(task)
         inputTask.value = ""
+        createElement(task)
         saveTask()
     }
 }
@@ -23,33 +21,25 @@ function createElement(task) {
     taskList.appendChild(listItem)
 
     let deleteTask = document.createElement("span")
-    deleteTask.innerHTML = '<i class="fa-solid fa-trash"></i>'
+    deleteTask.innerHTML = `<i class="fa-solid fa-trash"></i>`
     listItem.appendChild(deleteTask)
 
     deleteTask.addEventListener("click", () => {
-        listItem.remove()
+        listItem.remove();
         saveTask()
     })
 }
 
-
-function saveTask (){
-    let tasks= [];
-    taskList.querySelectorAll("li").forEach(function (list) {
-        tasks.push(list.textContent.trim())
+function saveTask() {
+    let tasks = []
+    taskList.querySelectorAll("li").forEach(function (item) {
+        tasks.push(item.textContent.trim())
     })
-    localStorage.setItem("task" , JSON.stringify(tasks))
+    localStorage.setItem("tasks", JSON.stringify(tasks))
 }
 
-function gettask(){
-    let tasks = JSON.parse(localStorage.getItem("task"))
+function getTask() {
+    let tasks = JSON.parse(localStorage.getItem("tasks"))
     tasks.forEach(createElement)
 }
-gettask()
-
-
-
-
-//chatgpt biigginer level Question
-//and biginer to advance lvl and some tricky question
-//see how to use debugger
+getTask()

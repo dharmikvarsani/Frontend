@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+
+<body>
+    <script>
+        {
+            class info {
+                constructor(firstName, lastName) {
+                    this.firstName = firstName,
+                        this.lastName = lastName
+                }
+
+            }
+
+            let person1 = new info("Rahul", "Singh")
+            console.log(person1)
+        }
+
+        {
+            class car {
+
+                constructor(model, year) {
+                    this.model = model,
+                        this.year = year
+                }
+                age() {
+                    let date = new Date()
+                    return date.getFullYear() - this.year
+                }
+            }
+
+            let car1 = new car("Nexon", "2022")
+            console.log(car1)
+
+            console.log(car1.age())
+        }
+
+
+        {
+            class car {
+                constructor(brand) {
+                    this.brand = brand
+                }
+                name() {
+                    return "My Car Name is " + this.brand
+                }
+            }
+
+            class caryear extends car {
+                constructor(brand, year) {
+                    super(brand)
+                    this.year = year
+                }
+                info() {
+                    return this.name() + " And I Bought In " + this.year
+                }
+            }
+
+            let car1 = new caryear("Fortuner", 2018)
+            console.log(car1.info())
+        }
+
+        {
+            class car {
+                constructor(brand) {
+                    this.brand = brand
+                }
+                get model() {
+                    return this.brand
+                }
+                set model(x) {
+                    this.brand = x;
+                }
+            }
+            let car1 = new car("Mustang")
+            console.log(car1.model)
+        }
+
+        {
+            class car {
+                constructor(name) {
+                    this.name = name;
+                }
+                static hello(x) {
+                    return "Hello " + x.name
+                }
+            }
+
+            let car1 = new car("Defender")
+            console.log(car1)
+            // console.log(car.hello());
+            console.log(car.hello(car1));
+        }
+
+        {
+            let a = "Hello"
+            let b = a.split("").reverse().join("")
+            console.log(b)
+
+            let c = {
+                name: "Hari",
+                age: 25,
+            }
+
+            for (let i in c) {
+                console.log(c[i])
+            }
+
+            let i = 1;
+            while (i <= 5) {
+                console.log(i)
+                i++
+            }
+        }
+    </script>
+
+</body>
+
+</html>
