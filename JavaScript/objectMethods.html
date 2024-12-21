@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Methods</title>
+</head>
+
+<body>
+
+    <script>
+
+        {
+            let Info = {
+                firstName: "Rakesh",
+                lastName: "Kumar",
+                age: 17,
+                marks: 89
+            }
+
+            let Info2 = {
+                firstName: "Jayesh",
+                lastName: "Kumar"
+            }
+
+            //assign
+            let Infos = Object.assign(Info, Info2)
+            console.log(Infos)
+
+            //entries
+            let objectEntries = Object.entries(Info)
+            console.log(objectEntries)
+
+            for (let [name, value] of Object.entries(Info)) {
+                console.log(name + " : " + value)
+            }
+
+            //values
+            let objValue = Object.values(Info)
+            console.log(objValue)
+
+            //key
+            let objkeys = Object.keys(Info)
+            console.log(objkeys)
+
+            for (let x in Info) {
+                console.log(Info[x])
+            }
+        }
+
+        {
+            let fruits = [
+                ['Apple', 500],
+                ['Banana', 120],
+                ['Kiwi', 420]
+            ]
+
+            //fromentries
+            let fruit = Object.fromEntries(fruits)
+            console.log(fruit)
+        }
+
+
+        //Property Menagement Methods
+
+        {
+            let info = {
+                firstName: "Jatin",
+                lastName: "Kumar",
+                age: 16
+            }
+
+            //Adding Property
+            Object.defineProperty(info, 'marks', { value: 46 })
+            console.log(info)
+
+            //changing Property
+            Object.defineProperty(info, "age", { value: 17 })
+            console.log(info)
+
+            //display all property
+            let property = Object.getOwnPropertyNames(info)
+            console.log(property)
+
+            let a = Object.getOwnPropertyDescriptor(info, "age")
+            console.log(a)
+        }
+
+
+        //object protection
+
+        {
+            let info = {
+                firstName: "Tanmay",
+                lastName: "Kumar",
+                age: 16
+            }
+
+            Object.preventExtensions(info)
+
+            // let a = Object.defineProperty(info, "marks", { value: 45 })
+
+            let text;
+            try {
+                info.marks = 45
+            } catch (error) {
+                text(error)
+            }
+            console.log(text)
+
+            let check = Object.isExtensible(info)
+            console.log(check)
+
+        }
+
+
+        {
+            let infos = {
+                firstName: "Prasant",
+                lastName: "Nilsagar",
+                age: 23,
+                language: "Hindi",
+                get lang() {
+                    return this.language.toUpperCase()
+                },
+                marks: "",
+                set number(num) {
+                    return this.marks = num
+                },
+                get fullName() {
+                    return this.firstName + " " + this.lastName
+                }
+            }
+
+            infos.number = 45
+            console.log(infos.lang)
+            console.log(infos.marks)
+            console.log(infos.fullName)
+        }
+
+        
+
+    </script>
+
+</body>
+
+</html>

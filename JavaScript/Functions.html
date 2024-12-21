@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+
+    <script>
+        {
+            function myfunction(a, b, c, d) {
+                return arguments.length
+            }
+            console.log(myfunction(4, 5, 8, 2))
+            console.log(myfunction.toString())
+        }
+
+        {
+            const a = (x, y) => x * y
+            console.log(a(4, 5))
+
+            const b = (x, y) => { return x / y }
+            console.log(b(10, 2))
+        }
+
+        {
+            function sum(...args) {
+                let sum = 0
+                for (let arg of args) sum += arg
+                return sum
+            }
+
+            console.log(sum(521, 3545, 7, 45, 76, 321, 310, 432, 687, 34, 22))
+        }
+
+        {
+            function sum() {
+                let sumall = 0
+                for (let i = 0; i < arguments.length; i++) {
+                    sumall += arguments[i]
+                }
+                return sumall
+            }
+            console.log(sum(45, 5, 5, 54, 89, 2))
+        }
+
+        {
+            function myfunction(a, b) {
+                this.firstName = a
+                this.lastName = b
+            }
+
+            let person1 = new myfunction("Raju", "Rastogi")
+            console.log(person1.firstName + " " + person1.lastName)
+        }
+
+
+        //call method
+        {
+            let person = {
+                fullName: function () {
+                    return this.firstName + " " + this.lastName
+                }
+            }
+
+            let person1 = {
+                firstName: "Pratik",
+                lastName: "Jain"
+            }
+
+            let person2 = {
+                firstName: "Prakhar",
+                lastName: "Kumar"
+            }
+
+            console.log(person.fullName.call(person1))
+            console.log(person.fullName.call(person2))
+        }
+
+        {
+            let person = {
+                fullName: function (age, city) {
+                    return this.firstName + " " + this.lastName + " " + age + " " + city
+                }
+            }
+
+            let person1 = {
+                firstName: "Kamlesh",
+                lastName: "Lal"
+            }
+
+            let person2 = {
+                firstName: "Jayesh",
+                lastName: "Singh"
+            }
+
+            console.log(person.fullName.call(person1, 25, "Mumbai"))
+            console.log(person.fullName.call(person2, 27, "Delhi"))
+
+            //apply
+            console.log(person.fullName.apply(person1, [26, "Surat"]))
+            console.log(person.fullName.apply(person1, [24, "Goa"]))
+
+            console.log(Math.max.apply("", [1, 2, 3]))
+            console.log(Math.min.apply(0, [1, 2, 3]))
+
+            //bind
+            let fullName = person.fullName.bind(person1)
+            console.log(fullName(), 25, "Rajkot")
+        }
+
+
+        //clouser
+        {
+            function a() {
+                let name = "Rohit"
+                function b() {
+                    console.log(name)
+                }
+                name = "Dhoni"
+                b()
+            }
+            a()
+        }
+
+        {
+            function a() {
+                let a = 5
+                console.log(a)
+                function b() {
+                    let b = 6
+                    console.log(b)
+                    function c() {
+                        let c = 7
+                        console.log(c)
+                    }
+                    c()
+                }
+                b()
+            }
+            a()
+        }
+
+        {
+            let a = function (a, b) { return a * b }
+            let b = a(4, 5)*2
+            console.log(b)
+        }
+
+    </script>
+</body>
+
+</html>

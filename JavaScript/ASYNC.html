@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASYNC</title>
+</head>
+
+<body>
+    <h2 id="time"></h2>
+    <script>
+        //callback function
+
+        {
+            function hello(name, callback) {
+                console.log(name)
+                callback()
+            }
+
+            function hii() {
+                console.log("Hii , HOw Are You")
+            }
+
+            hello("Yash", hii)
+        }
+
+        {
+            function sum(num1, num2, callback) {
+                let result = num1 + num2
+                callback(result)
+            }
+
+            sum(5, 8, function (result) {
+                console.log(`The Result Is ${result}`)
+            })
+        }
+
+        {
+            function array(arr, callback) {
+                arr.forEah(element => callback(element));
+
+                array([1, 2, 3, 4, 5], function (item) {
+                    console.log(`Your Array IS ${item}`)
+                })
+            }
+        }
+
+
+        {
+            function sum(num1, num2, callback) {
+                let x = num1 + num2
+                callback(x)
+            }
+
+            sum(5, 25, function (x) {
+                console.log(x)
+            })
+        }
+
+        //Asynchronous
+
+        {
+
+            function hii() {
+                console.log("Hii")
+            }
+            hii()
+            function hello() {
+                console.log("Heloo , How Are You!")
+            }
+
+            function how() {
+                console.log("How Are You.")
+            }
+            how()
+
+            setTimeout(hello, 3000)
+        }
+
+        {
+            function date() {
+                let a = new Date()
+                document.getElementById("time").innerHTML = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds()
+            }
+            setInterval(date, 1000)
+        }
+
+
+        //promises
+
+        // {
+
+        //     let promises = new Promise(function (myresolve, myreject) {
+        //         let x = prompt("enter a number")
+
+        //         if (x <= 5) {
+        //             myresolve("ok")
+        //         } else {
+        //             myreject("error")
+        //         }
+        //     })
+
+        //     promises.then(
+        //         function (value) { console.log(value) },
+        //         function (error) { console.log(error) }
+        //     )
+        // }
+
+        {
+            let promises = new Promise(function (myresolve, myreject) {
+                setTimeout(function (myresolve) { console.log("Hello This Is Promises Example.") }, 2000)
+            })
+
+            promises.then(function (result) {
+                console.log(result)
+            })
+        }
+
+        {
+            let complete = true;
+            let promises = new Promise(function (resolve, reject) {
+                if (complete) {
+                    resolve("Great Success!")
+                } else {
+                    reject("Failure")
+                }
+            })
+
+            console.log(promises)
+        }
+
+        {
+            function prom(complete) {
+                return new Promise(function (resolve, reject) {
+                    setTimeout(() => {
+                        if (complete) {
+                            resolve("Result IS Successfull.")
+                        } else {
+                            reject("Result Is Failure.")
+                        }
+                    }, 3000);
+                })
+            }
+
+            let onresolve = (result) => {
+                console.log(result)
+            }
+            let onreject = (error) => {
+                console.log(error)
+            }
+
+            prom(true).then(onresolve).catch(onreject)
+        }
+
+        {
+            function prom(a, b) {
+                return new Promise(function (resolve, reject) {
+                    c = a / b
+                    setTimeout(() => {
+                        if (a, b) {
+                            resolve(`Your Answer Is : ${c}`)
+                        } else {
+                            reject("This Is Not Valid.")
+                        }
+                    }, 3000);
+                })
+            }
+
+            prom(9, 6).then((result) => { console.log(result) }).catch((error) => { console.log(error) })
+        }
+
+        {
+            function prom(a, b) {
+                return new Promise(function (resolve, reject) {
+                    let c = a * b
+                    setTimeout(() => {
+                        if (a, b) {
+                            resolve(`Your Answer Is : ${c}`)
+
+                        } else {
+                            reject("This Is Not Valid.")
+                        }
+                    }, 2000);
+                })
+            }
+
+            prom(5, 4).then((result) => { console.log(result) }).catch((error) => { console.log(error) })
+        }
+
+        //async
+
+        {
+            async function hello() {
+                console.log("Hello I Am Async")
+            }
+
+            hello().then((result) => { result })
+        }
+
+        {
+            let test = async () => "Hello I Am Async Arrow Function"
+
+            test().then((result) => { console.log(result) })
+        }
+
+        {
+            async function demo() {
+                console.log("2")
+                await console.log("3")
+                console.log("4")
+            }
+
+            console.log("1")
+            demo()
+            console.log("5")
+        }
+
+        {
+            async function data() {
+                return "Data Loaded Successfully"
+            }
+
+            data().then((Data) => {
+                console.log(Data)
+            })
+        }
+
+        {
+            function getdata() {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        resolve({ name: "Rahul", age: 25 })
+                    }, 2000);
+                })
+            }
+
+            async function fetch() {
+                console.log("Your Data Is Featching...")
+                let user = await getdata()
+                console.log(`Name: ${user.name} , Age: ${user.age}`)
+            }
+            fetch()
+        }
+
+        {
+            let prom1 = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log("This Is First Promise.")
+                    resolve(100)
+                }, 1000);
+            })
+
+            let prom2 = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log("This Is Second Promise.")
+                    resolve(200)
+                }, 2000);
+            })
+
+            let prom3 = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log("This Is Third Promise.")
+                    resolve(300)
+                }, 3000);
+            })
+
+            Promise.all([prom1, prom2, prom3]).then((result) => {
+                console.log(`Result Is ${result}`)
+            }).catch((error) => {
+                console.log(`Error ${error}`)
+            })
+        }
+
+        {
+            let a = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log("Hello This Is Async Example.")
+                    resolve(500)
+                    reject(250)
+                }, 2000);
+            })
+
+            a.then((result) => {
+                console.log(`Result is ${result}`)
+            }).catch((error) => {
+                console.log(`Error ${error}`)
+            })
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

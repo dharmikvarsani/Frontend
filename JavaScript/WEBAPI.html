@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB API</title>
+</head>
+
+<body>
+    <!-- Forms -->
+    <input id="overflow" type="number" max="10" required>
+    <button onclick="rangeover()">Ok</button>
+    <br>
+    <br>
+    <input type="text" id="type" required>
+    <button onclick="typemis()">Ok</button>
+    <br>
+    <br>
+    <!-- History -->
+    <button onclick="newtab()">Click</button>
+    <button onclick="forward()">Forword</button>
+    <button onclick="back()">Back</button>
+    <button onclick="go()">Go</button>
+    <br>
+    <br>
+    <!-- WOrker Api -->
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <p id="count"></p>
+    <button id="click">click</button>
+    <button id="cancle">stop</button>
+    <p id="ok"></p>
+    <p id="notok"></p>
+    <br>
+    <br>
+    <button onclick="checkcord()">Cords</button>
+    <p id="geo"></p>
+    <script>
+
+        function rangeover() {
+            let text;
+            if (document.getElementById("overflow").validity.rangeOverflow) {
+                text = "Value Is Too Large."
+            } else {
+                text = "Value Is Ok."
+            }
+            console.log(text)
+        }
+
+
+        function typemis() {
+            let a = document.getElementById("type")
+            let text;
+            if (document.getElementById("type").validity.valueMissing) {
+                text = "Please Enter A Data."
+            } else {
+                text = "OK"
+            }
+            console.log(text)
+        }
+
+        //history
+
+        function newtab() {
+            location.assign("https://www.w3schools.com/js/js_api_history.asp")
+        }
+
+        function back() {
+            history.back()
+        }
+
+        function forward() {
+            history.forward()
+        }
+
+        function go() {
+            history.go(-2)
+        }
+
+        //web WOrker
+
+        {
+            let x;
+
+            function start() {
+                if (x == undefined) {
+                    x = new Worker("practice.js")
+                }
+
+                x.onmessage = function (a) {
+                    document.getElementById("count").innerHTML = a.data
+                }
+            }
+
+            function stop() {
+                x.terminate()
+                x = undefined
+            }
+
+            let click = document.getElementById("click")
+            let cancle = document.getElementById("cancle")
+            let ok = document.getElementById("ok")
+            let notok = document.getElementById("notok")
+
+            let worker = new Worker("practice.js")
+            click.addEventListener("click", () => {
+                worker.postMessage("")
+
+                worker.onmessage = (e) => {
+                    ok.innerHTML = e.data
+                }
+
+                // for (i = 0; i <= 100000000; i++) {
+                //     ok.innerHTML = i
+                // }
+
+            })
+
+            cancle.addEventListener("click", () => {
+                notok.innerHTML = "Cancle Is Clicked."
+            })
+
+        }
+
+        //fetch
+
+        // {
+        //     let url = "https://www.youtube.com/"
+
+        //     async function api() {
+        //         let x = await fetch(url)
+        //         let y = await x.json()
+        //         console.log(y)
+        //     }
+        //     api()
+        // }
+
+        //geolocation
+
+        {
+            let x = document.getElementById("geo")
+
+            function checkcord() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(position)
+                } else {
+                    x.innerHTML = "Data Is Not Found."
+                }
+            }
+
+            function position(locat) {
+                x.innerHTML = locat.coords.latitude + locat.coords.longitude
+            }
+
+        }
+    </script>
+</body>
+
+</html>

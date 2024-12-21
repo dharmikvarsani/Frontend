@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+
+<body>
+    <button onclick="OPEN()">Open</button>
+    <button onclick="CLOSE()">Close</button>
+    <button onclick="RESIZE()">Resize</button>
+    <br>
+    <br>
+    <!-- Location -->
+    <button onclick="loaddoc()">Load Document</button>
+    <br>
+    <br>
+    <!-- History -->
+    <button onclick="historyback()">History Back</button>
+    <button onclick="historyforword()">History Forword</button>
+    <br>
+    <br>
+    <!-- Timing -->
+    <button onclick="a = setTimeout(settime , 3000)">Set Timeout</button>
+    <button onclick="clearTimeout(a)">Clear TimeOut</button>
+    <p id="timer"></p>
+    <button onclick="clearInterval(abc)">TO Stop Timer</button>
+    <script>
+        //Window
+        {
+            console.log(window.innerHeight + "   window.innerHeight")
+            console.log(window.innerWidth + "   window.innerWidth")
+
+            function OPEN() {
+                window.open("https://toforzero.com/")
+            }
+
+            function CLOSE() {
+                window.close("")
+            }
+
+            function RESIZE() {
+                window.resizeTo(300, 452)
+            }
+        }
+
+        //screen
+
+        {
+            console.log(screen.width + "     screen.width")
+            console.log(screen.height + "     screen.height")
+            console.log(screen.availHeight + "     screen.availHeight")
+            console.log(screen.availWidth + "     screen.availWidth")
+            console.log(screen.colorDepth + "     screen.colorDepth")
+            console.log(screen.pixelDepth + "     screen.pixelDepth")
+        }
+
+        //Location
+
+        {
+            console.log(window.location.href + "     location.href")
+            console.log(window.location.hostname + "     location.hostname")
+            console.log(window.location.protocol + "     location.protocol")
+            console.log(window.location.pathname + "     location.pathname")
+
+            function loaddoc() {
+                window.location.assign("https://toforzero.com/")
+            }
+        }
+
+        //History
+
+        {
+            function historyback() {
+                history.back()
+            }
+
+            function historyforword() {
+                history.forward()
+            }
+
+        }
+
+        //navigator 
+        {
+            console.log(navigator.cookieEnabled + "     cookieEnabled")
+            console.log(navigator.appCodeName + '     appCodeName')
+            console.log(navigator.appName + "     appName")
+            console.log(navigator.platform + "     platform")
+            console.log(navigator.appVersion + "     appVersion")
+            console.log(navigator.onLine + "     Online")
+            console.log(navigator.language + "     language")
+            console.log(navigator.javaEnabled() + "     javaEnabled")
+
+        }
+
+        //TIming
+        {
+            function settime() {
+                alert("Hello")
+            }
+
+            let abc = setInterval(time, 1000)
+            function time() {
+                let d = new Date()
+                document.getElementById("timer").innerHTML = d.toLocaleTimeString()
+            }
+        }
+
+        //cookie
+
+        // {
+        //     document.cookie = "firstName = Rahul; lastName = Kumar; expires=Tue, 10 Dec 2024 13:46:58 GMT+0530 ; path=/ "
+
+        //     let key = prompt("Enter A Your FirstName.")
+        //     let value = prompt("Enter a Your LastName")
+        //     document.cookie = (`${encodeURIComponent(key)} = ${encodeURIComponent(value)}`)
+        //     console.log(document.cookie)
+        // }
+
+    </script>
+</body>
+
+</html>

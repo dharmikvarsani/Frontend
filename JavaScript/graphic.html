@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic</title>
+</head>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<body>
+    <div id="myPlot" style="height: 500px; width: 750px;"></div>
+    <div id="plot2" style="height: 500px; width: 700px;"></div>
+    <div id="plot3" style="height: 500px; width: 100%;"></div>
+    <div id="plot4" style="height: 500px; width: 100%;"></div>
+    <div id="plot5" style="height: 500px; width: 100%;"></div>
+    <div id="plot6" style="height: 500px; width: 100%;"></div>
+    <script>
+
+        {
+            let xArray = ["Rajesh", "Deep", "Kamal", "raj", "Bhavay"]
+            let yArray = [76, 89, 71, 60, 46]
+
+            let data = [{
+                x: xArray,
+                y: yArray,
+                type: "bar",
+                orientation: "v",
+                marker: { color: "Black" }
+            }]
+
+            const layout = { title: "World Wide Wine Production" };
+            Plotly.newPlot("myPlot", data, layout);
+        }
+
+
+        {
+            let xArray = ["Apple", "Banana", "Pinaple", " Orange", "Kiwi"]
+            let yArray = [100, 50, 75, 60, 150]
+
+            let data = [{
+                x: xArray,
+                y: yArray,
+                type: "bar",
+                orientation: "h",
+                marker: { color: "powederblue" }
+            }]
+            let title = { title: "Fruits And Their price." }
+            Plotly.newPlot("plot2", data, title)
+        }
+
+        {
+            let xArray = ["Tanmay", "Chintan", "Rakesh", "Jay", "Raghu"]
+            let yArray = [50, 13, 79, 53, 76]
+
+            let data = [{ labels: xArray, values: yArray, type: "pie" }]
+            let title = { title: "Students And Their Marks." }
+            Plotly.newPlot("plot3", data, title)
+        }
+
+
+        {
+            let labels = ["Apple", "Orange", "Custeredapple", "Pinapple", "Kiwi"]
+            let values = [100, 40, 75, 80, 120]
+
+            let data = [{ labels: labels, values: values, type: "pie", hole: .5 }]
+            let title = { title: "Fruits And Their Price Per Kilogram." }
+            Plotly.newPlot("plot4", data, title)
+
+        }
+
+        {
+            let xArray = [25,30,42,50,56,69,77,99]
+            let yArray = [1,2,3,4,5,6,7,8]
+
+
+            let data = [{
+                x: xArray,
+                y: yArray,
+                mode: "line",
+                type: "scatter"
+            }]
+
+            let layout = {
+                xaxis: { range: [10, 100] },
+                yaxis: { range: [0, 10] }
+            }
+
+            Plotly.newPlot("plot5", data, layout)
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
